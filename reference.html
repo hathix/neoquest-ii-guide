@@ -1,0 +1,493 @@
+<head>
+	<title>NQII Reference</title>
+	<style type="text/css">
+	//
+	{}
+		/*Release Notes
+		Rev's NeoQuest II Guide
+		by revolutionrising
+		(I would copyright this but what's the point?)
+		Guide Version 4.1 "A Blur of Green"
+		NQII Reference - NQref (neopets.com/~NQref)
+		Last edited 11/13/10
+		*/
+	/*Changelog
+		Version - Date - Notes
+		1.0 - 9/11 - Well, this is the first *official* version of the page.
+		*/
+	body {
+		font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+		font-size: 15px;
+		color: #05003F;
+		line-height: 1.4em;
+		cursor: crosshair;
+		background-color: #259ADF;
+		background-image: url('http://www.psdgraphics.com/file/windows-7-wallpaper-1366x768.jpg');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		}
+	table,font {
+		visibility: hidden;
+		}
+	div#hitcounter {
+		text-align: center;
+		}
+	div#allstuff {
+		margin-top: 5%;
+		height: 80%;
+		}
+	div#jumpandskills {
+		width: 220px;
+		float: right;
+		margin: 0px 10px 0px 10px;
+		}
+	div#jump {
+		padding: 10px 5px 10px 5px;
+		border: 3px ridge #000000;
+		background-color: #E0F0FF;
+		height: 50%;
+		overflow: scroll;
+		margin-bottom: 10px;
+		}
+	div#therest {
+		height: 100%;
+		overflow: scroll;
+		padding: 10px
+		}
+
+	div#header {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+		width: 606px;
+		text-align: center;
+		}	
+	div.bodycontent {
+		background-color: #E0F0FF;
+		border: 3px ridge #000000;
+		padding: 10px;
+		margin-bottom: 10px;
+		}
+
+	.heading {
+		text-transform: lowercase;
+		text-align: left;
+		letter-spacing: 0.6em;
+		font-weight: bold;
+		font-size: 180%;
+		color: #000000;
+		border-bottom: 1px dashed #444444;
+		font-family: Candara, "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	.wtheading {
+		text-transform: lowercase;
+		text-align: center;
+		letter-spacing: 0.5em;
+		font-size: 180%;
+		font-weight: bold;
+		color: #000000;
+		font-family: Candara, "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	h1#jumpheading {
+		text-align: left;
+		font-size: 200%;
+		letter-spacing: 0.7em;
+		border-bottom: 1px dashed #444444;
+		font-family: "Berlin Sans FB", Candara, Georgia, Verdana, Arial, sans-serif;
+		}
+	p {
+		text-indent: 10px;
+		}
+	em {
+		color: #700099;
+		font-style: italic;
+		}
+	strong {
+		color: #700099;
+		font-weight: bold;
+		}
+	span.strike {
+		text-decoration: line-through;
+		}
+	#header a {
+		text-decoration: none !important;
+		border: none !important;
+		}
+	#header img {
+		border: none !important;
+		}
+	span#learn {float: left;}
+	span#play {float: right;}
+	span#headercomment {
+		color: white;
+		}
+
+	a {
+		text-decoration: none;
+		border-bottom: 1px dashed #000000;
+		}
+	a:link {
+		color: #490028;
+		}
+	a:visited {
+		color: #13007F;
+		}
+	a:hover {
+		color: #BC0016;
+		}
+
+	div.ajump {
+		text-indent: 10px;
+		letter-spacing: 0.2em;
+		font-size: 14px;
+		text-transform: lowercase;
+		cursor: auto;
+		font-family: "Trebuchet MS", Georgia, "Berlin Sans FB Demi", Verdana, Arial, sans-serif;
+		}
+	h1.jumpsection {
+		font-size: 14px;
+		margin-bottom: 0px;
+		text-transform: lowercase;
+		letter-spacing: 0.3em;
+		}
+	.ajumpboss a {
+		border-bottom: 1px dotted #444444;
+		}
+	div#intro {
+		text-align: left;
+		width: 605px;
+		margin-left: auto;
+		margin-right: auto;	
+		}
+	tr.theadings{
+		font-weight: bold;
+		text-align: center;
+		font-size: 120%;
+		text-transform: lowercase;
+		background-color: #1773C0;
+		color: #FFFFFF;
+		}
+	.center {
+		text-align: center;
+		}
+	table.skills{
+		visibility: visible;
+		border: 1px dashed #444444;
+		border-collapse: collapse;
+		margin: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 75%;
+		color: #000000;
+		}
+	.skills td{
+		border: 1px dashed #444444;
+		padding: 5px;
+		}
+	col.skillcol{
+		width: 25%;
+		}
+	col.comments{
+		width: 75%;
+		}
+	td.skillname{
+		font-weight: bold;
+		text-align: center;
+		font-size: 130%;
+		background-color: #BFC6FF;
+		}
+	td.info{
+		background-color: #E2E4FF;
+		}
+	td.opinion{
+		font-style: italic;
+		background-color: #D1D4FE;
+		}
+	td.cname{
+		border-right: none;
+		text-transform: lowercase;
+		font-size: 180%;
+		text-align: center;
+		letter-spacing: 0.8em;
+		padding: 10px;
+		font-weight: bold;
+		background-color: #A3ADFF;
+		}
+	table#bosses{
+		visibility: visible !important;
+		margin-left: auto;
+		margin-right: auto;
+		border-collapse: collapse;
+		color: #000;
+	}
+	#bosses td{
+		border: 1px solid #000;
+		padding: 5px;
+	}	
+	#modes td{
+		text-align: center;
+		background-color: #000068;
+		color: #FFF;
+		font-weight: bold;
+		font-family: Candara, Georgia, Arial, Verdana, sans-serif;
+		font-size: 110%;
+		letter-spacing: 0.4em;
+		text-transform: lowercase;
+	}
+	td.act{
+		text-align: center;
+		background-color: #000068;
+		color: #FFF;
+		font-weight: bold;
+		font-family: Candara, Georgia, Arial, Verdana, sans-serif;
+		font-size: 140%;
+		text-transform: lowercase;
+		vertical-align: center;
+	}
+	col.mode_col{
+			width: 100px;
+	}
+	td.name{
+		font-weight: bold;
+		font-style: italic;
+		text-align: right !important;
+		font-size: 16px !important;
+	}
+	._1,._15,._2,._3,._4,._5 td{
+		text-align: center;
+		font-size: 110%;
+	}
+	._1{background-color: #88C483;}
+   ._15{background-color: #92D389;}
+	._2{background-color: #8DD1D3;}
+	._3{background-color: #EDAC9C;}
+	._4{background-color: #D3B294;}
+	._5{background-color: #C9C9FF;}
+	
+	#bosses a{
+		color: #000;
+		//border: none;
+	}
+	
+	</style>
+</head>
+<body>
+<div id="allstuff">
+<div id="jumpandskills">
+<div id="jump">
+<h1 class="heading" id="jumpheading">Jump</h1>
+<div class="ajump"><a href="http://www.neopets.com/">neopets home</a></div>
+<div class="ajump"><a href="http://www.neopets.com/games/nq2/nq2.phtml"
+ target="_blank">nqii main page</a></div>
+ <div class="ajump"><a href="http://www.neopets.com/~SmallGreenBlur">guide main page</a></div>
+<br>
+<div class="ajump"><a href="#header">top of page</a></div>
+<div class="ajump"><a href="#bosslevels">boss levels</a></div>
+<div class="ajump"><a href="#skills">skills</a></div>
+
+</div>
+</div>
+<div id="therest">
+<div id="header"> <span id="learn"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A1Learn.png"
+ alt="Learn..." title="Guides for Beginners"><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#interface"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A2Interface.png"
+ alt="Interface" title="The Game's Interface"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#battling"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A3Battling.png"
+ alt="Battling" title="Battling"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#shopping"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A4Shopping.png"
+ alt="Shopping" title="Shopping"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#items"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A5Items.png"
+ alt="Items" title="Items"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#skills"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A6Skills.png"
+ alt="Skills" title="Skills Guide"></a> </span> <span id="play"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B0Play.png"
+ alt="Play..." title="Walkthroughs"><br>
+<a href="http://www.neopets.com/~Epanastasi"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B1.png"
+ alt="Act 1, Part 1" title="Act 1, Part 1"></a><br>
+<a href="http://www.neopets.com/~Fordulat"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B15.png"
+ alt="Act 1, Part 2" title="Act 1, Part 2"><br>
+</a><a href="http://www.neopets.com/~CmdrInputBlocker"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B2.png"
+ alt="Act 2" title="Act 2"><br>
+</a><a href="http://www.neopets.com/~DiabolicalChia"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B3.png"
+ alt="Act 3" title="Act 3"><br>
+</a><a href="http://www.neopets.com/~AlaskanMosquito"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B4.png"
+ alt="Act 4" title="Act 4"><br>
+</a><a href="http://www.neopets.com/~ThePhoenixRising"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B5.png"
+ alt="Act 5" title="Act 5"><br>
+</a></span><span
+ id="headermain"> </span><a
+ href="http://www.neopets.com/~SmallGreenBlur"
+ alt="Rev's NeoQuest II Guide" title="To Home Page"
+ style="cursor: pointer;"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/HeaderMain.png"></a>
+<span id="headercomment">This guide is currently in beta. So don't
+worry. c:</span> </div>
+<div class="bodycontent" id="intro"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/RefHeader.jpg">
+</div>
+
+		<div class="bodycontent" id="hi">
+			<div id="hitcounter">
+			<img src="http://counter2.neomallers.com/nqref.gif?theme=mtblue&visit=#VISITOR" alt="The funniest thing about this alt text is that it's too late to realize it doesn't mean anything until you've actually finished reading it.">
+			</div>
+		<h1 class="heading">hi there</h1> 
+			<p>Ah, hi there #VISITOR. At the risk of being obvious, I'll tell you that you've found my NeoQuest II reference page. All my <strong>recommended boss levels and skills per level</strong> from the rest of the guide can be found here, so you don't need to crawl through each of the guide's pages to find what you're looking for. Handy, eh?</p>
+			
+			<p>I hope this helps, and, uh, have fun.</p>
+		</div>
+		
+		<div class="bodycontent" id="bosslevels">
+			<h1 class="heading">boss levels</h1>
+				<p>You know how I tell you all the <strong>recommended levels</strong> you should be to fight each boss during the guide? Well, I've compiled all the stuff from the guide right here, so you can find the recommended levels for Zombom or Hubrid Nox all in the same table. It's all below. Also, if you want <strong>more info</strong> on any boss, just <strong>click on the boss's name.</strong> More info will open in a new tab.</p>
+				
+				<p><strong>How to read the table:</strong> First, find the boss's name. Then <strong>read across the columns</strong>: go over one column if you're on Normal, 2 if Evil, and 3 if Insane. The number you land on is the recommended level. For example, look for Zombom. You should be level 12 if facing him on Normal, 13 if you're on Evil, and 14 if you're on Insane.</p>			
+			<table id="bosses">
+					<col id="act_col">
+					<col>
+					<col class="mode_col">
+					<col class="mode_col">
+					<col class="mode_col">
+				<tr id="modes">
+					<td>Act</td>
+					<td>Name</td>
+					<td>Normal</td>
+					<td>Evil</td>
+					<td>Insane</td>
+				<tr>
+				<tr class="_1">
+					<td rowspan="2" class="act" style="background-color: #227F1B">1</td>
+					<td class="name"><a href="http://www.neopets.com/~Epanastasi#theminerforeman" target="_blank">The Miner Foreman</a></td>
+					<td>6</td><td>7</td><td>8</td>
+				</tr>
+				<tr class="_1">
+					<td class="name"><a href="http://www.neopets.com/~Epanastasi#zombom" target="_blank">Zombom</a></td>
+					<td>12</td><td>13</td><td>14</td>
+				</tr>
+				<tr class="_15">
+					<td rowspan="3" class="act" style="background-color: #0DA500">1.5</td>
+					<td class="name"><a href="http://www.neopets.com/~Fordulat#giantsandgrundo" target="_blank">Giant Sand Grundo</a></td>
+					<td>15</td><td>16</td><td>17</td>
+				</tr>	
+				<tr class="_15">
+					<td class="name"><a href="http://www.neopets.com/~Fordulat#ramtor1" target="_blank">Ramtor (1st time)</a></td>
+					<td>17</td><td>18</td><td>19</td>
+				</tr>
+				<tr class="_15">
+					<td class="name"><a href="http://www.neopets.com/~Fordulat#ramtor2" target="_blank">Ramtor (2nd time)</a></td>
+					<td>20</td><td>21</td><td>22</td>
+				</tr>	
+				<tr class="_2">
+					<td rowspan="3" class="act" style="background-color: #1AA3A8">2</td>
+					<td class="name"><a href="http://www.neopets.com/~CmdrInputBlocker#leximp" target="_blank">Leximp</a></td>
+					<td>21</td><td>22</td><td>23</td>
+				</tr>
+				<tr class="_2">
+					<td class="name"><a href="http://www.neopets.com/~CmdrInputBlocker#kolvars" target="_blank">Kolvars</a></td>
+					<td>25</td><td>26</td><td>27</td>
+				</tr>	
+				<tr class="_2">
+					<td class="name"><a href="http://www.neopets.com/~CmdrInputBlocker#scuzzy" target="_blank">Scuzzy</a></td>
+					<td>30</td><td>31</td><td>32</td>
+				</tr>
+				<tr class="_3">
+					<td rowspan="5" class="act" style="background-color: #AF2B00">3</td>
+					<td class="name"><a href="http://www.neopets.com/~DiabolicalChia#siliclast" target="_blank">Siliclast</a></td>
+					<td>33</td><td>34</td><td>35</td>
+				</tr>	
+				<tr class="_3">
+					<td class="name"><a href="http://www.neopets.com/~DiabolicalChia#gebarnii" target="_blank">Gebarn II</a></td>
+					<td>34</td><td>35</td><td>36</td>
+				</tr>		
+				<tr class="_3">
+					<td class="name"><a href="http://www.neopets.com/~DiabolicalChia#therevenant" target="_blank">The Revenant</a></td>
+					<td>35</td><td>36</td><td>37</td>
+				</tr>
+				<tr class="_3">
+					<td class="name"><a href="http://www.neopets.com/~DiabolicalChia#coltzansghost" target="_blank">Coltzan's Ghost</a></td>
+					<td>38</td><td>39</td><td>40</td>
+				</tr>
+				<tr class="_3">
+					<td class="name"><a href="http://www.neopets.com/~DiabolicalChia#anubits" target="_blank">Anubits</a></td>
+					<td>40</td><td>41</td><td>42</td>
+				</tr>
+				<tr class="_4">
+					<td rowspan="5" class="act" style="background-color: #773B00">4</td>
+					<td class="name"><a href="http://www.neopets.com/~AlaskanMosquito#meuka" target="_blank">Meuka</a></td>
+					<td>41</td><td>42</td><td>43</td>
+				</tr>	
+				<tr class="_4">
+					<td class="name"><a href="http://www.neopets.com/~AlaskanMosquito#spidergrundo" target="_blank">Spider Grundo</a></td>
+					<td>44</td><td>45</td><td>46</td>
+				</tr>		
+				<tr class="_4">
+					<td class="name"><a href="http://www.neopets.com/~AlaskanMosquito#fourfaeries" target="_blank">Four Faeries</a></td>
+					<td>46</td><td>47</td><td>48</td>
+				</tr>	
+				<tr class="_4">
+					<td class="name"><a href="http://www.neopets.com/~AlaskanMosquito#hubridnox" target="_blank">Hubrid Nox</a></td>
+					<td>49</td><td>50</td><td>51</td>
+				</tr>				
+				<tr class="_4">
+					<td class="name"><a href="http://www.neopets.com/~AlaskanMosquito#esophagor" target="_blank">Esophagor</a></td>
+					<td>50</td><td>51</td><td>52</td>
+				</tr>
+				<tr class="_5">
+					<td rowspan="9" class="act" style="background-color: #000068">5</td>
+					<td class="name">Fallen Angel</td>
+					<td>51</td><td>52</td><td>53</td>
+				</tr>
+				<tr class="_5">
+					<td class="name">Devilpuss</td>
+					<td>53</td><td>54</td><td>55</td>
+				</tr>
+				<tr class="_5">
+					<td class="name">Faerie Thief (1st time)</td>
+					<td>55</td><td>56</td><td>57</td>
+				</tr>
+				<tr class="_5">
+					<td class="name">Faerie Thief (2nd time)</td>
+					<td>56</td><td>57</td><td>58</td>
+				</tr>
+				<tr class="_5">
+					<td class="name">Faerie Thief (3rd time)</td>
+					<td>56</td><td>57</td><td>58</td>
+				</tr>
+				<tr class="_5">
+					<td class="name">Pant Devil (NW tower)</td>
+					<td>57</td><td>58</td><td>59</td>
+				</tr>
+				<tr class="_5">
+					<td class="name">Pant Devil (NE tower)</td>
+					<td>58</td><td>59</td><td>60</td>
+				</tr>
+				<tr class="_5">
+					<td class="name">Terask I</td>
+					<td>59</td><td>60</td><td>60</td>
+				</tr>
+				<tr class="_5">
+					<td class="name">Terask II</td>
+					<td>60</td><td>60</td><td>60</td>
+				</tr>				
+				
+			</table>
+		</div>
+		
+		<div class="bodycontent" id="skills">
+			<h1 class="heading">skills</h1>
+			<p>Coming soon... very soon.</p>
+		</div>
+</div>
+</div>
+</body>

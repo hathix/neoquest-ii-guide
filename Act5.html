@@ -1,0 +1,928 @@
+<head>
+  <title>Act 5 Walkthrough - ThePhoenixRising</title>
+  <style type="text/css">
+	/*Release Notes
+		Rev's NeoQuest II Guide
+		by revolutionrising
+		(I would copyright this but what's the point?)
+		Guide Version 4.1 "A Blur of Green"
+		Act 5 - ThePhoenixRising (neopets.com/~ThePhoenixRising)
+		Page Version 0.1
+		Last edited 11/29/10
+		*/
+	/*Changelog
+		Version - Date     - Notes
+		0.1     - 11/14/10 - Just saying hi, since the content isn't done yet. 
+		*/
+	body {
+		font-family: Calibri, "Trebuchet MS", Helvetica, Verdana, Arial, sans-serif;
+		font-size: 16px;
+		color: #03193F;
+		line-height: 1.4em;
+		cursor: crosshair;
+		background-color: #083BA8;
+		background-image: url('http://www.psdgraphics.com/file/blue-sky-background.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: 0px -20px;
+		}
+	table {
+		visibility: hidden;
+		}
+	font{
+		visibility: hidden;
+	}
+	div#hitcounter {
+		text-align: center;
+		}
+	div#allstuff {
+		margin-top: 5%;
+		height: 80%;
+		}
+	div#jumpandskills {
+		width: 220px;
+		float: right;
+		margin: 0px 10px 0px 10px;
+		}
+	div#jump {
+		padding: 10px 5px 10px 5px;
+		border: 3px ridge #000000;
+		background-color: #CFE2F7;
+		height: 99%;
+		overflow: scroll;
+		margin-bottom: 10px;
+		}
+	div#skills {
+		padding: 0px 5px 5px 5px;
+		border: 3px ridge #000000;
+		background-color: #CFE2F7;
+		height: 60%;
+		overflow: scroll;
+		}
+	div#therest {
+		height: 100%;
+		overflow: scroll;
+		padding: 10px;
+		}
+
+	div#header {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+		width: 606px;
+		text-align: center;
+		}	
+	div.bodycontent {
+		background-color: #CFE2F7;
+		border: 3px ridge #000000;
+		padding: 10px;
+		margin-bottom: 10px;
+		}
+
+	div.boss {
+		background-color: #CFE2F7;
+		border: 3px ridge #000000;
+		padding: 10px;
+		margin-bottom: 10px;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		}
+
+	.heading {
+		text-transform: lowercase;
+		text-align: left;
+		letter-spacing: 0.6em;
+		font-weight: bold;
+		font-size: 160%;
+		color: #000000;
+		border-bottom: 1px dashed #444444;
+		font-family: Candara, "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	.wtheading {
+		text-transform: lowercase;
+		text-align: center;
+		letter-spacing: 0.5em;
+		font-size: 180%;
+		font-weight: bold;
+		color: #000000;
+		font-family: Candara, "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	h1#jumpheading {
+		text-align: left;
+		font-size: 200%;
+		letter-spacing: 0.7em;
+		border-bottom: 1px dashed #444444;
+		font-family: "Berlin Sans FB", Candara, Georgia, Verdana, Arial, sans-serif;
+		}
+	div.place {
+		width: 50%;
+		text-align: center;
+		border-bottom: 1px dashed #444444;
+		margin-left: auto;
+		margin-right: auto;
+		}
+	.place img{
+		width: 100px;
+		}
+	div.flavortext {
+		font-style: italic;
+		margin-top: 0.5em;
+		font-size: 16px;
+		}
+
+	p {
+		text-indent: 10px;
+		font-size: 16px;
+		}
+	em {
+		color: #008787;
+		font-style: italic;
+		}
+	strong {
+		color: #8A0EB7;
+		font-weight: bold;
+		}
+	span.strike {
+		text-decoration: line-through;
+		}
+
+	div.ajump {
+		text-indent: 15px;
+		letter-spacing: 0.3em;
+		font-size: 14px;
+		text-transform: lowercase;
+		cursor: auto;
+		font-weight: bold;
+		font-family: "Trebuchet MS", "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	#header a {
+		text-decoration: none !important;
+		border: none !important;
+		}
+	#header img {
+		border: none !important;
+		}
+	span#learn {float: left;}
+	span#play {float: right;}
+	span#headercomment {
+		color: white;
+		}
+
+	a {
+		text-decoration: none;
+		border-bottom: 1px dashed #000000;
+		}
+	a:link {
+		color: #7700FF;
+		}
+	a:visited {
+		color: #7F0046;
+		}
+	a:hover {
+		color: #0052AD;
+		}
+
+	div.ajumpwt {
+		text-indent: 10px;
+		letter-spacing: 0.2em;
+		font-size: 14px;
+		text-transform: lowercase;
+		cursor: auto;
+		font-family: Calibri, "Trebuchet MS", Georgia, "Berlin Sans FB Demi", Verdana, Arial, sans-serif;
+		}
+	div.ajumpboss {
+		text-indent: 10px;
+		letter-spacing: 0.2em;
+		font-size: 14px;
+		text-transform: lowercase;
+		cursor: auto;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		color: #9E0915;
+		font-weight: bold;
+		}
+	h1.jumpsection {
+		font-size: 14px;
+		margin-bottom: 0px;
+		text-transform: lowercase;
+		letter-spacing: 0.3em;
+		}
+	.ajumpboss a {
+		border-bottom: 1px dotted #444444;
+		}
+	div#intro {
+		text-align: center;
+		width: 605px;
+		margin-left: auto;
+		margin-right: auto;	
+		}
+	div.message {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		background-color: white;
+		border: 2px solid black;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		padding: 5px;
+		}
+	div.message img{
+		width: 100px;
+	}
+	span.messagetitle {
+		font-variant: small-caps;
+		font-size: 18px;
+		font-style: italic;
+		color:#b8389e;
+		margin-top: 10px;
+		text-decoration: underline;
+		}
+	span.red {
+		color: #FF0000;
+		}
+	p.smallprint {
+		font-size: 10px;
+		font-family: "Times New Roman", serif;
+		line-height: 1em;
+		}
+	div.bosspic {
+		margin: 5px;
+		text-align: center;
+		}
+	.bosspic img {
+		width: 100px;
+		}
+	table.bossinfo {
+		width: 80%;
+		margin: 5px auto 0px auto;
+		border: 1px dashed black;
+		padding: 5px;
+		visibility: visible !important;
+		}
+	.bossinfo td {
+		padding: 3px;
+		}
+	td.first {
+		text-align: right;
+		font-weight: bold;
+		text-transform: lowercase;
+		letter-spacing: 0.1em;
+		width: 30%;
+		}
+	td.second {
+		text-align: left;
+		border-bottom: 1px dotted #444444;
+		width: 70%;
+		}
+	td.secondlast {
+		border-bottom: none !important;
+		}
+	ul.strategy {
+		text-align: left;
+		list-style-type: none;
+		}
+	.strategy li {
+		margin-left: 25px;
+		margin-bottom: 1em;
+		}
+	.strategy strong {
+		margin-left: -10px !important;
+		border-bottom: 1px dashed #444444;
+		}
+	li.bossstrategy {
+		font-weight: bold;
+		letter-spacing: 0.1em;
+		text-transform: lowercase;
+		margin-left: 0px !important;
+		border-bottom: 1px dotted #444444;
+		}
+	div.postbattle {
+		text-align: left;
+		}
+	h1.postbattle {
+		color: #000000;
+		font-family: Candara, "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		text-transform: lowercase;
+		border-bottom: 1px dotted #444444;
+		font-size: 120%;
+		letter-spacing: 0.3em;
+		}
+	#skillsheading {
+		font-size: 200%;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		text-transform: lowercase;
+		letter-spacing: 0.4em;
+		border-bottom: 1px dashed #444444;
+		}
+	table#skillstable {
+		font-size: 12px;
+		border-collapse: collapse;
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		visibility: visible !important;
+		}
+	#skillstable td {
+		border: 1px solid #444444;
+		padding: 1px;
+		text-align: center;
+		}
+	.levelcol {
+		width: 10%;
+		}
+	.rohane, .mipsy, .talinia, .velm {
+		width: 20%;
+		}
+	tr#skillstableheadings {
+		text-transform: lowercase;
+		font-weight: bold;
+		font-family: "Candara", "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		font-size: 14px;
+		color: #000000;
+		background-color: transparent !important;
+		}
+	#charnames td {
+		font-weight: bold;
+		text-transform: lowercase;
+		font-family: "Candara", "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, "Trebuchet MS", Verdana, Arial, sans-serif;
+		font-size: 140%;
+		background-color: #CFE2F7 !important;
+		border: none !important;
+		}
+	#skillstableheadings td {
+		border: none !important;
+		}
+	#skillstable tr {
+		background-color: #EDFFD8;
+		}
+	tr.altcolor {
+		background-color: #D2FF9B !important;		
+		}
+	td.lev {
+		font-weight: bold;
+		font-family: "Trebuchet MS", Georgia, Verdana, Arial, sans-serif;
+		font-size: 120%;
+		border: none !important;
+		background-color: #CFE2F7;
+		}
+	td.left {
+		text-align: center;
+		background-color: #FF8E8C !important;
+		font-weight: bold;
+		width: 30%;
+		}
+	td.right {
+		width: 70%;
+		}
+	div.message {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		background-color: white;
+		border: 2px solid black;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		padding: 5px;
+		}
+	span.messagetitle {
+		font-variant: small-caps;
+		font-size: 18px;
+		font-style: italic;
+		color:#b8389e;
+		margin-top: 10px;
+		text-decoration: underline;
+		}
+	span.red {
+		color: #FF0000;
+		}
+	p.smallprint {
+		font-size: 10px;
+		font-family: "Times New Roman", serif;
+		line-height: 1em;
+		}
+	div.shoppinglist{
+		background-color: #FFFFFF;
+		background-image: url('http://images2.layoutsparks.com/1/103072/notebook-paper-lines-page.gif');
+		width: 50%;
+		padding: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		font-family: "Segoe Print", "Trebuchet MS", Verdana, Arial, sans-serif;
+		text-align: center;
+		}
+	.shoppinglist h1{
+		font-family: "Segoe Script", "Segoe Print", "Trebuchet MS", Verdana, Arial, sans-serif;
+		}
+	.shoppinglist ul{
+		text-align: left;
+		font-size: 14px;
+		list-style-type: none;
+		}
+	.shoppinglist ul ul{
+		}
+	.shoppinglist strong{
+		color: #000000;
+		text-decoration: underline;
+		padding: 2px;
+		}
+	table#abilities{
+		visibility: visible !important;
+		}
+	.aname{
+		text-align: right;
+		font-style: italic;
+		border-right: 1px dotted #444444;
+		width: 25%;
+		}
+	.amount{
+		text-align: right;
+		width: 10%;
+		}
+	.atype{
+		font-weight: bold;
+		width: 65%;
+		}
+	table#faeries{
+		visibility: visible !important;
+		width: 80%;
+		background-color: #F1FFE0;
+		margin: 10px;
+		border-collapse: collapse;
+		margin-left: auto;
+		margin-right: auto;		
+	}
+	#faeries td{
+		border: 1px solid #000;
+		padding: 3px;
+		text-align: center;
+	}
+	#faerieheadings td{
+		font-weight: bold;
+		background-color: #E5FFC6;
+		size: 110%;
+	}
+	#mainfaerieheading td{
+		text-transform: lowercase;
+		background-color: #6A9E2C;
+		color: #FFF;
+		font-weight: bold;
+		font-size: 150%;
+		letter-spacing: 1em;
+	}
+	td.faerie{
+		font-weight: bold;
+		font-size: 110%;
+		text-decoration: underline;
+	}
+	ol.strategylist li{
+		margin-top: 0.6em;
+	}
+	.bigheading{
+		size: 140%;
+		text-align: center;
+		font-family: Candara, "Segoe Print","Berlin Sans","Berlin Sans FB",Georgia, Verdana, sans-serif;
+		color: #FF0000;
+		text-decoration: underline;
+	}
+	
+	#paper{
+		font-family: "Times New Roman", serif;
+		text-align: justify;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	div#cnmap{
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+
+<div id="allstuff">
+<div id="jumpandskills">
+<div id="jump">
+<h1 class="heading" id="jumpheading">Jump</h1>
+<div class="ajump"><a href="http://www.neopets.com/">neopets home</a></div>
+<div class="ajump"><a href="http://www.neopets.com/games/nq2/nq2.phtml"
+ target="_blank">nqii main page</a></div>
+ <div class="ajump"><a href="http://www.neopets.com/~NQref">nqii reference</a></div>
+<br>
+<div class="ajump"><a href="#header">top of page</a></div>
+<div class="ajumpwt"><a href="#northernwatchtower">northern watchtower</a></div>
+<div class="ajumpboss"><a href="#fallenangel">fallen angel</a></div>
+<div class="ajumpwt"><a href="#theunderclouds">the underclouds</a></div>
+<div class="ajumpwt"><a href="#cumulonimbus">cumulonimbus</a></div>
+<div class="ajumpboss"><a href="#devilpuss">devilpuss</a></div>
+<div class="ajumpwt"><a href="#cirrus">cirrus</a></div>
+<div class="ajumpwt"><a href="#faeriecity">faerie city</a></div>
+
+</div>
+</div>
+<div id="therest">
+<div id="header"> <span id="learn"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A1Learn.png"
+ alt="Learn..." title="Guides for Beginners"><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#interface"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A2Interface.png"
+ alt="Interface" title="The Game's Interface"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#battling"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A3Battling.png"
+ alt="Battling" title="Battling"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#shopping"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A4Shopping.png"
+ alt="Shopping" title="Shopping"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#items"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A5Items.png"
+ alt="Items" title="Items"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#skills"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A6Skills.png"
+ alt="Skills" title="Skills Guide"></a> </span> <span id="play"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B0Play.png"
+ alt="Play..." title="Walkthroughs"><br>
+<a href="http://www.neopets.com/~Epanastasi"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B1.png"
+ alt="Act 1, Part 1" title="Act 1, Part 1"></a><br>
+<a href="http://www.neopets.com/~Fordulat"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B15.png"
+ alt="Act 1, Part 2" title="Act 1, Part 2"><br>
+</a><a href="http://www.neopets.com/~CmdrInputBlocker"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B2.png"
+ alt="Act 2" title="Act 2"><br>
+</a><a href="http://www.neopets.com/~DiabolicalChia"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B3.png"
+ alt="Act 3" title="Act 3"><br>
+</a><a href="http://www.neopets.com/~AlaskanMosquito"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B4.png"
+ alt="Act 4" title="Act 4"><br>
+</a><a href="http://www.neopets.com/~ThePhoenixRising"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B5.png"
+ alt="Act 5" title="Act 5"><br>
+</a></span><span
+ id="headermain"> </span><a
+ href="http://www.neopets.com/~SmallGreenBlur"
+ alt="Rev's NeoQuest II Guide" title="To Home Page"
+ style="cursor: pointer;"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/HeaderMain.png"></a>
+<span id="headercomment">This guide is currently in beta. So don't
+worry. c:</span> </div>
+<div class="bodycontent" id="intro"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/Act5Header.jpg">
+</div>
+
+		<div class="bodycontent" id="hi">
+			<div id="hitcounter">
+			<img src="http://counter2.neomallers.com/thephoenixrising.gif?theme=ptblue&visit=#VISITOR" alt="The funniest thing about this alt text is that it's too late to realize it doesn't mean anything until you've actually finished reading it.">
+			</div>
+		<h1 class="heading">aloha</h1> 
+			<p>Hi there. At the risk of being obvious, you're reading the Act 5 walkthrough. Good news: It's the last act. Only 10 (or less <em>note from the Grammar <span class="strike">Geeks</span> Gurus Club: it should be "fewer." You might want to change it, else we're going to, uh, hurt you. Yeah, let's go with that.</em>), uh, levels left until you finish the game. Bad news: this is a really tough act. But you'll manage.</p>
+			
+			<p>No, really, you'll do fine. I'm serious. You can go to the real part of the guide now.</p>
+		
+			<p>Really, you <strong>will</strong> do fine. Don't you have a guide to be reading? *glares*</p>
+	</div>
+	
+	<div class="bodycontent" id="northernwatchtower">
+
+		<div class="place">
+
+			<h1 class="wtheading">northern watchtower</h1>
+
+			<img src="http://images.neopets.com/items/sta_neoquest2_ntower.gif" alt="The tower... ooh...">
+
+				<div class="flavortext">For once, a tower that *isn't* owned by a megalomaniacal jerk.</div></div>
+					<p>When you're plopped into Faerieland, switch to <strong>Normal mode</strong> and <strong>follow the path</strong> south until you see a conviently-placed tower blocking your way. Go ahead and enter it. Once you're there, take a gander at your <em>map</em> for the place. A Scorchio called <strong>Calam</strong> on the first floor sells weapons. To get to <strong>Gustano</strong>, the potion selling Elephante, go to the 2nd floor. Oh yeah, look at your shopping list too.</p>
+					<div class="shoppinglist">
+						<h1>Shopping List</h1>
+						<ul>
+							<li>Milk</li>
+							<li>Eggs</li>
+							<li>Cheese</li>
+							<li><strong>Potions: </strong><ul>
+									<li><b>20</b> Typhoon Potions</li>
+									<li><b>20</b> Slumber Potions</li>
+									<li><b>20</b> Speed of Wind Potions</li>
+									<li><b>1 to 3</b> Vivify Potions <i>(if you're out of Resurrection Potions from Act 1)</i></li>
+								</ul></li>
+							<li><strong>Weapons/Armor: </strong><ul>
+									<li>As usual, get what you need (i.e. only buy if the weapon is a big step up from what you normally have.) The upgrades here are good, but not amazing or anything.</li>
+									
+								</ul></li>
+							<li><strong>Inn: </strong>No point resting here, since you just started the Act.
+								</li>
+						</ul>
+					</div>	
+
+					<p>Not-so-fun-fact: This is the 2nd-last town to buy weapons/armor and the 3rd-last place to buy potions. There are only 2 bosses between this place and the next town, though, so it's all cool. Anyway, look at your map for <em>Faerieland: Map 2</em> or whatever it's called. This is the path to the next boss. Any way you go will get you to the boss, just <strong>choose a path</strong> before you set out.</p>
+					<p>We want to grow to level <strong title="Normal: 51, Evil: 52, Insane: 53">51/52/53</strong> (remember: <strong>don't spend</strong> the skill point) before we get to the boss, so use that old <em>Fight-As-You-Go</em> method. Once you level up, keep fighting baddies, since more fighting now equals less fighting later. Well, head out, going <strong>south</strong> on the cloud path thing until you reach your next boss, the <strong>Fallen Angel</strong>. *dun dun dun*</p>
+				</div>	
+		<div class="boss" id="fallenangel">
+				<h1 class="wtheading">fallen angel</h1>
+				<div class="bosspic"><img src="http://images.neopets.com/nq2/m/m5025_e3489.gif" alt="The Fallen Angel... scary"></div>
+				<div class="flavortext">I think she's got the Force in her hand. That's pretty sweet.</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">51 on Normal<br>52 on Evil<br>53 on Insane</td></tr>
+
+				<tr>
+					<td class="first">HP:</td>
+					<td class="second">1200 on Normal<br>1500 on Evil<br>1800 on Insane</td></tr>
+				<tr>
+					<td class="first">Special Abilities:</td>
+					<td class="second">
+							<table id="abilities">
+
+								<tr>
+									<td class="aname">Renew</td>
+									<td class="amount">150HP</td>
+									<td class="atype">Heal</td>
+								</tr>
+								<tr>
+									<td class="aname">Spellbind</td>
+									<td class="amount"></td>
+									<td class="atype">Mesmerization</td>
+								</tr>
+								<tr>
+									<td class="aname"></td>
+									<td class="amount"></td>
+									<td class="atype">Shockwave</td>
+								</tr>
+								<tr>
+									<td class="aname"></td>
+									<td class="amount"></td>
+									<td class="atype">Stunning Strikes</td>
+								</tr>
+							</table>
+							</td></tr>
+
+				<tr>
+					<td class="first">Prizes:</td>
+					<td class="secondlast">
+											2 weapons/armor<br>
+											3000 gold<br>
+											1000 NP
+											</td></tr>
+
+				</table>
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General: </strong>She's not too tough, really. If you feel like walking back to the Watchtower, you can use the potions you just got, else just use Haunted Woods Potions.</li>
+					<li><strong>Setup: </strong>Toss some <em>Vile's Apathy Potions</em> or whatever potions you have at the start to slow her. Make sure Mipsy has <em>Group Haste</em> up at all times and Velm has <em>Group Shields</em> up. If you ever forget to do that, these bosses will eat you and I'll eat you too. Ha ha.</li>
+					<li><strong>Offensive: </strong>Don't bother with damage potions: even though she can heal, she doesn't have too much HP. Rohane and Talinia should use their melee (red Attack! button) and Mipsy should use Direct Damage. Pretty simple.</li>
+					<li><strong>Defensive: </strong>Again, make sure Velm has those <em>Group Shields</em> up. He should use Group Healing whenever someone is hurt. Whenever no one is hurt he can toss Blister Potions or something.</li>
+				</ul> 
+				<div class="postbattle"><h1 class="postbattle">Post-battle:</h1>
+					<p>If you used any potions from the Watchtower (i.e. Typhoon, Speed of Wind, or Slumber Potions), walk back there and restock. <strong>You need 20 of each</strong> of the Typhoon, Speed of Wind, and Slumber Potions before you go the next area.</p>
+				</div>
+		</div>
+	<div class="bodycontent" id="theunderclouds">
+
+		<div class="place">
+
+			<h1 class="wtheading">the underclouds</h1>
+
+			<img src="http://images.neopets.com/items/mall_clouds_scaryblack.gif" alt="A storm cloud! Quick! Hide!">
+
+				<div class="flavortext">Oh great, <b>another</b> depressing area.</div></div>
+					<p>If you look at your map for this place, it looks absolutely HUGE. Sure enough, it is. Anyhow, we need to get to <strong>Cumulonimbus</strong> in the <strong>southeast</strong> part of the map. We need to get there and grow to level <strong title="Normal: 52, Evil: 53, Insane: 54">52/53/54</strong> before we get there. The idea is to <strong>stay on the outside</strong> of the path as you walk. Go ahead and, uh, get to Cumulonimbus.</p>
+				</div>
+
+	<div class="bodycontent" id="cumulonimbus">
+
+		<div class="place">
+
+			<h1 class="wtheading">cumulonimbus</h1>
+
+			<img src="http://images.neopets.com/items/rty914tjntwei7y.gif" alt="Scary.">
+
+				<div class="flavortext">OK, I'm running out of cloud pictures.</div></div>
+					<p>Well, if you take a peek at the map for this city, you'll feel like punching me for getting you hooked onto NQII. *ducks, then gets into defensive crouch* No, really, it's not that bad. Look, I even <span class="strike">stole</span> borrowed a picture from meowpillay's NQII maps:</p>
+						<div id="cnmap"><img src="http://www.neonuttersofneopia.com/neoquest2/chp5/C5_cumulonimbus.jpg" style="max-width: 100%;"></div>
+						
+					<p>Yeah, you want to walk to the <strong>big red kitty</strong> on the east side of town. It's a long hike, so you should use the <em>Fight-As-You-Go method</em> to grow to level <strong title="Normal: 53, Evil: 54, Insane: 55">53/54/55</strong> by the time you get to the Devilpuss (aka the big red kitty.) Once you're ready, walk up to the guy and ask him why he didn't lend you Segways when you entered the city.</p>
+				</div>		
+
+		<div class="boss" id="devilpuss">
+				<h1 class="wtheading">devilpuss</h1>
+				<div class="bosspic"><img src="http://images.neopets.com/items/angelpuss_devilpuss.gif" alt="A big angry red kitty."></div>
+				<div class="flavortext">The stereotypical cat: angry, moody, and in need of a nail trimming.</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">53 on Normal<br>54 on Evil<br>55 on Insane</td></tr>
+
+				<tr>
+					<td class="first">HP:</td>
+					<td class="second">1500 on Normal<br>1875 on Evil<br>2250 on Insane</td></tr>
+				<tr>
+					<td class="first">Special Abilities:</td>
+					<td class="second">
+							<table id="abilities">
+								<tr>
+									<td class="aname"></td>
+									<td class="amount"></td>
+									<td class="atype">Critical Attacks</td>
+								</tr>							
+								<tr>
+									<td class="aname"></td>
+									<td class="amount"></td>
+									<td class="atype">Shockwave</td>
+								</tr>
+								<tr>
+									<td class="aname"></td>
+									<td class="amount">5%</td>
+									<td class="atype">Slowing Strike</td>
+								</tr>
+							</table>
+							</td></tr>
+
+				<tr>
+					<td class="first">Prizes:</td>
+					<td class="secondlast">Devilpuss Avatar<br>
+											2 weapons/armor<br>
+											2500 gold<br>
+											1100 NP
+											</td></tr>
+
+				</table>
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General: </strong>Not much to say here. He's tough, but then again bosses are <i>supposed</i> to be tough. It can't heal, thankfully, although it can hit hard.</li>
+					<li><strong>Setup: </strong>Have Rohane and Talinia toss some <b>Vile's Apathy Potions</b> until they work. Velm should put up Group Shields and Mipsy should caste Group Haste. Standard stuff.</li>
+					<li><strong>Offensive: </strong>It doesn't have terribly high HP, plus it can't heal, which is always good. Rohane, Mipsy, and Talinia should use their <b>usual attacks</b>. No need to use damage potions unless you're losing and need to kill this guy off quickly.</li>
+					<li><strong>Defensive: </strong>The Devilpuss can hit for over 100 damage if you're unlucky. That being said, Velm should be Group Healing <b>all the time</b>. Even if someone's just a little scratched Velm should heal. Not like he's got anything better to do anyway.</li>
+				</ul> 
+				<div class="postbattle"><h1 class="postbattle">Post-battle:</h1>
+					<p>After you beat him and go back to the map, you'll get this avatar:</p>
+						<div style="text-align: center;">
+							<img src="http://images.neopets.com/neoboards/avatars/devilpuss.gif" alt="The Devilpuss avatar">
+						</div>
+					<p>Pretty nice. More importantly, you'll want to leave Cumulonimbus and head back out to the <strong>Underclouds</strong>. If you look at your map, you'll see we need to get to <strong>Cirrus</strong>. Again, stick to the outside of the path and follow your maps till you get to Cirrus. You might as well stay on Hunting mode until you get there.</p>
+				</div>
+		</div>		
+	<div class="bodycontent" id="cirrus">
+
+		<div class="place">
+
+			<h1 class="wtheading">cirrus</h1>
+
+			<img src="http://images.neopets.com/items/cirrus_blue.gif" alt="A cloud">
+
+				<div class="flavortext">Hooray! For once, you aren't surrounded by people who want to kill you.</div></div>
+					<p>Yeah, this is the <strong>last town in the game</strong>, except for one potion-seller at the very end. So this is the <strong>last place to buy weapons</strong>. Speaking of buying stuff, look at your shopping list:</p>
+					
+					<div class="shoppinglist">
+						<h1>Shopping List</h1>
+						<ul>
+							<li>Milk</li>
+							<li>Eggs</li>
+							<li>Cheese</li>
+							<li><strong>Potions: </strong><ul>
+									<li><b>20</b> Hurricane Potions</li>
+									<li><b>20</b> Coma Potions</li>
+									<li><b>20</b> Speed of Light Potions</li>
+								</ul></li>
+							<li><strong>Weapons/Armor: </strong><ul>
+									<li>BUY EVERYTHING. Even if you don't think you're going to ever use some of the weapons/armor, buy them anyway, since they're the last ones you're guaranteed to get.</li>
+									
+								</ul></li>
+							<li><strong>Inn: </strong>Unless you feel like walking back from the start of the act if you die, rest here.
+								</li>
+						</ul>
+					</div>			
+
+					<p>Yeah, this is an important place to buy stuff. Make absolutely sure you rest at the inn, too. Other than that, there isn't much more to see in this town. Leave town and <strong>head north till you see stairs</strong>, at which point take them. You'll be on the <strong>Road to Faerie City</strong>, which is really easy to navigate. Keep walking and you'll get to <strong>Faerie City</strong>.</p>
+
+					<p>But first a message from our sponsors.</p>
+					
+					<div class="message">
+				<span class="messagetitle">Wanted!</span>
+		<p><img src='http://images.neopets.com/nq2/m/m5065_79b70.gif' alt="A bionic cybunny! *gasp*" title="a bionic cybunny">
+			<img src="http://images.neopets.com/nq2/m/m5130_b30c1.gif" alt="A techo sword guy! *gasp*" title="a techo blademaster">
+				<br>
+			<img src="http://images.neopets.com/nq2/m/m5085_780db.gif" alt="A fire faerie! *gasp*" title="a corrupted fire faerie">
+			<img src="http://images.neopets.com/nq2/m/m5135_9d51c.gif" alt="A dark overlord! *gasp*" title="a dark overlord">
+		</p>
+			<p style="font-size: 70%;font-style: italic;text-align: center;font-weight: normal;">Hover over their pictures to see their names!</p>
+
+					<p>Warning! If you run into any of these guys, <span class="red">KILL THEM IMMEDIATELY!</span> They're <span class="red">wanted</span> for a reason!</p>
+					
+					<p>The top two guys are wanted for <span class="red">Focus Energy'ing</span>, which makes them insanely hard to kill, except with magic!</p>
+
+					<p>The bottom two guys are wanted for <span class="red">overuse of magic</span>, which hurts your characters way too much!</p>
+					
+					<p>Again, these people should be the <span class="red">FIRST</span> enemies you take out when you're fighting! And be sure to use <span class="red">MAGIC</span> on the enemies who use Focus Energy!</p>
+
+					<p><span class="red">**</span>Brought to you by the <span class="red">NQII Help 
+
+Club!**</span></p>
+					<p class="smallprint">DISCLAIMER: Method does not work if Chias are present. If they are, flee immediately and thank us for saving your life. You're welcome. And stop bowing down to us.</p>
+			</div>					
+			
+		<p>Yeah, you'll start running into baddies like these pretty soon. Generally, <strong>kill the faeries</strong> (i.e. anything with "faerie" in its name) <strong>first</strong>, then kill the rest.</p>
+		
+		<p>And if you happen to run into the bionic cybunnies or techo blademasters, Mipsy should focus <strong>only on killing them</strong> and completely ignore all the other enemies until those guys are dead. Rohane and Talinia should <strong>fight other baddies</strong> while Mipsy is killing the Focus'ers.</p>
+		
+		<p>And one more thing (sorry): Velm should put up Group Shields <strong>every battle</strong>, and Mipsy should caste Group Haste every battle. Velm should use Group Healing <strong>almost every turn.</strong></p>
+		
+		<p>Now back to the action.</p>
+				</div>	
+
+	<div class="bodycontent" id="faeriecity">
+
+		<div class="place">
+
+			<h1 class="wtheading">Faerie City</h1>
+
+			<img src="http://images.neopets.com/items/sta_faerie_castle.gif" alt="Faerie City on a stamp">
+
+				<div class="flavortext">Despite this being a huge city, there's only one person here (and she's a kleptomaniac.)</div></div>
+					<p>STUFF HERE
+				</div>				
+	<!--PLACE TEMPLATE
+	<div class="bodycontent" id="">
+
+		<div class="place">
+
+			<h1 class="wtheading"></h1>
+
+			<img src="" alt="">
+
+				<div class="flavortext">lorem</div></div>
+					<p>STUFF HERE
+				</div>
+		-->
+	<!-- BOSS TEMPLATE
+		<div class="boss" id="">
+				<h1 class="wtheading"></h1>
+				<div class="bosspic"><img src="" alt=""></div>
+				<div class="flavortext">Cool mustache, but that robe? Ew. He's gotta go.</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">20 on Normal<br>21 on Evil<br>22 on Insane</td></tr>
+
+				<tr>
+					<td class="first">HP:</td>
+					<td class="second">200 on Normal<br>250 on Evil<br>300 on Insane</td></tr>
+				<tr>
+					<td class="first">Special Abilities:</td>
+					<td class="second">
+							<table id="abilities">
+								<tr>
+									<td class="aname">Rampant Acceleration</td>
+									<td class="amount">38%</td>
+									<td class="atype">Group Haste</td>
+								</tr>
+								<tr>
+									<td class="aname">Infestation</td>
+									<td class="amount">44HP</td>
+									<td class="atype">Group Damage</td>
+								</tr>
+								<tr>
+									<td class="aname">Mitigation</td>
+									<td class="amount">60HP</td>
+									<td class="atype">Group Heal</td>
+								</tr>
+								<tr>
+									<td class="aname">Spellbind</td>
+									<td class="amount"></td>
+									<td class="atype">Mesmerization</td>
+								</tr>
+								<tr>
+									<td class="aname"></td>
+									<td class="amount"></td>
+									<td class="atype">Shockwave</td>
+								</tr>
+								<tr>
+									<td class="aname"></td>
+									<td class="amount">5%</td>
+									<td class="atype">Slowing Strike</td>
+								</tr>
+							</table>
+							</td></tr>
+
+				<tr>
+					<td class="first">Prizes:</td>
+					<td class="secondlast">the Wordstone (lets you talk to those Chias)<br>
+											2 Potions of Regeneration<br>
+											1 weapon/armor<br>
+											200 gold<br>
+											500 NP
+											</td></tr>
+
+				</table>
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General: </strong>stuff</li>
+					<li><strong>Setup: </strong></li>
+					<li><strong>Offensive: </strong></li>
+					<li><strong>Defensive: </strong></li>
+				</ul> 
+				<div class="postbattle"><h1 class="postbattle">Post-battle:</h1>
+				</div>
+		</div>
+	-->	
+	</div>
+	</div>	
+</body>

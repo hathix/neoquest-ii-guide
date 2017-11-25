@@ -1,0 +1,848 @@
+<head>
+	<title>NQII Guide Main Page</title>
+	<style type="text/css">
+	//
+	{}
+		/*Release Notes
+		Rev's NeoQuest II Guide
+		by revolutionrising
+		(I would copyright this but what's the point?)
+		Guide Version 4.1 "A Blur of Green"
+		Main Page - SmallGreenBlur (neopets.com/~SmallGreenBlur)
+		Last edited 10/9/10
+		*/
+	/*Changelog
+		Version - Date - Notes
+		1.2 - 11/13- Changed the background a bit, and now this is smallgreenblur's page.
+		1.1 - 10/9 - Maybe it's just me, but the whole idea of version numbers is a little stupid. On a side note, I can finally take down 
+						that horrendously ugly old page now.
+		1.0 - 9/11 - Well, this is the first *official* version of the page.
+		*/
+	body {
+		font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+		font-size: 15px;
+		color: #05003F;
+		line-height: 1.4em;
+		cursor: crosshair;
+		background-color: #011434;
+		background-image: url('http://www.psdgraphics.com/file/underwater-background.jpg');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		}
+	table,font {
+		visibility: hidden;
+		}
+	div#hitcounter {
+		text-align: center;
+		}
+	div#allstuff {
+		margin-top: 5%;
+		height: 80%;
+		}
+	div#jumpandskills {
+		width: 220px;
+		float: right;
+		margin: 0px 10px 0px 10px;
+		}
+	div#jump {
+		padding: 10px 5px 10px 5px;
+		border: 3px ridge #000000;
+		background-color: #E0F0FF;
+		height: 85%;
+		overflow: scroll;
+		margin-bottom: 10px;
+		}
+	div#therest {
+		height: 100%;
+		overflow: scroll;
+		padding: 10px
+		}
+
+	div#header {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+		width: 606px;
+		text-align: center;
+		}	
+	div.bodycontent {
+		background-color: #E0F0FF;
+		border: 3px ridge #000000;
+		padding: 10px;
+		margin-bottom: 10px;
+		}
+
+	.heading {
+		text-transform: lowercase;
+		text-align: left;
+		letter-spacing: 0.6em;
+		font-weight: bold;
+		font-size: 180%;
+		color: #000000;
+		border-bottom: 1px dashed #444444;
+		font-family: Candara, "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	.wtheading {
+		text-transform: lowercase;
+		text-align: center;
+		letter-spacing: 0.5em;
+		font-size: 180%;
+		font-weight: bold;
+		color: #000000;
+		font-family: Candara, "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	h1#jumpheading {
+		text-align: left;
+		font-size: 200%;
+		letter-spacing: 0.7em;
+		border-bottom: 1px dashed #444444;
+		font-family: "Berlin Sans FB", Candara, Georgia, Verdana, Arial, sans-serif;
+		}
+	p {
+		text-indent: 10px;
+		}
+	em {
+		color: #700099;
+		font-style: italic;
+		}
+	strong {
+		color: #700099;
+		font-weight: bold;
+		}
+	span.strike {
+		text-decoration: line-through;
+		}
+	#header a {
+		text-decoration: none !important;
+		border: none !important;
+		}
+	#header img {
+		border: none !important;
+		}
+	span#learn {float: left;}
+	span#play {float: right;}
+	span#headercomment {
+		color: white;
+		}
+
+	a {
+		text-decoration: none;
+		border-bottom: 1px dashed #000000;
+		}
+	a:link {
+		color: #490028;
+		}
+	a:visited {
+		color: #13007F;
+		}
+	a:hover {
+		color: #BC0016;
+		}
+
+	div.ajump {
+		text-indent: 10px;
+		letter-spacing: 0.2em;
+		font-size: 14px;
+		text-transform: lowercase;
+		cursor: auto;
+		font-family: "Trebuchet MS", Georgia, "Berlin Sans FB Demi", Verdana, Arial, sans-serif;
+		}
+	h1.jumpsection {
+		font-size: 14px;
+		margin-bottom: 0px;
+		text-transform: lowercase;
+		letter-spacing: 0.3em;
+		}
+	.ajumpboss a {
+		border-bottom: 1px dotted #444444;
+		}
+	div#intro {
+		text-align: left;
+		width: 605px;
+		margin-left: auto;
+		margin-right: auto;	
+		}
+	div.message {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		background-color: white;
+		border: 2px solid black;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		padding: 5px;
+		}
+	span.messagetitle {
+		font-variant: small-caps;
+		font-size: 18px;
+		font-style: italic;
+		color:#b8389e;
+		margin-top: 10px;
+		text-decoration: underline;
+		}
+	span.red {
+		color: #FF0000;
+		}
+	p.smallprint {
+		font-size: 10px;
+		font-family: "Times New Roman", serif;
+		line-height: 1em;
+		}
+	div.shoppinglist{
+		background-color: #FFFFFF;
+		background-image: url('http://images2.layoutsparks.com/1/103072/notebook-paper-lines-page.gif');
+		width: 50%;
+		padding: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		font-family: "Segoe Print", "Trebuchet MS", Verdana, Arial, sans-serif;
+		text-align: center;
+		}
+	.shoppinglist h1{
+		font-family: "Segoe Script", "Segoe Print", "Trebuchet MS", Verdana, Arial, sans-serif;
+		}
+	.shoppinglist ul{
+		text-align: left;
+		font-size: 14px;
+		list-style-type: none;
+		}
+
+	.shoppinglist strong{
+		color: #000000;
+		text-decoration: underline;
+		padding: 2px;
+		}
+	li.question, li.answer {
+		list-style-type: none;
+		}
+	li.question {
+		font-weight: bold;
+		}
+	li.answer {
+		margin-left: 15px;
+		}
+	div.times{
+		font-family: "Times New Roman", serif;
+		color: black;
+		line-height: 1em;
+		background-color: #FFFFFF;
+		padding: 0px;
+		width: 40%;
+		margin-left: auto;
+		margin-right: auto;
+		}
+	.pic {
+		text-align: center;
+		width: 750px;
+		background-color: #E0F0FF;
+		border: 3px ridge #000000;
+		padding: 10px;
+		margin-bottom: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		}
+	.pic h1{
+		font-size: 150%;
+		color: #000000;
+		text-transform: lowercase;
+		border-bottom: 1px dashed #444444;
+		margin: 5px;
+		font-family: "Segoe Print", Candara, Trebuchet MS, Georgia, Verdana, Arial, sans-serif;
+		}
+	.pic img{
+		margin: 10px;
+		}
+	.pic p{
+		text-align: left;
+		}
+	table.todolist{
+		visibility: visible;
+		border: 1px dotted #444444;
+		border-collapse: collapse;
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+		}
+	.todolist td{
+		padding: 5px;
+		border: 1px dashed #444444;
+		}
+	.task{
+		font-weight: bold;
+		text-align: center;
+		width: 40%;
+		text-transform: lowercase;
+		font-size: 125%;
+		background-color: #87A6BF;
+		}
+	.desc {
+		width: 60%;
+		}
+	tr.theadings{
+		font-weight: bold;
+		text-align: center;
+		font-size: 120%;
+		text-transform: lowercase;
+		background-color: #1773C0;
+		color: #FFFFFF;
+		}
+	.center {
+		text-align: center;
+		}
+	table.skills{
+		visibility: visible;
+		border: 1px dashed #444444;
+		border-collapse: collapse;
+		margin: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 75%;
+		color: #000000;
+		}
+	.skills td{
+		border: 1px dashed #444444;
+		padding: 5px;
+		}
+	col.skillcol{
+		width: 25%;
+		}
+	col.comments{
+		width: 75%;
+		}
+	td.skillname{
+		font-weight: bold;
+		text-align: center;
+		font-size: 130%;
+		background-color: #BFC6FF;
+		}
+	td.info{
+		background-color: #E2E4FF;
+		}
+	td.opinion{
+		font-style: italic;
+		background-color: #D1D4FE;
+		}
+	td.cname{
+		border-right: none;
+		text-transform: lowercase;
+		font-size: 180%;
+		text-align: center;
+		letter-spacing: 0.8em;
+		padding: 10px;
+		font-weight: bold;
+		background-color: #A3ADFF;
+		}
+	</style>
+</head>
+<body>
+<div id="allstuff">
+<div id="jumpandskills">
+<div id="jump">
+<h1 class="heading" id="jumpheading">Jump</h1>
+<div class="ajump"><a href="http://www.neopets.com/">neopets home</a></div>
+<div class="ajump"><a href="http://www.neopets.com/games/nq2/nq2.phtml"
+ target="_blank">nqii main page</a></div>
+<div class="ajump"><a href="http://www.neopets.com/~NQref">nqii reference</div> 
+<br>
+<div class="ajump"><a href="#header">top of page</a></div>
+<div class="ajump"><a href="#qa">q & a</a></div>
+<h1 class="jumpsection">guides</h1>
+<div class="ajump"><a href="#interface">game interface</a></div>
+<div class="ajump"><a href="#items">items</a></div>
+<div class="ajump"><a href="#shopping">shopping</a></div>
+<div class="ajump"><a href="#skills">skills</a></div>
+<div class="ajump"><a href="#battling">battling</a></div>
+<br>
+<p>To get to the guides, just click on the header.</p>
+
+</div>
+</div>
+<div id="therest">
+<div id="header"> <span id="learn"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A1Learn.png"
+ alt="Learn..." title="Guides for Beginners"><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#interface"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A2Interface.png"
+ alt="Interface" title="The Game's Interface"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#battling"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A3Battling.png"
+ alt="Battling" title="Battling"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#shopping"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A4Shopping.png"
+ alt="Shopping" title="Shopping"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#items"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A5Items.png"
+ alt="Items" title="Items"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#skills"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A6Skills.png"
+ alt="Skills" title="Skills Guide"></a> </span> <span id="play"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B0Play.png"
+ alt="Play..." title="Walkthroughs"><br>
+<a href="http://www.neopets.com/~Epanastasi"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B1.png"
+ alt="Act 1, Part 1" title="Act 1, Part 1"></a><br>
+<a href="http://www.neopets.com/~Fordulat"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B15.png"
+ alt="Act 1, Part 2" title="Act 1, Part 2"><br>
+</a><a href="http://www.neopets.com/~CmdrInputBlocker"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B2.png"
+ alt="Act 2" title="Act 2"><br>
+</a><a href="http://www.neopets.com/~DiabolicalChia"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B3.png"
+ alt="Act 3" title="Act 3"><br>
+</a><a href="http://www.neopets.com/~AlaskanMosquito"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B4.png"
+ alt="Act 4" title="Act 4"><br>
+</a><a href="http://www.neopets.com/~ThePhoenixRising"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B5.png"
+ alt="Act 5" title="Act 5"><br>
+</a></span><span
+ id="headermain"> </span><a
+ href="http://www.neopets.com/~SmallGreenBlur"
+ alt="Rev's NeoQuest II Guide" title="To Home Page"
+ style="cursor: pointer;"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/HeaderMain.png"></a>
+<span id="headercomment">This guide is currently in beta. So don't
+worry. c:</span> </div>
+<div class="bodycontent" id="intro"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/MainPageHeader.jpg">
+</div>
+
+		<div class="bodycontent" id="hi">
+			<div id="hitcounter">
+			<img src="http://counter2.neomallers.com/smallgreenblur.gif?theme=lb1&visit=#VISITOR" alt="Good news! By reading this utterly useless alt text, you've just grown a few seconds older.">
+			</div>
+		<h1 class="heading">uh, hi there</h1> 
+		<p>*awkward pause* Uh, hi there #VISITOR. If you were looking for that elusive fountain of youth, you made a wrong turn at Albuquerque. If you were looking for Chias who seek world domination, I think you've found your page (you don't want to know about those Chias...) You're reading the home page of my <strong>NeoQuest II guide</strong>. If you want to play NQII, go ahead and <strong>read this page</strong> first. After that you can start actually playing the game.</p>
+		<p>If you're currently following the walkthrough and are completely lost (I don't blame you), scroll all the way up and <strong>click on the act</strong> you want to go to. You can bookmark that page if you like.</p>
+		<p>At any rate, have fun.</p>
+		</div>
+		
+<div class="bodycontent" id="qa">
+			<h1 class="heading">q & a</h1>
+			<p>Hi again. Before we start, I'm going to use my <span style="text-decoration: line-through;">non-existant</span> psychic powers to see what questions you have.</p>
+			<ul class="questions">
+				<li class="question">So, uh, what is this thing?</li>
+				<li class="answer">Good question. This is my NeoQuest II guide.</li>
+				<li class="question">NeoQuest II, eh? What's that?</li>
+				<li class="answer">NQII's a <strong>role-playing game</strong> released on January 29, 2004 (yes I looked that up.) 					Basically you walk around and beat stuff up until you get to the big ugly dragon at the end of the 					game.</li>
+				<li class="question">That's cool, but what's in it for me?</li>
+				<li class="answer">Somehow I knew you'd ask that. Well there's a whole section on that but, uh, you'll read 						that later. Anyway, after playing through the game once you get <strong>3 avatars</strong>. And if you beat the 						game on the hardest difficulty you can get a prize that sells for <strong>over 2 million NP</strong>. And stop salivating 					like that, it's scary.</li>
+				<li class="question">Mm-hmm. This game must be hard, right?</li>
+				<li class="answer">Well, not <em>hard</em>. Just complicated. That's why I wrote this guide.</li>
+				<li class="question">That doesn't make sense. There's color... and pictures! And it's not in Times New Roman! 					What sorta NQII guide is this?!?</li>
+				<li class="answer">Relax, #VISITOR. NQII guides don't <em>have</em> to be boring, right? I'm allowed to use 					color. It's not like an elite squad of ninjas is gonna fly down from the sky and kidnap me for using color. <span 					style="background-color: white; font-family: 'Times New Roman', serif; color: black;">Also, this is written in 					Times New Roman. Whatcha gonna do now, eh?</span></li>
+			
+				<li class="question">You still haven't answered my question about the pictures.</li>
+				<li class="answer">That's cause you interrupted me. People learn by pictures, not words. On the Internet, a 					picture is worth 1024 words.</li>
+				<li class="question">Uh huh. So when do I get to the walkthrough?</li>
+				<li class="answer"> Hold up, cowboy, you gotta <strong>learn the game</strong> before you play it. If you don't, you'll get 					eaten alive by those Chias I was telling you about.</li>
+				<li class="question">OK, OK, I get it. But where do I start?</li>
+				<li class="answer">Fortunately for you, all you need to do is <strong>read this page</strong>. After that you can start 					playing.</li>
+				<li class="question">Believe me, once I'm done with this page I'll control some Chias of my own and set them 					upon you.</li>
+				<li class="answer">...</li>
+			</ul>
+		</div>
+	<div class="bodycontent" id="interface">
+		<h1 class="heading">Game Interface</h1>
+			<p>You can't learn anything about NQII unless you know the <strong>basics</strong>. Learning how to fight before learning about the interface is like learning how to ride a horse without knowing what a horse is. (OK, that was a bad comparison, but you get the gist.)</p>
+			<p>So when you <strong>start off your NQII game</strong> (you'll want to <a href="http://www.neopets.com/games/nq2/index.phtml">do that so you can follow along</a>), you'll come across a screen like this:</p>
+		<div class="center">
+		<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/IntMain.png" alt="All the stuff. 1 is the top bar, 2 is the right bar, 3 is the actual map.">
+		</div>
+	<p>Except all the numbers, of course, but that sort of stuff goes without saying. There's loads of information on the screen, so I've <strong>split it up</strong> into 3 pieces. As you read about each button/link/doohickey, <strong>click it in your game</strong> to see for yourself what it does.</p>
+</div>	
+	<div class="pic" id="interface1">
+		<h1>Interface Part 1: The Top Bar</h1>
+			<p>Basically, all the <strong>info on your team</strong> goes up here. Really, <strong>don't worry</strong> about <em>Health</em> or <em>Experience</em>. We'll talk more about it later. After you've looked at this picture, take a look at the top bar <strong>in your game</strong>.</p>
+		<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/Int1.png" alt="You really gotta see this.">
+	</div>
+	<div class="pic" id="interface2">
+		<h1>Interface Part 2: The Right Bar</h1>
+			<p>This is probably the <strong>most important</strong> bar. You can do <strong>all sorts of stuff</strong> here, including accessing your items and moving around. Don't feel overwhelmed by the sheer amount of stuff... really, it's not that bad. I think I should clam up now and let the picture do the talking.</p>
+			<p>Actually, I have one quick thing to say first. After you look at the picture, <strong>click some of the links</strong> in your game. Try moving around a few steps. See your inventory or talk to mom if you like. Try to get to know the bar. You'll be great friends, trust me.</p>
+			<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/Int2.png" alt="Again, you really gotta see this.">
+		</div>
+	<div class="pic" id="interface3">
+		<h1>Interface Part 3: The Map</h1>
+			<p>The map isn't way too important because you can't really click anything on it. Take a look at the picture to <strong>get familiar</strong> with the map. </p>
+			<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/Int3.png" alt="Once again, you really gotta see this. Is it RequestPolicy or soething?">
+			</div>
+	<div class="pic" id="interfacereview">
+		<h1>Reviewing the Interface</h1>
+		<p>Now that you're an expert on the interface (I hope), it's time to review a bit to test what you've learned. Here are a few things you should do. If you get stuck on anything, <strong>look at the pictures again</strong> and find what made you stuck.</p>
+		<table class="todolist">
+			<tr class="theadings">
+				<td>To practice this...</td>
+				<td>Do this.</td>
+			</tr>
+			<tr>
+				<td class="task">Getting Around</td>
+				<td class="desc">Rohane's landed a job as a pizza delivery boy. A Lupe called Marvis, who lives on the <strong>east side of town</strong>, ordered a grand anchovy pizza with breadsticks. Use the <strong>arrow buttons</strong> to walk over to his house before your 30 minutes are up. <em>Hint: follow the path.</em></td>
+			</tr>
+			<tr>
+				<td class="task">talking to people</td>
+				<td class="desc">After an unsuccessful gig as pizza delivery boy, Rohane is now a journalist and need to interview people. Walk around and talk to <strong>everyone in town</strong>. <em>Hint: there are 5 people in town, excluding you.</em></td>
+			</tr>
+			<tr>
+				<td class="task">overall</td>
+				<td class="desc">Nothing's going right for Rohane, so he's now a cartographer. Glance at <strong>your game</strong> and look at all the bars/menus/stuff we went over. Try to <strong>explain</strong> what each thing does without looking at the guide.</td>
+			</tr>
+		</table>
+			<p>If you're reading this, I'll assume you got through all that stuff OK. That's good, since we need a good foundation in order to learn the harder things. Which reminds me, we need to start learning harder things. Follow me to the next section...</p>
+	</div>
+	
+	<div class="bodycontent" id="items">
+		<h1 class="heading">items and your inventory</h1>
+			<p>Unless you want to become Chia food, you need to learn how to <strong>use items</strong>. Items are awesome: you can heal yourself, equip yourself with stuff, and... well, that's actually it, but you get the gist of it.</p>
+			<table summary="!!NOTE!! Get a better Inventory and Party Info Pic later."></table>
+			<div class="center">
+			<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/InvPartyInfo.PNG" alt="You should see this.">
+			</div>
+	</div>
+	
+	<div class="bodycontent" id="shopping">
+		<h1 class="heading">shopping</h1>
+			<p>Now you know all about items. That's cool and all, but how exactly do you <em>get</em> these so-called <em>item</em> thingies? Well, you <strong>buy them from merchants</strong>. And you can also <strong>sell items</strong> if you want to. Here you'll learn all about shopping.</p>
+			<p>In order to shop, you need to walk up to a merchant and select <strong>Trade with [name]</strong>. Walk over to <strong>Pongoras</strong> (he's the Ixi in the green shirt) and ask to trade with him. That'll give you a taste of what the shopping interface looks like.</p>
+	</div>
+	<div class="pic" id="buying">
+		<h1>buying stuff</h1>
+			<p>At the top of every "shopping page" there's an option to trade with the merchant. This is how you buy potions and weapons. I think you'll learn more from the picture than from me:</p>
+			<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/BuyingStuff.PNG" alt="How to buy stuff.">
+	</div>
+	
+	<div class="pic" id="selling">
+		<h1>selling stuff</h1>
+			<p>Now, buying stuff is easy, since you do it in real life. But when's the last time you sold a sword to a shopkeeper? I thought so. But still, it's easy. <strong>Scroll down from the buying menu</strong> and you'll see the selling menu. And quick clarification: sell all your unequipped weapons, except for the <em>Father's sword</em>. You'll see why at the end of the game.</p>
+			<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/SellingStuff.PNG" alt="How to sell stuff.">
+		</div>
+	<div class="pic" id="shoppingreview">
+		<h1>shopping review</h1>
+		<p>Again, we should review shopping. However there isn't really that much to do, since you don't have any gold and hardly anything's for sale in Trestin. But just try this anyway.</p>
+				<table class="todolist">
+			<tr class="theadings">
+				<td>To practice this...</td>
+				<td>Do this.</td>
+			</tr>
+			<tr>
+				<td class="task">buying stuff</td>
+				<td class="desc">Rohane continues on his downward spiral as he tries to shoplift. Trade with <strong>Pongoras</strong> and try to buy <strong>10 Healing Vials</strong>.</td>
+			</tr>
+			<tr>
+				<td class="task">a little math</td>
+				<td class="desc">Rohane has now decided to become a math nerd like me. Let's say he wants to buy <strong>17</strong> of something. What's the fastest way to do that? <em>Hint: in what quantities can you buy stuff?</em></td>
+			</tr>
+			<tr>
+				<td class="task">smart shopping</td>
+				<td class="desc">Rohane's gotten pretty smart as of late. Notice how you can carry <em>5</em> of each kind of weapon/armor. Should Rohane go out and collect a bunch of swords, or should he skimp and just get one? <em>Hint: think back to the inventory lessons.</em></td>
+			</tr>
+		</table>
+			<p>OK! You're now an expert with items, and you know how to buy swords and explosive stuff (I really wouldn't trust Rohane with those things, to be honest.) Ready to battle yet? Hold up a second, though. We need to learn about <strong>skills</strong>. <em>Then</em> we can start beating up Chias. Patience, young grasshopper.</p>
+		</div>
+	
+	<div class="bodycontent" id="skills">
+		<h1 class="heading">skills guide</h1>
+			<p>Skills are what make the world go round. Well, not really. More accurately, they make <strong>battling a whole lot easier</strong>. Once you know all about skills, you can blast stuff in the face with damage spells, stun stuff with your flashy sword, and more. So what's not to love?</p>
+			<p>Before you start, though, there are a few things you need to know.</p>
+			<ul id="stufftoknow">
+				<li>You gain <em>skill points</em> when you level up.</li>
+				<li>You <strong>spend</strong> skill points on these skills.</li>
+				<li>You can spend up to <strong>15 skill points</strong> in any skill.</li>
+				<li>Skills get <strong>better</strong> as you spend more skill points in them.</li>
+			</ul>
+			<p>Well, now that you've read that, you can <strong>skip the actual skills</strong> if you want. They're good reference for later, though, if you're into that sort of thing.</p>
+	
+		<table class="skills" id="rohane">
+			<col class="skillcol"><col class="comments">
+			<tr>
+				<td colspan="2" class="cname">rohane</td>
+			</tr>
+			
+			<tr>
+				<td class="skillname" rowspan="2">Critical Attacks</td>
+				<td class="info">If you invest here, Rohane can occasionally hit baddies <strong>extra hard</strong>. The more points you invest here, the more often he'll score a <em>critical hit</em>. (If you extend it to its max level, Rohane can score a critical hit nearly every other turn.)</td>
+			</tr><tr>
+				<td class="opinion"><b>9</b>. Great skill to have, since who doesn't like dealing more damage? The only problem is that it isn't that consistent.</td>
+			</tr>
+			
+			<tr>
+				<td class="skillname" rowspan="2">Damage Increase</td>
+				<td class="info">As you can imagine, this skill allows Rohane to <strong>deal more damage</strong> whenever he swings his sword around.</td>
+			</tr><tr>
+				<td class="opinion"><b>10</b>. More damage = win. What more can I say?</td>
+			</tr>
+
+			
+			<tr>
+				<td class="skillname" rowspan="2">Combat Focus</td>
+				<td class="info">If this skill is activated, Rohane gets in the zone, allowing him to <strong>take less damage</strong> from melee hits. Unfortunately he also <strong>deals less damage</strong>.</td>
+			</tr><tr>
+				<td class="opinion"><b>1</b>. Rohane's pretty <span class="strike">fat</span> resistant as is, so he can take plenty of hits normally. Besides, do you really want to reduce his hitting power? Didn't think so.</td>
+			</tr>
+			<tr>
+				<td class="skillname" rowspan="2">Stunning Strikes</td>
+				<td class="info">If you invest here, Rohane can occasionally stun someone he hits, which basically <strong>sets back their next turn</strong> a few seconds. The more points you put here, the more often he'll stun and the longer the stun will last.</td>
+			</tr><tr>
+				<td class="opinion"><b>7</b>. Nifty skill, especially in the beginning of the game, where potions are a Really Big Deal. Later, though, baddies will start resisting it, and you won't need to stun stuff as much anyway.</td>
+			</tr>			
+			<tr>
+				<td class="skillname" rowspan="2">Battle Taunt</td>
+				<td class="info">When activated, Rohane starts making loud "Yo Mama" jokes. This, of course, encourages baddies to <strong>target him</strong> instead of other characters.</td>
+			</tr><tr>
+				<td class="opinion"><b>3</b>. This skill is useful on paper, but I hardly ever find myself using it except against the final boss. It's really useful during that battle, though.</td>
+			</tr>
+			<tr>
+				<td class="skillname" rowspan="2">Innate Magic Resistance</td>
+				<td class="info">This skill makes Rohane's skull thicker (is that even possible?) As a result, baddies' magic <strong>doesn't hurt</strong> him as much. The more points you put here, the less damage magic does.</td>
+			</tr><tr>
+				<td class="opinion"><b>3</b>. As I said, Rohane's pretty <span class="strike">fat</span> solid so he can afford to take magic attacks. Our points are better spent elsewhere.</td>
+			</tr>
+			<tr>
+				<td class="skillname" rowspan="2">Innate Melee Haste</td>
+				<td class="info">With this skill, the <strong>time in between turns</strong> for him decreases. (i.e. he moves faster.) The more points you put here, the faster he moves.</td>
+			</tr><tr>
+				<td class="opinion"><b>9</b>. Awesome skill. The faster Rohane goes, the faster he'll be able to put the hurt on baddies.</td>
+			</tr>			
+		</table>
+		
+		<table class="skills" id="mipsy">
+			<col class="skillcol"><col class="comments">
+			<tr>
+				<td colspan="2" class="cname">mipsy</td>
+			</tr>
+			<tr>
+				<td class="skillname" rowspan="2">Direct Damage</td>
+				<td class="info">When Mipsy casts this spell, she <strong>hurts 1 enemy</strong> for a lot of HP. At its max level, this can deal <em>100</em> damage.</td>
+			</tr><tr>
+				<td class="opinion"><b>10</b>. This is Mipsy's best way of dealing damage. This skill is so awesome that it just lets you breeze by the second half of Act 1.</td>
+			</tr>
+			<tr>
+				<td class="skillname" rowspan="2">Group Direct Damage</td>
+				<td class="info">When Mipsy casts this spell, she <strong>hurts all enemies</strong>, but for <strong>less damage</strong> than Direct Damage. At its max level, this can deal, <em>64</em> damage to each baddie. Also, this skill takes <strong>more time</strong> to execute than Direct Damage.</td>
+			</tr><tr>
+				<td class="opinion"><b>5</b>. Eh, it's an OK skill, but Direct Damage is way better. This skill is a lot worse against bosses, plus it's pretty slow. Mipsy isn't the fastest girl in the world so she can't afford to use such a slow spell.</td>
+			</tr>			
+			<tr>
+				<td class="skillname" rowspan="2">Group Haste</td>
+				<td class="info">When Mipsy casts this spell, <strong>everyone</strong> on your team gets temporarily hasted a bit (it's like you increase their Innate Haste.) At max level, everyone is hasted for <em>38%</em> for about 30 seconds.</td>
+			</tr><tr>
+				<td class="opinion"><b>7</b>. Neat skill. Without it, you'd have to have everyone use hasting potions during each boss battle, which would take really long. The only problem with this skill is that it isn't that useful until it's at level 8 or so. </td>
+			</tr>			
+			<tr>
+				<td class="skillname" rowspan="2">Slowing</td>
+				<td class="info">When Mipsy casts this spell, <strong>one enemy</strong> is slowed, so it takes more time for them to do stuff. (This is a lot like tossing a slowing potion.) At max level, Mipsy can slow baddies up to <em>62%</em>.</td>
+			</tr><tr>
+				<td class="opinion"><b>2</b>. Fun, but not all that useful. Slowing potions were made for a reason, you know. Mipsy has better places to spend her skill points.</td>
+			</tr>			
+			<tr>
+				<td class="skillname" rowspan="2">Damage Shields</td>
+				<td class="info">Mipsy uses the Force to make a wall around your team, which <strong>hurts anyone who melee attacks you.</strong> Baddies who use magic don't get hurt, though. At max level, baddies get hurt for <em>22</em> HP each time they hit your team.</td>
+			</tr><tr>
+				<td class="opinion"><b>3</b>. This skill hardly does any damage, which is bad for it since Mipsy can deal 100 damage in one shot if she wants to. This skill is defensive, and Mipy's offensive. Again, Mipsy has better places to spend her skills points.</td>
+			</tr>	
+			<tr>
+				<td class="skillname" rowspan="2">Innate Melee Defense</td>
+				<td class="info">If you invest here, Mipsy invests in <span class="strike">uglier</span> thicker robes, which makes her <strong>get hurt less</strong> by baddies.</td>
+			</tr><tr>
+				<td class="opinion"><b>10</b>. This is a mandatory skill for Mipsy. Normally, she's about as sturdy as a wet paper towel, so without this skill, Mipsy becomes Chia bait. Not pretty.</td>
+			</tr>			
+			<tr>
+				<td class="skillname" rowspan="2">Innate Casting Haste</td>
+				<td class="info">This skill is a lot like everyone else's Innate Haste. If you invest here, her <strong>time between turns goes down</strong>.</td>
+			</tr><tr>
+				<td class="opinion"><b>9</b>. With this skill, Mipsy can inflict pain and suffering more often. That's pretty awesome.</td>
+			</tr>			
+		</table>
+		
+	<table class="skills" id="talinia">
+			<col class="skillcol"><col class="comments">
+			<tr>
+				<td colspan="2" class="cname">talinia</td>
+			</tr>
+			<tr>
+				<td class="skillname" rowspan="2">Increased Bow Damage</td>
+				<td class="info">I'm pretty sure you know what this skill does. Talinia <strong>deals more damage</strong> whenever she sticks someone with an arrow.</td>
+			</tr><tr>
+				<td class="opinion"><b>10</b>. More damage = win. Especially for Talinia, who isn't that strong by default.</td>
+			</tr>	
+			<tr>
+				<td class="skillname" rowspan="2">Multiple Targets</td>
+				<td class="info">Occasionally, Talinia will be able to shoot <strong>more than 1 arrow at a time</strong>, so this skill works a bit like Mipsy's Group Damage. At level 1, she can shoot 2 arrows at a time. At level <em>6</em>, she can shoot 3, and at level <em>11</em> she can shoot 4.</td>
+			</tr><tr>
+				<td class="opinion"><b>7</b>. Pretty useful skill, despite its inconsistency. Talinia can really deal out pain when she shoots 4 arrows at a time.</td>
+			</tr>	
+			<tr>
+				<td class="skillname" rowspan="2">Ranged Attacks</td>
+				<td class="info">Whenever someone <strong>tries to hit Talinia</strong>, their turn gets <strong>set back</strong> a bit. Basically, anyone who hits Talinia gets stunned.</td>
+			</tr><tr>
+				<td class="opinion"><b>6</b>. This skill is good because baddies are stunned every time they hit Talinia. The problem is that they don't always aim at Talinia. Also, I think the next skill is a bit more useful than this one.</td>
+			</tr>
+			<tr>
+				<td class="skillname" rowspan="2">Shockwave</td>
+				<td class="info">Imagine Rohane's Stunning Strikes. Now imagine <strong>all enemies getting stunned</strong> instead of just one. Yup, occasionally Talinia will be able to stun all enemies when she hits any one of them.</td>
+			</tr><tr>
+				<td class="opinion"><b>8</b>. This is a great ability, since if all baddies are stunned you gain a lot of free time. The only problem with Shockwave is that it gets resisted (i.e. it doesn't go off as much) toward the end of the game.</td>
+			</tr>
+			<tr>
+				<td class="skillname" rowspan="2">Slowing Strikes</td>
+				<td class="info">Each time Talinia hits a baddie, they get slowed a little (this slowing is cumulative with slowing from potions/spells.) The slowing wears off quickly, though. At the max level, baddies are slowed <em>5%</em> whenever Talinia hits them.</td>
+			</tr><tr>
+				<td class="opinion"><b>3</b>. 5% is nice as an interest rate but it just isn't enough in NeoQuest II. Talinia has better places to spend her skill points.</td>
+			</tr>
+			<tr>
+				<td class="skillname" rowspan="2">Innate Magic Resistance</td>
+				<td class="info">If you invest here, Talinia gives baddies the evil eye (she's good at it), so their <strong>magic is less effective</strong>.</td>
+			</tr><tr>
+				<td class="opinion"><b>3</b>. Same as with Rohane. Talinia doesn't have quite as much HP, but Velm arrives fairly soon after you get Talinia, so she won't need to worry about getting hurt that much. You can spend points elsewhere.</td>
+			</tr>
+			<tr>
+				<td class="skillname" rowspan="2">Innate Melee Haste</td>
+				<td class="info">If you spend points here, Talinia buys some 4-Hour-Energy, which helps <strong>reduce the time between turns</strong> for her (or, she just moves faster.)</td>
+			</tr><tr>
+				<td class="opinion"><b>9</b>. If you haven't noticed the theme already, haste is really important. With more speed, Talinia can effectively deal more damage. That's pretty nice.</td>
+			</tr>			
+		</table>
+		
+	<table class="skills" id="velm">
+			<col class="skillcol"><col class="comments">
+			<tr>
+				<td colspan="2" class="cname">velm</td>
+			</tr>
+			<tr>
+				<td class="skillname" rowspan="2">Healing</td>
+				<td class="info">When Velm casts this spell, he <strong>heals one team member</strong> (sorta like that person using a healing potion.) At max level, he can heal someone for <em>150</em> HP. (Fun fact: in order for him to heal someone, you need to click on someone's picture during battle.)</td>
+			</tr><tr>
+				<td class="opinion"><b>6</b>. I mean, it's nice, but we have Healing Potions for a reason. Besides, chances are you'll have more than one person getting hurt at a time, so Healing won't work as well. And also, I'm too lazy to scroll down and click on a character every time I want to heal them.</td>
+			</tr>
+			<tr>
+				<td class="skillname" rowspan="2">Group Healing</td>
+				<td class="info">When Velm casts this, he <strong>heals everyone on the team</strong>. The catch is that <strong>you don't heal for as much</strong> as Healing, and <strong>this spell is slower</strong> than Healing. At max level, this heals everyone for <em>90</em> HP.</td>
+			</tr><tr>
+				<td class="opinion"><b>10</b>. I like this skill more than Healing. This skill is really convenient and pretty effective, since most of the time you have 2 or 3 people hurt. This is the reason why Velm makes the game so much easier.</td>
+			</tr>
+			<tr>
+				<td class="skillname" rowspan="2">Group Shielding</td>
+				<td class="info">Velm too can use the Force. When he casts this, he <strong>increases the Magic Restistance and Defense</strong> of all your team members. That means both melee attacks and magic do less damage than normal.</td>
+			</tr><tr>
+				<td class="opinion"><b>9</b>. Another incredibly useful skill. With the ability to shield and heal, Velm can make your team near-indestructible.</td>
+			</tr>
+			<tr>
+				<td class="skillname" rowspan="2">Mesmerization</td>
+				<td class="info">When Velm casts this on an enemy, the enemy is basically <strong>stunned for a really long time</strong>. The only catch is that the enemy <strong>snaps out of it</strong> if they're either <strong>hit or healed</strong>. So basically, you Mesmerize someone and then ignore them for a while.</td>
+			</tr><tr>
+				<td class="opinion"><b>7</b>. When Velm isn't healing, this is a good way for him to spend his turn. Mes is like a free stun, which is always nice. The problem is that it gets resisted a lot toward the end of the game.</td>
+			</tr>
+			<tr>
+				<td class="skillname" rowspan="2">Celestial Hammer</td>
+				<td class="info">Yeah, this is the thing Velm uses to hit Chias. This is basically a spell that both <strong>hurts and stuns</strong> baddies. At its max level, it can deal <em>45 damage</em> and stun for <em>3 seconds</em>.</td>
+			</tr><tr>
+				<td class="opinion"><b>4</b>. Very fun skill, but it's not all that useful. The damage is hardly anything, and the stun is cool but Mesmerization does it way better. Velm's just not made to go on the offensive.</td>
+			</tr>	
+			<tr>
+				<td class="skillname" rowspan="2">Innate Melee Defense</td>
+				<td class="info">As you might expect, this skill causes Velm to <strong>take less damage</strong> when baddies attack him.</td>
+			</tr><tr>
+				<td class="opinion"><b>8</b>. Velm can heal, sure, but he needs his defense. You don't want our amnesiac friend to get mauled, now do you? Didn't think so.</td>
+			</tr>
+			<tr>
+				<td class="skillname" rowspan="2">Innate Casting Haste</td>
+				<td class="info">Velm steals some 4-Hour-Energy from Talinia and uses that to decrease the time between his turns (that just means <strong>he goes faster</strong>.)</td>
+			</tr><tr>
+				<td class="opinion"><b>10</b>. Velm's not that fast, and healing spells aren't that fast either. Unless you want your team to get eaten, make sure you put plenty of points here.</td>
+			</tr>			
+	</table>			
+	</div>	
+	
+	<div class="pic" id="spendingskillpoints">
+		<h1>spending skill points</h1>
+			<p>Don't get me wrong, learning about skill points is awesome and all, but it isn't going to do you any good unless you <strong>spend them</strong>. See, each time you <strong>level up</strong>, you gain a <strong>skill point</strong> that can be spent on any of the skills I just told you about. Here's how you spend one of those skill points.</p>
+		<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/Skill1.png" alt="How many times do I have to tell you to turn off RequestPolicy for now?">
+			<p>Not that bad, right?</p>
+	</div>
+	
+	<div class="pic" id="lotsofskillpoints">
+		<h1>spending lots of skill points</h1>
+			<p>Whenever someone <strong>joins your team</strong>, they'll have, uh, lots of skill points to spend. When that happens, the old skill-point-spending <strong>menu is replaced</strong> with a fancy new one. I think I should just let you look at the picture.</p>
+			<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/SpendingLotsaSkillPoints.PNG" alt="You saw this, right?">
+			<p>If you're wondering (you probably aren't), you get these drop-down menus whenever you have more than 1 skill point to spend.</p>
+	</div>
+	
+	<div class="bodycontent" id="battling">
+		<h1 class="heading">battling</h1>
+			<p>So, you've learned how to get around... you've learned how to buy weapons and potions... and now you've learned about skill points. Now we're going to <strong>put that all together</strong>. Say hi to <strong>battling</strong>, which is incidentally the <strong>most important part</strong> of NQII. You can't beat up Chias without knowing how to battle, can you? Anyway, I should stop wasting your time in this paragraph. On to the pictures.</p>
+	</div>
+	
+	<div class="pic" id="battle_hpbar">
+		<h1>anatomy of an hp bar</h1>
+		<p>OK, <strong>I lied</strong>. There are a <strong>couple more sections</strong> to go before we get to the actual battle part. These are just some <strong>basics of RPGs</strong> that you'll need to know about before you start playing.</p>
+		<p>Remember that green bar you saw in the interface? The one I kept saying we'd learn later? Well, say hi to it. We're <span class="strike">lobotomizing</span> <span class="strike">dissecting</span> taking a good look at it.</p>
+			<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/HPBar.png" alt="If you've played RPGs before, you aren't missing much.">
+		<p>Not that bad, right? Now we can get on to the battle...</p>
+	</div>
+	
+	<div class="pic" id="battle_turns">
+		<h1>turns</h1>
+		<p>OK, so I lied again. I'm such a bad guy. But hold up. See, NQII is like a board game... <em>you go, then someone else goes, then someone else goes, and so on</em>. Just one problem: pretend your annoying little cousin is playing with you and he/she sometimes <strong>goes twice in a row</strong> or <strong>skips your turn</strong>. It's almost like all the NQII characters are playing a board game and they're taking turns. While I come to terms with my mythomania, please enjoy this flowchart.</p>
+			<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/Flowchart.png" alt="Foo.">
+		<p>Make sense? Good. Now we can start playing.</p>
+	</div>
+	
+	<div class="pic" id="battle_start">
+		<h1>start of a battle</h1>
+		<p>When you're walking around, you sometimes <strong>run into monsters</strong>. (Remember <em>Normal</em> and <em>Hunting</em> modes from the interface? Yeah.) Well, this is what the page looks like when some baddie feels like mauling you. (Not gonna happen, though.)</p>
+		<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/Battle1.PNG" alt="You're not missing much.">
+		<p>Once you click <em>Begin the Fight!</em>, the actual fight will start.</p>
+	</div>
+	
+	<div class="pic" id="battle_overview">
+		<h1>battle overview</h1>
+		<p>Once you've started a battle, you'll be shown a <strong>big scary page</strong>. Unfortunately, this big scary page will, for the most part, stay the same until the end of the battle. You'll see the big scary page below. (You know, forget everything I just said. The page isn't that scary.)</p>
+		<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/Battle2.png" alt="You're missing a lot.">
+		<p>You see those <strong>buttons</strong> (you know, the red/yellow/gray ones)? You click those in order to <strong>do stuff</strong>. What sort of stuff am I talking about? You'll see.</p>
+	</div>
+	
+	<div class="pic" id="battle_yourturn">
+		<h1>your turn</h1>
+		<p>Remember how I told you about <strong>turns</strong>? Well, whenever <strong>someone on your team</strong> gets his/her turn, this is what the screen will look like:</p>
+		<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/Battle3.png" alt="Your turn to turn off RequestPolicy. But it's good that you're using FireFox.">
+		<p>That screen was just for Rohane's turn, of course. If it was Mipsy's turn, the page would stay more or less the same (however, the <em>Special Abilities</em> section would change a bit.)</p>
+		<p>And if you're wondering, there's a maybe 50% chance that you'll flee when you click "flee." If it works, you go back to the overworld but get no experience (even from any baddies you've already killed.) If it doesn't work (the baddies block your path), you're basically stunned for a bit.</p>
+	</div>
+	
+	<div class="pic" id="battle_theirturn">
+		<h1>the baddies' turn</h1>
+		<p>(Note how I used the plural. Yeah, you can run into up to 4 baddies at a time, but that's only toward the end of the game.) Anyway, this screen will <strong>look the same</strong> regardless of which baddie is up.</p>
+		<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/Battle4.png" alt="Now it's my turn to punch you.">
+		<p>So yeah, there isn't much going on when an enemy is up. Just click <em>Next Turn</em>.</p>
+	</div>
+	
+	<div class="pic" id="battle_healing">
+		<h1>healing</h1>
+			<p>This is an optional section, but I included it anyway just to show how important it is. Remember to <strong>heal whenever you're hurt</strong>.</p>
+			<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/Battle5.png" alt="I'll make you have to heal yourself if you don't turn off RequestPolicy.">
+	</div>
+	
+	<div class="pic" id="battlelogic">
+		<h1>one last thing</h1>
+			<p>OK, so you know how to beat stuff up. That's good and all, but knowing how to use a hammer doesn't help you make a sculpture, if you'll excuse that horrible metaphor. Before I send you out into the big scary overworld, you have to know <strong>the best way to battle</strong>.</p>
+			<p>I think this picture really says it all.</p>
+				<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/BattleLogic.png" alt="Kill one baddie at a time.">
+			<p>Just beat up one baddie till it's dead, at which point focus on another baddie. Keep beating up baddies until they're all dead. It really doesn't matter what order you kill baddies in. Some people go left to right, some (including me) go highest HP to lowest HP... your call.</p>
+	</div>
+	
+	<div class="pic" id="battle_end">
+		<h1>end of the battle</h1>
+			<p>Once all the baddies are in that big Internet server in the sky, the battle will be over and you'll get a bunch of goodies. Here's what it'll look like:</p>
+					<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/BattleEnd.PNG" alt="Took you a while.">
+			<p>After that, you'll go back to the overworld.</p>
+			<p>And, if you're wondering, yes, there is no review section. Deal with it. But really, you'll be getting plenty of battling practice in the real game... believe me.</p>
+	</div>
+	
+<div class="bodycontent" id="finished">
+	<h1 class="heading">finally... finished</h1>
+		<p>Good news! If you're reading this, you've probably already read everything you need to know about NQII. Now you can <strong>start playing for real</strong>. Head on over to <a href="http://www.neopets.com/~Epanastasi">the Act 1, Part 1 Guide</a> and start the game. I can smell the dead Chias already.</p>
+</div>
+</div>
+</div>
+</body>

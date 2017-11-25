@@ -1,0 +1,118 @@
+Rohane
+CH 13
+DI 13
+SS 9
+IMR 3
+IMH 11
+Total 49
+
+Mipsy
+DD 13
+GH 12
+IMD 12
+ICH 12
+Total 49
+
+Talinia
+IBD 13
+MT 11
+SW 11
+IMR 3
+IMH 11
+Total 49
+
+Velm
+GH 13
+GS 13
+Mes 4
+IMD 8
+ICH 11
+Total 49
+
+At Level
+22 
+	DI 8, IMH 7, IMR 2, CH 3, SS 1
+	DD 10, ICH 4, IMD 7
+
+30 (+8)
+	DI 8, CH 7(+4), SS 5(+4), IMR 2, IMH 7
+	DD 13(+3), IMD 8(+1), ICH 8(+4)
+	IBD 9, MT 6, SW 7, IMH 7
+40(+10)
+	DI 10(+2), CH 10(+3), SS 9(+4), IMR 2, IMH 8(+1)
+	DD 13, GH 6(+6), IMD 10(+2), ICH 10(+2)
+	IBD 11(+2), MT 7(+1), SW 11(+4), IMR 1(+1), IMH 9(+2)
+	GH 9, GS 9, Mes 4, IMD 6, ICH 11
+50(+10) - 49 points
+	DI 13(+3), CH 13(+3), SS 9, IMR 3(+1), IMH 11(+3)
+	DD 13, GH 12(+6), IMD 12(+2), ICH 12(+2)
+	IBD 13(+2), MT 11(+4), SW 11, IMR 3(+2), IMH 11(+2)
+	GH 12(+3), GS 12(+3), Mes 4, IMD 10(+4), ICH 11
+
+Priorities
+rohane mipsy  talinia   velm
+3BT     |        |          | 
+DI       |DD    |IBD      |GH
+CH      |GH    |IMH     |GS
+IMH     |ICH   |IMR 2   |ICH
+BT 12   |IMD  |RA       |IMD
+IMR 12 |DS    |           |Mes
+
+Get
+Talinia 24 - IBD 9, MT 6, SW 3, IMH 5
+Velm 34 - GH 8, GS 7, Mes 2, IMD 6, ICH 10
+
+At Level
+22 
+	DI 8, IMH 7, IMR 2, CH 3, SS 1
+	DD 10, ICH 4, IMD 7
+	
+Levelwise
+41 - IMH 9 - IMD 11 - MT 8   - GH 10
+42 - DI 11 - ICH 11 - MT 9   - GS 10
+43 - CH 11 - GH 7   - IBD 12 - GS 11
+44 - IH 10 - GH 8   - MT 10  - IMD 7
+45 - DI 12 - GH 9   - MT 11  - GH 11
+46 - DI 13 - IMD 12 - IBD 13 - IMD 8
+47 - CH 12 - ICH 12 - IMH 10 - GS 12
+48 - IH 11 - GH 10  - IMH 11 - GH 12
+49 - CH 13 - GH 11  - IMR 2  - IMD 9
+50 - IMR 3 - GH 12  - IMR 3  - IMD 10
+
+<!--		rohane
+	<td title="Stunning Strikes to skill lv. 9">Stun. Strikes</td>
+	<td title="Damage Increase to skill lv. 11">Damage Inc.</td>
+	<td title="Critical Attacks to skill lv. 4">Critical Attacks</td>
+
+			mipsy
+	<td title="Innate Casting Haste to skill lv. 11">Innate Casting Haste</td>
+	<td title="Innate Melee Defense to skill lv. 11">Innate Melee Def.</td>
+	<td title="Group Haste to skill lv. 1">Group Haste</td>
+
+			talinia
+	<td title="Shockwave to skill lv. 10">Shock- wave</td>
+	<td title="Multiple Targets to skill lv. 9">Mult. Targets</td>
+	<td title="Increased Bow Damage to skill lv. 11">Incrsd. Bow Dmg.</td>
+
+			velm
+	<td title="Group Healing to skill lv. 10">Group Heal.</td>
+	<td title="Group Shielding to skill lv. 10">Group Shield.</td>
+	<td title="Mesmerization to skll lv. 3">Mesmer- ization</td>
+
+-->
+<!--template
+	<tr>
+		<td class="lev">33</td>
+
+		
+		
+		
+	</tr>
+	<tr class="altcolor">
+		<td class="lev">34</td>
+
+
+
+		
+	</tr>
+	-->

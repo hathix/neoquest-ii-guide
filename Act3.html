@@ -1,0 +1,1145 @@
+<head>
+  <title>Act 3 Walkthrough - DiabolicalChia</title>
+  <style type="text/css">
+	/*Release Notes
+		Rev's NeoQuest II Guide
+		by revolutionrising
+		(I would copyright this but what's the point?)
+		Guide Version 4.1 "A Blur of Green"
+		Act 3 - DiabolicalChia (neopets.com/~DiabolicalChia)
+		Page Version 1.0
+		Last edited 9/24/10
+		*/
+	/*Changelog
+		Version - Date - Notes
+		1.0 - 9/24 - Well, this is the first *official* version of the page.
+		*/
+	body {
+		font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+		font-size: 15px;
+		color: #3F0600;
+		line-height: 1.4em;
+		cursor: crosshair;
+		background-color: #110302;
+		background-image: url('http://images2.layoutsparks.com/1/181842/simple-red-floral-design.jpg');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		}
+	table,font {
+		visibility: hidden;
+		}
+	div#hitcounter {
+		text-align: center;
+		}
+	div#allstuff {
+		margin-top: 5%;
+		height: 80%;
+		}
+	div#jumpandskills {
+		width: 220px;
+		float: right;
+		margin: 0px 10px 0px 10px;
+		}
+	div#jump {
+		padding: 10px 5px 10px 5px;
+		border: 3px ridge #000000;
+		background-color: #FFE6E5;
+		height: 35%;
+		overflow: scroll;
+		margin-bottom: 10px;
+		}
+	div#skills {
+		padding: 0px 5px 5px 5px;
+		border: 3px ridge #000000;
+		background-color: #FFE6E5;
+		height: 60%;
+		overflow: scroll;
+		}
+	div#therest {
+		height: 100%;
+		overflow: scroll;
+		padding: 10px;
+		//margin-right: 240px;
+		}
+
+	div#header {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+		width: 606px;
+		text-align: center;
+		}	
+	div.bodycontent {
+		background-color: #FFE6E5;
+		border: 3px ridge #000000;
+		padding: 10px;
+		margin-bottom: 10px;
+		}
+
+	div.boss {
+		background-color: #FFE6E5;
+		border: 3px ridge #000000;
+		padding: 10px;
+		margin-bottom: 10px;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		}
+
+	.heading {
+		text-transform: lowercase;
+		text-align: left;
+		letter-spacing: 0.6em;
+		font-weight: bold;
+		font-size: 180%;
+		color: #000000;
+		border-bottom: 1px dashed #444444;
+		font-family: Candara, "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	.wtheading {
+		text-transform: lowercase;
+		text-align: center;
+		letter-spacing: 0.5em;
+		font-size: 180%;
+		font-weight: bold;
+		color: #000000;
+		font-family: Candara, "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	h1#jumpheading {
+		text-align: left;
+		font-size: 200%;
+		letter-spacing: 0.7em;
+		border-bottom: 1px dashed #444444;
+		font-family: "Berlin Sans FB", Candara, Georgia, Verdana, Arial, sans-serif;
+		}
+	div.place {
+		width: 50%;
+		text-align: center;
+		border-bottom: 1px dashed #444444;
+		margin-left: auto;
+		margin-right: auto;
+		}
+	.place img{
+		width: 100px;
+		}
+	div.flavortext {
+		font-style: italic;
+		margin-top: 0.5em;
+		}
+
+	p {
+		text-indent: 10px;
+		}
+	em {
+		color: #B72A41;
+		font-style: italic;
+		}
+	strong {
+		color: #B72A41;
+		font-weight: bold;
+		}
+	span.strike {
+		text-decoration: line-through;
+		}
+
+	div.ajump {
+		text-indent: 15px;
+		letter-spacing: 0.3em;
+		font-size: 14px;
+		text-transform: lowercase;
+		cursor: auto;
+		font-weight: bold;
+		font-family: "Trebuchet MS", "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	#header a {
+		text-decoration: none !important;
+		border: none !important;
+		}
+	#header img {
+		border: none !important;
+		}
+	span#learn {float: left;}
+	span#play {float: right;}
+	span#headercomment {
+		color: white;
+		}
+
+	a {
+		text-decoration: none;
+		border-bottom: 1px dashed #000000;
+		}
+	a:link {
+		color: #490028;
+		}
+	a:visited {
+		color: #13007F;
+		}
+	a:hover {
+		color: #BC0016;
+		}
+
+	div.ajumpwt {
+		text-indent: 10px;
+		letter-spacing: 0.2em;
+		font-size: 14px;
+		text-transform: lowercase;
+		cursor: auto;
+		font-family: "Trebuchet MS", Georgia, "Berlin Sans FB Demi", Verdana, Arial, sans-serif;
+		}
+	div.ajumpboss {
+		text-indent: 10px;
+		letter-spacing: 0.2em;
+		font-size: 14px;
+		text-transform: lowercase;
+		cursor: auto;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		color: #9E0915;
+		font-weight: bold;
+		}
+	h1.jumpsection {
+		font-size: 14px;
+		margin-bottom: 0px;
+		text-transform: lowercase;
+		letter-spacing: 0.3em;
+		}
+	.ajumpboss a {
+		border-bottom: 1px dotted #444444;
+		}
+	div#intro {
+		text-align: center;
+		width: 605px;
+		margin-left: auto;
+		margin-right: auto;	
+		}
+	div.message {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		background-color: white;
+		border: 2px solid black;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		padding: 5px;
+		}
+	span.messagetitle {
+		font-variant: small-caps;
+		font-size: 18px;
+		font-style: italic;
+		color:#b8389e;
+		margin-top: 10px;
+		text-decoration: underline;
+		}
+	span.red {
+		color: #FF0000;
+		}
+	p.smallprint {
+		font-size: 10px;
+		font-family: "Times New Roman", serif;
+		line-height: 1em;
+		}
+	div.bosspic {
+		margin: 5px;
+		text-align: center;
+		}
+	.bosspic img {
+		width: 100px;
+		}
+	table.bossinfo {
+		width: 80%;
+		margin: 5px auto 0px auto;
+		border: 1px dashed black;
+		padding: 5px;
+		visibility: visible !important;
+		}
+	.bossinfo td {
+		padding: 3px;
+		}
+	td.first {
+		text-align: right;
+		font-weight: bold;
+		text-transform: lowercase;
+		letter-spacing: 0.1em;
+		width: 30%;
+		}
+	td.second {
+		text-align: left;
+		border-bottom: 1px dotted #444444;
+		width: 70%;
+		}
+	td.secondlast {
+		border-bottom: none !important;
+		}
+	ul.strategy {
+		text-align: left;
+		list-style-type: none;
+		}
+	.strategy li {
+		margin-left: 25px;
+		margin-bottom: 1em;
+		}
+	.strategy strong {
+		margin-left: -10px !important;
+		border-bottom: 1px dashed #444444;
+		}
+	li.bossstrategy {
+		font-weight: bold;
+		letter-spacing: 0.1em;
+		text-transform: lowercase;
+		margin-left: 0px !important;
+		border-bottom: 1px dotted #444444;
+		}
+	div.postbattle {
+		text-align: left;
+		}
+	h1.postbattle {
+		color: #000000;
+		font-family: Candara, "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		text-transform: lowercase;
+		border-bottom: 1px dotted #444444;
+		font-size: 120%;
+		letter-spacing: 0.3em;
+		}
+	#skillsheading {
+		font-size: 200%;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		text-transform: lowercase;
+		letter-spacing: 0.4em;
+		border-bottom: 1px dashed #444444;
+		}
+	table#skillstable {
+		font-size: 12px;
+		border-collapse: collapse;
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		visibility: visible !important;
+		}
+	#skillstable td {
+		border: 1px solid #444444;
+		padding: 1px;
+		text-align: center;
+		}
+	.levelcol {
+		width: 10%;
+		}
+	.rohane, .mipsy, .talinia, .velm {
+		width: 20%;
+		}
+	tr#skillstableheadings {
+		text-transform: lowercase;
+		font-weight: bold;
+		font-family: "Candara", "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		font-size: 14px;
+		color: #000000;
+		background-color: transparent !important;
+		}
+	#charnames td {
+		font-weight: bold;
+		text-transform: lowercase;
+		font-family: "Candara", "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, "Trebuchet MS", Verdana, Arial, sans-serif;
+		font-size: 140%;
+		background-color: #FFE6E5 !important;
+		border: none !important;
+		}
+	#skillstableheadings td {
+		border: none !important;
+		}
+	#skillstable tr {
+		background-color: #FFB9B7;
+		}
+	tr.altcolor {
+		background-color: #FF8E8C !important;		
+		}
+	td.lev {
+		font-weight: bold;
+		font-family: "Trebuchet MS", Georgia, Verdana, Arial, sans-serif;
+		font-size: 120%;
+		border: none !important;
+		background-color: #FFE6E5;
+		}
+	table#newcharskills {
+		visibility: visible !important;
+		background-color: #FFB9B7;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		border-collapse: collapse;
+		}
+	#newcharskills td {
+		border: 1px solid black;
+		padding: 5px;
+		}
+	tr#ncsheadings {
+		text-align: center;
+		font-weight: bold;
+		background-color: #FF8E8C !important;
+		}
+	td.left {
+		text-align: center;
+		background-color: #FF8E8C !important;
+		font-weight: bold;
+		width: 30%;
+		}
+	td.right {
+		width: 70%;
+		}
+	div.message {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		background-color: white;
+		border: 2px solid black;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		padding: 5px;
+		}
+	span.messagetitle {
+		font-variant: small-caps;
+		font-size: 18px;
+		font-style: italic;
+		color:#b8389e;
+		margin-top: 10px;
+		text-decoration: underline;
+		}
+	span.red {
+		color: #FF0000;
+		}
+	p.smallprint {
+		font-size: 10px;
+		font-family: "Times New Roman", serif;
+		line-height: 1em;
+		}
+	div.shoppinglist{
+		background-color: #FFFFFF;
+		background-image: url('http://images2.layoutsparks.com/1/103072/notebook-paper-lines-page.gif');
+		width: 50%;
+		padding: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		font-family: "Segoe Print", "Trebuchet MS", Verdana, Arial, sans-serif;
+		text-align: center;
+		}
+	.shoppinglist h1{
+		font-family: "Segoe Script", "Segoe Print", "Trebuchet MS", Verdana, Arial, sans-serif;
+		}
+	.shoppinglist ul{
+		text-align: left;
+		font-size: 14px;
+		list-style-type: none;
+		}
+	.shoppinglist ul ul{
+		}
+	.shoppinglist strong{
+		color: #000000;
+		text-decoration: underline;
+		padding: 2px;
+		}
+	table#abilities{
+		visibility: visible !important;
+		}
+	.aname{
+		text-align: right;
+		font-style: italic;
+		border-right: 1px dotted #444444;
+		width: 25%;
+		}
+	.amount{
+		text-align: right;
+		width: 10%;
+		}
+	.atype{
+		font-weight: bold;
+		width: 65%;
+		}
+	</style>
+</head>
+<body>
+<div id="allstuff">
+<div id="jumpandskills">
+<div id="jump">
+<h1 class="heading" id="jumpheading">Jump</h1>
+<div class="ajump"><a href="http://www.neopets.com/">neopets home</a></div>
+<div class="ajump"><a href="http://www.neopets.com/games/nq2/nq2.phtml"
+ target="_blank">nqii main page</a></div>
+<div class="ajump"><a href="http://www.neopets.com/~NQref">nqii reference</div>  
+<br>
+<div class="ajump"><a href="#header">top of page</a></div>
+<div class="ajumpwt"><a href="#sakhmetcity">sakhmet city</a></div>
+<div class="ajumpwt"><a href="#templeofthesky">temple of the sky</a></div>
+<div class="ajumpboss"><a href="#siliclast">siliclast</a></div>
+<div class="ajumpwt"><a href="#ruinedtemple">ruined temple</a></div>
+<div class="ajumpboss"><a href="#gebarnii">gebarn ii</a></div>
+<div class="ajumpwt"><a href="#wasetvillage">waset village</a></div>
+<div class="ajumpwt"><a href="#palaceofancientkings">pal. of anc. kings</a></div>
+<div class="ajumpboss"><a href="#therevenant">the revenant</a></div>
+<div class="ajumpwt"><a href="#treasurehunt">treasure hunt</a></div>
+<div class="ajumpwt"><a href="#akhten-ka">akhten-ka</a></div>
+<div class="ajumpboss"><a href="#coltzansghost">coltzan's ghost</a></div>
+<div class="ajumpwt"><a href="#acrossthedesert">across the desert</a></div>
+<div class="ajumpwt"><a href="#zakharukhspyramid">zakharukhs pyramid</a></div>
+<div class="ajumpboss"><a href="#anubits">anubits</a></div>
+
+</div>
+<div id="skills">
+<h1 id="skillsheading">skills</h1>
+<table id="skillstable">
+  <col class="levelcol"> <col class="rohane"> <col class="mipsy"> <col class="talinia"> <col class="velm">
+    <tr id="skillstableheadings">
+      <td>lv.</td>
+      <td colspan="4">When you grow to that level, spend points here.</td>
+    </tr>
+    <tr id="charnames">
+      <td style="border: none;"><br>
+      </td>
+      <td title="Rohane">Roh</td>
+      <td title="Mipsy">Mip</td>
+	  <td title="Talinia">Tal</td>
+	  <td title="Velm">Velm</td>
+	 
+    <tr>
+      <td class="lev">31</td>
+		<td title="Stunning Strikes to skill lv. 6">Stun. Strikes</td>
+		<td title="Innate Melee Defense to skill lv. 9">Innate Melee Def.</td>
+		<td title="Shockwave to skill lv. 8">Shock- wave</td>
+    </tr>
+	<tr class="altcolor">
+      <td class="lev">32</td>
+		<td title="Stunning Strikes to skill lv. 7">Stun. Strikes</td>
+		<td title="Innate Casting Haste to skill lv. 9">Innate Casting Haste</td>
+		<td title="Increased Bow Damage to skill lv. 10">Incrsd. Bow Dmg.</td>
+    </tr>
+	<tr>
+		<td class="lev">33</td>
+			<td title="Damage Increase to skill lv. 9">Damage Inc.</td>	
+			<td title="Innate Melee Defense to skill lv. 10">Innate Melee Def.</td>
+			<td title="Shockwave to skill lv. 9">Shock- wave</td>
+	</tr>
+	<tr class="altcolor">
+		<td class="lev">34</td>
+			<td title="Stunning Strikes to skill lv. 8">Stun. Strikes</td>
+			<td title="Innate Casting Haste to skill lv. 10">Innate Casting Haste</td>
+			<td title="Innate Melee Haste to skill lv. 8">Innate Melee Haste</td>
+
+	</tr>
+	<tr>
+		<td class="lev">35</td>
+			<td title="Damage Increase to skill lv. 10">Damage Inc.</td>
+			<td title="Group Haste to skill lv. 1">Group Haste</td>
+			<td title="Shockwave to skill lv. 10">Shock- wave</td>	
+			<td title="Innate Casting Haste to skill lv. 11">Innate Casting Haste</td>		
+	</tr>
+	<tr class="altcolor">
+		<td class="lev">36</td>
+			<td title="Critical Attacks to skill lv. 8">Critical Attacks</td>
+			<td title="Group Haste to skill lv. 2">Group Haste</td>
+			<td title="Shockwave to skill lv. 11">Shock- wave</td>
+			<td title="Group Healing to skill lv. 9">Group Heal.</td>
+	</tr>	
+	<tr>
+		<td class="lev">37</td>
+			<td title="Stunning Strikes to skill lv. 9">Stun. Strikes</td>
+			<td title="Group Haste to skill lv. 3">Group Haste</td>
+			<td title="Multiple Targets to skill lv. 7">Mult. Targets</td>
+			<td title="Group Shielding to skill lv. 8">Group Shield.</td>
+	</tr>
+	<tr class="altcolor">
+		<td class="lev">38</td>
+			<td title="Critical Attacks to skill lv. 9">Critical Attacks</td>
+			<td title="Group Haste to skill lv. 4">Group Haste</td>
+			<td title="Increased Bow Damage to skill lv. 11">Incrsd. Bow Dmg.</td>
+			<td title="Mesmerization to skll lv. 3">Mes- merize</td>
+	</tr>
+	<tr>
+		<td class="lev">39</td>
+			<td title="Critical Attacks to skill lv. 10">Critical Attacks</td>
+			<td title="Group Haste to skill lv. 5">Group Haste</td>
+			<td title="Innate Melee Haste to skill lv. 9">Innate Melee Haste</td>
+			<td title="Mesmerization to skll lv. 4">Mes- merize</td>		
+	</tr>
+	<tr class="altcolor">
+		<td class="lev">40</td>
+			<td title="Innate Melee Haste to skill lv. 8">Innate Melee Haste</td>
+			<td title="Group Haste to skill lv. 6">Group Haste</td>
+			<td title="Innate Magic Resistance to skill lv. 1">Innate Magic Res.</td>
+			<td title="Group Shielding to skill lv. 9">Group Shield.</td>
+	</tr>
+	<tr>
+		<td class="lev">41</td>
+			<td title="Innate Melee Haste to skill lv. 9">Innate Melee Haste</td>
+			<td title="Innate Melee Defense to skill lv. 11">Innate Melee Def.</td>
+			<td title="Multiple Targets to skill lv. 8">Mult. Targets</td>
+			<td title="Group Healing to skill lv. 10">Group Heal.</td>
+	</tr>
+	<tr class="altcolor">
+		<td class	="lev">42</td>
+			<td title="Damage Increase to skill lv. 11">Damage Inc.</td>
+			<td title="Innate Casting Haste to skill lv. 11">Innate Casting Haste</td>
+			<td title="Multiple Targets to skill lv. 9">Mult. Targets</td>
+			<td title="Group Shielding to skill lv. 10">Group Shield.</td>
+	</tr>	
+
+
+</table>
+</div>
+</div>
+<div id="therest">
+<div id="header"> <span id="learn"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A1Learn.png"
+ alt="Learn..." title="Guides for Beginners"><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#interface"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A2Interface.png"
+ alt="Interface" title="The Game's Interface"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#battling"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A3Battling.png"
+ alt="Battling" title="Battling"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#shopping"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A4Shopping.png"
+ alt="Shopping" title="Shopping"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#items"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A5Items.png"
+ alt="Items" title="Items"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#skills"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A6Skills.png"
+ alt="Skills" title="Skills Guide"></a> </span> <span id="play"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B0Play.png"
+ alt="Play..." title="Walkthroughs"><br>
+<a href="http://www.neopets.com/~Epanastasi"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B1.png"
+ alt="Act 1, Part 1" title="Act 1, Part 1"></a><br>
+<a href="http://www.neopets.com/~Fordulat"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B15.png"
+ alt="Act 1, Part 2" title="Act 1, Part 2"><br>
+</a><a href="http://www.neopets.com/~CmdrInputBlocker"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B2.png"
+ alt="Act 2" title="Act 2"><br>
+</a><a href="http://www.neopets.com/~DiabolicalChia"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B3.png"
+ alt="Act 3" title="Act 3"><br>
+</a><a href="http://www.neopets.com/~AlaskanMosquito"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B4.png"
+ alt="Act 4" title="Act 4"><br>
+</a><a href="http://www.neopets.com/~ThePhoenixRising"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B5.png"
+ alt="Act 5" title="Act 5"><br>
+</a></span><span
+ id="headermain"> </span><a
+ href="http://www.neopets.com/~SmallGreenBlur"
+ alt="Rev's NeoQuest II Guide" title="To Home Page"
+ style="cursor: pointer;"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/HeaderMain.png"></a>
+<span id="headercomment">This guide is currently in beta. So don't
+worry. c:</span> </div>
+<div class="bodycontent" id="intro"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/Act3Header.jpg">
+</div>
+<div class="bodycontent" id="hi">
+<div id="hitcounter"><img
+ src="http://counter2.neomallers.com/diabolicalchia.gif?theme=sb_orange&visit=#VISITOR"
+ alt="Good news! By reading this utterly useless alt text, you've just killed a few seconds. So your counter's probably loaded by now."></div>
+<h1 class="heading">bonjour</h1>
+	<p>Hiya! If you haven't noticed already, you're at the <strong>Act 3 Walkthrough</strong>. I'm pretty sure you know what I'm going to say but I'll say it anyway. If you haven't finished Act 2 yet, go and <a href="http://www.neopets.com/~CmdrInputBlocker">finish that</a>. Also, go ahead and bookmark this page if you like, since you'll be coming back here for a while.</p>
+	<p>Nothing much more to add here. You might be interested to know that you're <strong>50% through the game</strong> (at least level-wise) and you only have 5 more tough levels ahead of you. After that, <strong>the game becomes pretty easy</strong>. There are no Chias in this chapter, but there are plenty of undead things, if that helps.</p>
+	<p>Before you start, take a look at your old friend the <strong>skills table</strong>. He's having serious weight problems, so I've had to <strong>abbreviate</strong> some of the skill/character names (Talinia's <em>Increased Bow Damage</em> has become <em>Incrsd. Bow Dmg.</em>) Don't worry, you can still <strong title="Geez, you really like hovering, don't you?">hover your mouse</strong> over the skill name abbreviations to see the whole thing.</p>
+	<p>Also, about your <strong>map site</strong>: make sure you navigate to the <em>Lost Desert</em> page before looking for any maps. You've done this sort of thing before.</p>
+	<p>Anyway, on to the guide. Have fun, and don't get eaten.</p>
+	</div>
+	
+	<div class="bodycontent" id="sakhmetcity">
+		<div class="place">
+			<h1 class="wtheading">sakhmet city</h1>
+			<img src="http://images.neopets.com/items/ldf_sakhmetpalcake.gif" alt="I'm cold... and mad.">
+			<div class="flavortext">Wait, we're in a giant dessert?!? Awesome! No wait, it's a desert...</div></div>
+				<p>Well, Sakhmet City isn't the coolest of places, but it sure beats a town full of Chias. You can talk to the guys next to you if you want, but you really don't have to. Head north and west to leave the building. Now you're out in the big scary world again. See those <strong>tents</strong> to your west? They're the actual town. There are three tents you have to be concerned with:</p>
+					<ul style="list-style-type: none;">
+						<li><strong>Inn</strong> - Yellow tent in northeast</li>
+						<li><strong>Potions</strong> - Yellow tent in southwest</li>
+						<li><strong>Weapons/Armor</strong> - Light blue tent in southeast (the one with the sword on it)</li>
+					</ul>
+				<p>I'm pretty sure you know what to do when you're in a town by now. Where's that Shopping List?</p>
+					<div class="shoppinglist">
+						<h1>Shopping List</h1>
+						<ul>
+							<li>Milk</li>
+							<li>Eggs</li>
+							<li>Cheese</li>
+							<li><strong>Potions: </strong> <i>Note to self: these'll come in handy later.</i><ul>
+									<li><b>20</b> Scorch Potions</li>
+									<li><b>10</b> Potions of Loafing Laziness</li>
+									<li><b>5</b> Potions of Great Haste</li>
+								</ul></li>
+							<li><strong>Weapons/Armor: </strong><ul>
+									<li>Note to self: only buy if the thing for sale has 5 or more points than what you already have. For example, the bow here has 25 power. Only buy it if Talinia's current bow has less than 20 power.</li>
+									
+								</ul></li>
+							<li><strong>Inn: </strong> No need to rest here now.
+								</li>
+						</ul>
+					</div>
+				<p>If you're wondering what I meant under Weapons/Armor, I'm saying that you should be careful about buying weapons/armor from stores now. From here on out, the weapons/armor dropped by bosses will have some pretty nifty bonuses. Unless the weapon you have right now is much weaker than the one for sale, don't buy.</p>
+				<p>If you're still confused, <em>Bonuses beat Power</em>.</p>
+				
+				<p>Enough about that. Now that you're done shopping, it's time to hit the <span class="strike">road</span> sand. We need to get <strong>training</strong>. Go <strong>a little north</strong> from the huts and start training. We need to get to level <strong title="Normal: 32, Evil: 33, Insane: 34">32/33/34</strong> - that's right, <em>two</em> levels. If you're hurt badly (i.e. someone's health is <strong>yellow</strong>), run back to the <strong>inn</strong> (that's the yellow northeastern tent) and rest. Why? We need to <strong>conserve potions</strong>. Besides, cash probably isn't an issue anymore.</p>
+				<p>Once you've gained those two levels, open up your map to <em>South Lost Desert</em>. See the <strong>Temple of the Sky</strong> over to your northeast? Walk on over there and enter once you get there.</p>
+				</div>
+				
+	<div class="bodycontent" id="templeofthesky">
+
+		<div class="place">
+
+			<h1 class="wtheading">temple of the sky</h1>
+
+			<img src="http://images.neopets.com/items/sta_nq2_temple.gif" alt="A temple thingy.">
+
+				<div class="flavortext">So let me get this straight... the Temple of the <b>Sky</b> is on the <b>ground</b>. Yup, the NQII designers were geniuses, all right.</div></div>
+				<p>Another dungeon. Ew. We'll have to get used to it, though, since there are 3 more dungeon-ish things in this chapter. Oh well. You're currently on <em>Level 1</em>. If you glance at your map, this floor looks pretty big. Nonsense. You just have to walk <strong>north</strong> to the grassy area and then go <strong>west</strong>. We're going to use the <em>Fight-As-You-Go method</em> throughout this entire temple (we need to <strong>gain a level</strong> by the end of the next floor. Don't worry about leveling up on this floor.) So, uh, have fun walking and fighting through this level.</p>
+				<p>Now you're on <em>Level 2</em>. It's a bit of a maze but, hey, you've got maps, so you'll be able to figure it out. Keep using that <em>Fight-As-You-Go method</em> until you grow to level <strong title="Normal: 33, Evil: 34, Insane: 35">33/34/35</strong>. Once you gain level up, switch to <strong>Normal mode</strong> and make your way through the rest of the level. Eventually you'll come across your next boss. <strong>Heal up</strong> and get ready to face him...</p>
+				</div>
+			
+	<div class="boss" id="siliclast">
+				<h1 class="wtheading">siliclast</h1>
+				<div class="bosspic"><img src="http://images.neopets.com/nq2/m/m3025_6e4b4.gif" alt="Siliclast"></div>
+				<div class="flavortext">What, is it too much work to smile?</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">33 on Normal<br>34 on Evil<br>35 on Insane</td></tr>
+
+				<tr>
+					<td class="first">HP:</td>
+					<td class="second">500 on Normal<br>625 on Evil<br>750 on Insane</td></tr>
+				<tr>
+					<td class="first">Special Abilities:</td>
+					<td class="second">Infestation - 44HP <strong>Group Damage</strong><br>
+										Dormancy - 44% <strong>Slow</strong><br>
+										Rampant Acceleration - 38% <strong>Group Haste</strong>
+							</td></tr>
+
+				<tr>
+					<td class="first">Prizes:</td>
+					<td class="secondlast">the Celestial Talisman<br>
+											5 Potions of Potent Health<br>
+											2 weapons/armor<br>
+											2500 gold<br>
+											600 NP
+											</td></tr>
+
+				</table>
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General: </strong>This big rock dude is nothing special as far as bosses go, but he's still <em>pretty tough</em>. He can hit pretty hard and he has decent HP (although he can't heal.) With a bit of luck you should be able to beat him.</li>
+								
+					<li><strong>Setup: </strong>First off, make sure he's <em>slowed</em> at all times. Start the battle by having everyone chuck slowing potions until one works. When the slowing potion wears off, <em>toss another one</em>. (That goes without saying.) Rohane will be your main damage dealer, so he should use a <em>hasting potion</em> early in the battle.</li>
+					<li><strong>Offensive: </strong>As I was saying, Rohane will be your main damage dealer. He should focus on using his <em>melee</em> attack. As you might expect, Mipsy should toss around <em>Direct Damage</em> spells. Talinia isn't that hard of a hitter yet, so she should throw <em>Scorch Potions.</em></li>
+					<li><strong>Defensive: </strong>This guy's melee is pretty powerful,and his Group Damage hurts too. Watch everyone's health and make sure they heal if their HP goes <em>yellow</em>. Be very careful with Mipsy, since Siliclast can kill her in 2 hits once she's down to yellow.</li>
+				</ul> 
+				<div class="postbattle"><h1 class="postbattle">Post-battle:</h1>
+							<p>Keep throwing stuff at Siliclast and he'll die, as you might expect. There's a conveniently-placed <strong>teleporter</strong> behind where Siliclast was, so step on it. You're back in <strong>Sakhmet City</strong>. (I really have to get one of those teleporters.) Head out to town and <strong>replenish</strong> (that's fancy talk for <em>restock</em>) the slowing/damage potions you used. (The potions shop is the yellow southwestern tent.) Of course, sell your old weapons.</p>
+							<p>Open your map back up to <em>South Lost Desert</em>. You'll want to walk over to the <em>Ruined Temple</em> all the way in the north. Once you get there, enter the temple.</p>
+				</div>
+		</div>
+		
+	<div class="bodycontent" id="ruinedtemple">
+
+		<div class="place">
+
+			<h1 class="wtheading">ruined temple</h1>
+
+			<img src="http://images.neopets.com/items/gar_sand_castle.gif" alt="More temples.">
+
+				<div class="flavortext">The NQII developers were really creative with names, I'm telling you.</div></div>
+					<p>If you look at the <strong>maps</strong> for this place, you'll notice that it's 4 stories high and not really ruined at all. Only <em>Level 1</em> is ruined. Speaking of which, you're on that level. We have to <strong>gain a level</strong> of our own before we take on the boss at the top of this temples, so we'll be using the <em>Fight-As-You-Go method</em> again. (Once you level up, switch back to <strong>Normal mode</strong>.) Go ahead and make your way through this level of the temple.</p>
+					<p>You're now on <em>Level 2</em>. This floor is unremarkable except for the conference room in the southeast. (I'm serious, look at the map. Doesn't it look like a conference room?) Just walk through this level.</p>
+					<p><em>Level 3</em> is slightly trickier. You start at the stairs in the northeast, and you have to get to the <strong>stairs in the northwest.</strong> Walk through this level too. (Chances are you'll have leveled up by now. If you have, remember to switch back to <strong>Normal mode</strong>. If you haven't leveled up yet, train on this level until you level up.)</p>
+					<p>Now you're on <em>Level 4</em>. Your next boss is in the very <strong>south</strong> of this room. Walk on over to him, <strong>heal up</strong>, and take him on.</p>
+				</div>
+
+	<div class="boss" id="gebarnii">
+				<h1 class="wtheading">gebarn ii</h1>
+				<div class="bosspic"><img src="http://images.neopets.com/nq2/m/m3040_0f9ec.gif" alt=""></div>
+				<div class="flavortext">This guy could use a manicure. And a pedicure. And throw in some pants while you're at it.</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">34 on Normal<br>35 on Evil<br>36 on Insane</td></tr>
+
+				<tr>
+					<td class="first">HP:</td>
+					<td class="second">350 on Normal<br>437 on Evil<br>525 on Insane</td></tr>
+				<tr>
+					<td class="first">Special Abilities:</td>
+					<td class="second">Destroy - 77HP <strong>Direct Damage</strong><br>
+							Contagion - 52HP <strong>Group Damage</strong><br>
+							Hibernation - 53% <strong>Slow</strong><br>
+							Restore - 100HP <strong>Heal</strong><br>
+							Nice <strong>hat</strong>
+							</td></tr>
+
+				<tr>
+					<td class="first">Prizes:</td>
+					<td class="secondlast">the Medallion of Wind (upper part)<br>
+											3 Potions of Greater Health<br>
+											2 weapons/armor<br>
+											3000 gold<br>
+											700 NP
+											</td></tr>
+
+				</table>
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General: </strong>This undead Krawk has a big goodie bag and isn't afraid to use it. However, once you beat him you'll get Velm, which is <em>awesome</em>. Go ahead and beat this guy up.</li>
+					<li><strong>Setup: </strong>You want him moving as slow as possible. Toss some <em>Potions of Loafing Laziness</em> first until he's slowed, and re-throw them when one wears off. If you like, your guys can use hasting potions. They'll come in handy.</li>
+					<li><strong>Offensive: </strong>Gebarn hits hard, so we need to dispose of him as quickly as we can. Mipsy should use <em>Direct Damage</em>, as always. Rohane and Talinia should throw <em>Scorch Potions</em> (they'll be your best way of dealing damage.) If you run out of Scorch Potions, just use melee.</li>
+					<li><strong>Defensive: </strong>Good news: after this battle, you probably won't need healing potions any more, so don't be afraid to heal. Watch everyone's HP and make sure they heal if their HP bar becomes <em>yellow/red</em>.</li>
+				</ul> 
+				<div class="postbattle"><h1 class="postbattle">Post-battle:</h1>
+					<p>Once he's dead, you can start partying: the game will soon become about 3 times easier. But first, take the teleporter behind where Gebarn stood and... you'll be back in Sakhmet. How convenient. Head out to the <strong>yellow southwestern tent</strong> to <strong>replenish</strong> the potions you used.</p>
+					<p>Leave town to the north and make sure you're on <strong>Normal mode</strong> (the baddies around here are jokes now, and not very funny ones either.) Head back north to the <strong>Ruined Temple</strong>. If you noticed, the mountains on either side of the temple are gone, allowing you to go farther north. Go north and you'll see a village nearby.</p>
+				</div>
+		</div>
+				
+	<div class="bodycontent" id="wasetvillage">
+
+		<div class="place">
+
+			<h1 class="wtheading">waset village</h1>
+
+			<img src="http://images.neopets.com/items/toy_nq2_velm.gif" alt="The almighty Chia-bashing Techo.">
+
+				<div class="flavortext">Eat your vegetables!</div></div>
+					<p>Say hi to this new village made of <strong>4 tents</strong>. As exciting as buying potions is, we've got more important things to do. Enter the <strong>yellow tent</strong>. That's the <strong>inn</strong>. But more importantly, you've got a Techo to chat with. Walk over to the east side of the inn and talk to the guy there. Guess who?</p>
+					<p>Yup, it's Velm. Ask him to join you, and he will. Congrats! The best NQII character (in my opinion) has just joined your team. Before we shock baddies with the awesomeness that is Velm, we have to <strong>spend his skill points</strong> first.</p>
+						
+					<table id="newcharskills">
+							<tr id="ncsheadings">
+							  <td>On this difficulty...</td>
+							  <td>Spend Velm's skill points here.</td>
+							</tr>
+							<tr>
+							  <td class="left">Normal</td>
+							  <td class="right">
+								<b>8</b> points in Group Healing<br>
+								<b>7</b> points in Group Shielding<br>
+								<b>2</b> points in Mesmerization<br>
+								<b>6</b> points in Innate Melee Defense<br>
+								<b>10</b> points in Innate Casting Haste
+							</tr>
+							<tr>
+							  <td class="left">Evil</td>
+							  <td class="right">
+							  	<b>8</b> points in Group Healing<br>
+								<b>7</b> points in Group Shielding<br>
+								<b>2</b> points in Mesmerization<br>
+								<b>6</b> points in Innate Melee Defense<br>
+								<b>11</b> points in Innate Casting Haste
+							  </td>
+							</tr>
+							<tr>
+							  <td class="left">Insane</td>
+							  <td class="right">
+							  	<b>9</b> points in Group Healing<br>
+								<b>7</b> points in Group Shielding<br>
+								<b>2</b> points in Mesmerization<br>
+								<b>6</b> points in Innate Melee Defense<br>
+								<b>11</b> points in Innate Casting Haste
+							  </td>
+							</tr>
+						</table>
+			<p>Go ahead and spend Velm's skill points according to your difficulty. We still have a bit of shopping to do. Here are the buildings that each merchant is in:</p>
+			<ul style="list-style-type: none;">
+				<li><strong>Inn</strong> - the yellow tent you're standing in right now</li>
+				<li><strong>Potions, Weapons, and Armor</strong> - cube-shaped blue-and-white tent (whoo that's a lot of dashes)</li>
+			</ul>
+						<div class="shoppinglist">
+						<h1>Shopping List</h1>
+						<ul>
+							<li>Milk</li>
+							<li>Eggs</li>
+							<li>Cheese</li>
+							<li><strong>Potions: </strong><ul>
+									<li><b>20</b> Blister Potions</li>
+									<li><b>20</b> Potions of Inert Inaction</li>
+									<li><b>5</b> Potions of Alarming Haste</li>
+								</ul></li>
+							<li><strong>Weapons/Armor: </strong><ul>
+									<li>Note to self: thing about bonuses over power still applies. Only buy stuff if the thing someone's holding has no bonuses. For example, if Talinia's tunic has no bonuses (i.e. it's store-bought), upgrade. Else, don't upgrade.</li>
+								</ul></li>
+							<li><strong>Inn: </strong> Won't need to stay at inns anymore. *woohoo*
+								</li>
+						</ul>
+					</div>		
+			<p>After you've done a bit of shopping, you're ready to <strong>leave town</strong>. Don't worry, we'll be back. Before we get adventuring, let's <strong>test out Velm</strong>. At the beginning of each battle, Velm should <strong>always throw up Group Shields</strong> (that didn't sound quite right, but you know what I mean.) Talinia should use Multiple Targets, then everyone should go all-out. Mipsy will start learning Group Haste soon, so she should cast that at the beginning of battle. After that, everyone should just go all-out offensive, with Velm using Group Heal whenever anyone (that's right, <em>anyone</em>) is hurt. If no one's hurt he can use Mesmerization.</p>
+			<p>Enough lecturing, let's get playing. Switch to <strong>Normal mode</strong> (you can be on Hunting if you want, but the baddies here don't give out that much EXP.) Now, before we start wandering aimlessly, a word from our sponsors.</p>
+			
+						<div class="message">
+				<span class="messagetitle">The (not so) NEW Left-Hand Method!</span>
+		<p><img src='http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/NewHandWall.PNG' alt="Keep your hand on the wall at  all times."></p>
+
+					<p>Feeling <span class="red">LOST?</span> Don't be! With our patented new Left-Hand Method, 
+
+you can get out of <span class="red">ANY</span> cave, guaranteed!</p>
+
+					<p>Just put your <span class="red">left hand</span> on a wall and start <span  class="red">walking</span>! That's right! As long as you keep your left hand on a wall, you'll get <span class="red">out</span> of the cave 
+
+pronto!</p>
+					<p>But <span class="red">wait</span>! There's more! This method will also work in <span  class="red">towers and dungeons</span>! So what are you waiting for?!?!?</p>
+
+					<p><span class="red">**</span>Brought to you by the <span class="red">NQII Help 
+
+Club!**</span></p>
+					<p class="smallprint">DISCLAIMER: Method does not work if you are eaten by Chias before you leave 
+the cave. And yes, you can use your right hand if you want. And stop reading small print, it's bad for your eyes.</p>
+			</div>
+			<p>Do you remember it? Maybe not, but that doesn't really matter. Just know that it works for mountains too. Pretend mountains are the walls, and you can find your way around pretty easily.</p>
+			<p>Well, now you're in the <strong>Valley of Kings</strong>. If you haven't found it yet, glance at your map for the <em>Northwest Lost Desert</em>. Find your map of this valley and look for the <strong>Palace of Ancient Kings</strong> in the southwest. Walk on over to the palace, then enter it.</p>
+				</div>
+
+	<div class="bodycontent" id="palaceofancientkings">
+
+		<div class="place">
+
+			<h1 class="wtheading">palace of<br> ancient kings</h1>
+
+			<img src="http://images.neopets.com/items/clo_ld_hissi_headpieceandcrown.gif" alt="Nice hat.">
+
+				<div class="flavortext">You know, there's nothing I hate more than really long place names. Except for fish, but that's another story.</div></div>
+				<p>Just an FYI: we want to <strong>gain a level</strong> in this place. Use the <em>Fight-As-You-Go method</em> all throughout the palace. Once you grow to level <strong title="Normal: 35, Evil: 36, Insane: 37">35/36/37</strong>, feel free to keep on hunting. But first we need to get going.</p>
+				<p>If you look at your map for <em>Level 1</em>, you'll notice that there are no stairs. (There is no spoon, either.) Well, the stairs are actually hidden <strong>underneath a bed</strong>. Chances are your map will have circled the bed, but if not, look for the weird pools of water and the rooms surrounding them. See the northwestern room? The bed is the one in the southwest of that room.</p>
+				<p>So take those stairs into <em>Level 2</em>. You've been plopped in a <strong>little maze</strong>, but I'm pretty sure you'll be able to get out OK. Once you get out into the dirt passageway, head <strong>north</strong> until you see your next boss.</p>
+				</div>	
+
+		<div class="boss" id="therevenant">
+				<h1 class="wtheading">the revenant</h1>
+				<div class="bosspic"><img src="http://images.neopets.com/nq2/m/m3080_10cae.gif" alt="This guy can't smell very good either."></div>
+				<div class="flavortext">Big? Check. Ugly? Check. No fashion sense? Check. Yup, this guy is your average NQII boss.</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">35 on Normal<br>36 on Evil<br>37 on Insane</td></tr>
+
+				<tr>
+					<td class="first">HP:</td>
+					<td class="second">600 on Normal<br>750 on Evil<br>900 on Insane</td></tr>
+				<tr>
+					<td class="first">Special Abilities:</td>
+					<td class="second">
+							<table id="abilities">
+								<tr>
+									<td class="aname">Rampant Acceleration</td>
+									<td class="amount">38%</td>
+									<td class="atype">Group Haste</td>
+								</tr>
+								<tr>
+									<td class="aname">Infestation</td>
+									<td class="amount">44HP</td>
+									<td class="atype">Group Damage</td>
+								</tr>
+								<tr>
+									<td class="aname">Mitigation</td>
+									<td class="amount">60HP</td>
+									<td class="atype">Group Heal</td>
+								</tr>
+								<tr>
+									<td class="aname">Spellbind</td>
+									<td class="amount"></td>
+									<td class="atype">Mesmerization</td>
+								</tr>
+								<tr>
+									<td class="aname"></td>
+									<td class="amount"></td>
+									<td class="atype">Shockwave</td>
+								</tr>
+								<tr>
+									<td class="aname"></td>
+									<td class="amount">5%</td>
+									<td class="atype">Slowing Strike</td>
+								</tr>
+							</table>
+							</td></tr>
+
+				<tr>
+					<td class="first">Prizes:</td>
+					<td class="second">
+											2 weapons/armor<br>
+											750 NP
+											</td></tr>
+				<tr>
+					<td class="first">Notes:</td>
+					<td class="secondlast">
+						The Revenant has two cronies who are <strong>possessed skeletons</strong> (180HP on Normal, 270HP on Evil, 360HP on Insane.) Once you beat the Revenant, his cronies will die too, so <strong>don't bother</strong> attacking them.
+					</td>
+				</tr>
+				</table>
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General: </strong>Normally this guy would be pretty tough, but you have Velm now, so he's pretty easy. He's good practice for later bosses, though.</li>
+					<li><strong>Setup: </strong> At the start, Velm should put up <b>Group Shields</b> while everyone else throws <b>slowing potions</b> at the Revenant until one works. After that, you can just go all-out offensive. Just remember to reapply potions/shields when they wear off.</li>
+					<li><strong>Offensive: </strong>This guy's pretty easy so don't use any damage potions on him. Rohane and Talinia should use their <b>melee</b> while Mipsy nails the Revenant with <b>Direct Damage</b>.</li>
+					<li><strong>Defensive: </strong>The Revenant can hit decently hard, but that's what Velm's for. Velm should use <b>Group Heal</b> almost every turn. (If no one's hurt by the time Velm's turn comes, Velm can mesmerize one of the cronies.)</li>
+				</ul> 
+				<div class="postbattle"><h1 class="postbattle">Post-battle:</h1>
+					<p>Nice work. Walk northeast of where the Revenant stood and talk to <strong>Lifira</strong>, who's evidently Waset's missing librarian. She'll teleport away. Now go northwest of where the Revenant was and you'll see another <strong>teleporter</strong>. That'll whisk you outside this palace.</p>
+				</div>
+		</div>		
+	<div class="bodycontent" id="treasurehunt">
+
+		<div class="place">
+
+			<h1 class="wtheading">treasure hunt</h1>
+
+			<img src="http://images.neopets.com/items/foo_buriedtreasure.gif" alt="I smell treasure.">
+
+				<div class="flavortext">No RPG is complete without a bit of cheesy treasure-hunting.</div></div>
+					<p>We'll get to the treasure hunt soon enough. First, though, we need to get back to <strong>Waset</strong>. Switch to <strong>Normal mode</strong> and make your way back. Once you do, <strong>replenish your potions</strong> in the blue-and-white-cube tent. Then walk over to the <strong>red tent</strong> and talk to <strong>Lifira</strong> in the east part of the house. She'll tell you some story line and some secret word or other.</p>
+					<p>Go ahead and open up your maps for the <em>Northwest Lost Desert</em> or something like that. You're in Waset, and you need to get to the <strong>hermit</strong> toward the northwest of the map. He's standing next to a pitifully small patch of water and some trees. We're going to use the <em>Fight-As-You-Go</em> method to grow to level <strong title="Normal: 36, Evil: 37, Insane: 38">36/37/38</strong> as soon as we can. Make your way northwest (try to hug the mountains) to the hermit.</p>
+					<p>Once you get to the hermit, talk to him, of course. He'll give you pretty good (if annoying) instructions to get to where you need to. Follow those instructions and you'll find the <strong>2nd piece</strong> of the Medallion of Wind (you know, that junk piece of metal you've been lugging around all this chapter.) If you haven't <strong>gained that level</strong> already, you'll want to train here until you do.</p>
+					<p>Now we need to get to our next boss, who's a good distance away. You know what that means. Switch to <strong>Hunting mode</strong> and keep using the <em>Fight-As-You-Go</em> method until you grow to level <strong title="Normal: 37, Evil: 38, Insane: 39">37/38/39</strong>. You'll want to start off by walking <strong>southeast</strong>.</p>
+					<p>After a bit you'll reach the <em>East Lost Desert</em> (these names are really creative.) Ignore the weird rock formations (and, for that matter, the slightly creepy Skeith guy) and make your way to the <strong>Lost City of Akhten-Ka</strong> in the southwest. Keep beating up those baddies until you've leveled up. Once you get to Akhten-Ka, enter it.</p>
+				</div>
+	<div class="bodycontent" id="akhten-ka">
+
+		<div class="place">
+
+			<h1 class="wtheading">akhten-ka</h1>
+
+			<img src="http://images.neopets.com/items/sta_sakhmet.gif" alt="Not as pretty as it looks.">
+
+				<div class="flavortext">Ironically, the abandoned cities are all bigger than the real ones.</div></div>
+					<p>When you open up the map of this place, you'll be like a farm boy in New York. Which is to say, <span class="strike">you get mugged almost immediately</span> you feel really small. Unfortunately all the guys here want to mug you, so yeah. We have to grow to level <strong title="Normal: 38, Evil: 39, Insane: 40">38/39/40</strong> in this place. Walk on over to the <strong>northwestern corner</strong> of the city while using the <em>Fight-As-You-Go</em> method.</p>
+					<p>Once you reach the corner, gain that level if you haven't yet. Then look for the ghost guy <strong>Coltzan</strong>. Proceed to bust that ghost. (What, stop giving me weird looks like that. It's scary.)</p>
+				</div>
+				
+		<div class="boss" id="coltzansghost">
+				<h1 class="wtheading">coltzan's ghost</h1>
+				<div class="bosspic"><img src="http://images.neopets.com/items/bd_desert_deathmask.gif" alt="Wot?"></div>
+				<div class="flavortext">Wot? Where am I, and why am I fighting a fat Blumaroo and his bunch of Star Trek nerds?</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">38 on Normal<br>39 on Evil<br>40 on Insane</td></tr>
+
+				<tr>
+					<td class="first">HP:</td>
+					<td class="second">750 on Normal<br>937 on Evil<br>1125 on Insane</td></tr>
+				<tr>
+					<td class="first">Special Abilities:</td>
+					<td class="second">
+							<table id="abilities">
+								<tr>
+									<td class="aname">Rampant Acceleration</td>
+									<td class="amount">38%</td>
+									<td class="atype">Group Haste</td>
+								</tr>
+								<tr>
+									<td class="aname">Renew</td>
+									<td class="amount">150HP</td>
+									<td class="atype">Heal</td>
+								</tr>
+							</table>
+							</td></tr>
+
+				<tr>
+					<td class="first">Prizes:</td>
+					<td class="secondlast">Medallion of Wind's gemstone<br>
+											2 weapons/armor<br>
+											800 NP
+											</td></tr>
+
+				</table>
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General: </strong>Not too exciting, but are you gonna let him call you a Star Trek nerd? Didn't think so. Yeah, he's just a practice battle.</li>
+					<li><strong>Setup: </strong>You know what to do. Have Rohane and Talinia toss slow potions and make sure he's always slowed. Velm should keep shields up, and if you really want to Mipsy can use Group Haste (it's probably too weak to help right now, though.)</li>
+					<li><strong>Offensive: </strong>He can heal, yeah, but you can probably deal around 150HP in one turn. Remember that he called you a Star Trek nerd, and proceed to beat him to a spectral pulp.</li>
+					<li><strong>Defensive: </strong>Coltzan's cool and all but he can't hurt you very much. Velm won't be using Group Healing that much, so he can toss damage potions if he wants. Don't bother with Mesmerization, since it doesn't work very often on bosses.</li>
+				</ul> 
+				<div class="postbattle"><h1 class="postbattle">Post-battle:</h1>
+					<p>Unfortunately, Coltzan hangs around even after you beat him up. He'll tell you to look at the <strong>barrel behind him</strong>, so when you do you'll get the gemstone of the medallion. Somehow I thought this would be a more rewarding experience. Anyway, there's no teleporter here so you'll have to walk out yourself. Stay on Hunting mode, though, since the baddies give nice EXP..</p>
+				</div>
+		</div>
+
+	<div class="bodycontent" id="acrossthedesert">
+
+		<div class="place">
+
+			<h1 class="wtheading">across the desert</h1>
+
+			<img src="http://images.neopets.com/items/bd_bag_of_sand.gif" alt="Sand.">
+
+				<div class="flavortext">Maybe it's just me, but the sections keep getting shorter. I don't know.</div></div>
+					<p>Before the end of this section, we need to grow to level <strong title="Normal: 39, Evil: 40, Insane: 41">39/40/41</strong>, so use that <em>Fight-As-You-Go</em> method until you level up. Well, you've left the city, so open up your map of the <em>East Lost Desert</em>. See that weird rock formation (you know, the weird smiley face on its side)? Walk over to the <strong>"nose"</strong>. <strong>3 spaces west</strong> of the nose is the <strong>last piece</strong> of the Medallion. Walk over to it and grab it.</p>
+					<p>Now for that walk across half the desert. Open up your map to <em>Lost Desert: Overall</em>. You're still at that weird rock formation, but you have to get to <strong>Zakharukh's Pyramid</strong> in the far southwest. First, though, walk over to <strong>Waset</strong>. There, go into the <strong>blue tent</strong>. Restock your potions (remember, we need all the slowing/damage potions we can get) and sell your old weapons/armor here.</p>
+					<p>From  there, go southwest to the Pyramid and enter it.</p>
+				</div>
+				
+	<div class="bodycontent" id="zakharukhspyramid">
+
+		<div class="place">
+
+			<h1 class="wtheading">zakharukh's pyramid</h1>
+
+			<img src="http://images.neopets.com/template_images/desert_grarrl_dance.gif" alt="You aren't missing much.">
+
+				<div class="flavortext">Since I can't think of anything witty to say, please enjoy this picture of a dancing Grarrl.</div></div>
+					<p>All right, this is the last dungeon of the act. Go ahead and scroll down a bit to get the Grarrl off your screen, then switch to <strong>Hunting mode</strong>. Yup, we'll be using the <em>Fight-As-You-Go</em> method to grow to level <strong title="Normal: 40, Evil: 41, Insane: 42">40/41/42</strong> on this level. That's your last Lost Desert level. *woohoo*</p>
+					<p>Anyhow, look at the map for <em>Level 1</em>. Not too pretty. I'm just going to say good luck getting to Level 2. (I'm so nice, aren't I? And so modest too.) <em>Level 2</em> isn't too bad by comparison, so make your way through it (nothing much to say about it, really.) Once you're on <em>Level 3</em>, heal up and get ready to face the <strong>final boss</strong> of this act.</p>
+				</div>		
+		<div class="boss" id="anubits">
+				<h1 class="wtheading">anubits</h1>
+				<div class="bosspic"><img src="http://images.neopets.com/items/sta_nq2_anubits.gif" alt="FORTY-TWO!"></div>
+				<div class="flavortext"><span title="FORTY-TWO!">101010</span>. Haha... computer nerd humor.</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">40 on Normal<br>41 on Evil<br>42 on Insane</td></tr>
+
+				<tr>
+					<td class="first">HP:</td>
+					<td class="second">1000 on Normal<br>1250 on Evil<br>1500 on Insane</td></tr>
+				<tr>
+					<td class="first">Special Abilities:</td>
+					<td class="second">
+							<table id="abilities">
+								<tr>
+									<td class="aname">Rampant Acceleration</td>
+									<td class="amount">38%</td>
+									<td class="atype">Group Haste</td>
+								</tr>
+								<tr>
+									<td class="aname">Petrification</td>
+									<td class="amount">62%</td>
+									<td class="atype">Slow</td>
+								</tr>
+								<tr>
+									<td class="aname">Protection Of Infinity</td>
+									<td class="amount">+30</td>
+									<td class="atype">Group Shields</td>
+								</tr>
+								<tr>
+									<td class="aname">Petrification</td>
+									<td class="amount"></td>
+									<td class="atype">Mesmerization</td>
+								</tr>
+								<tr>
+									<td class="aname"></td>
+									<td class="amount"></td>
+									<td class="atype">Powerful melee</td>
+								</tr>
+								</tr>
+							</table>
+							</td></tr>
+
+				<tr>
+					<td class="first">Prizes:</td>
+					<td class="secondlast">
+											3 weapons/armor<br>
+											1200 NP
+											</td></tr>
+
+				</table>
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General: </strong>This guy's pretty tough, with a powerful melee, high HP, and lots of goodies. You have Velm, though, and your other guys are hitting pretty hard by this point. This is a tough but doable battle.</li>
+					<li><strong>Setup: </strong>Toss some Potions of Loafing Laziness (yeah, save those potions from Waset) to start and keep him slowed. Velm should put up shields, while Mipsy should use Group Haste (it'll be decent by this point.)</li>
+					<li><strong>Offensive: </strong>Anubits has high HP and healing powers, so hit him hard. Rohane should use melee, Mipsy should use Direct Damage, and Talinia should toss Scorch Potions to do the most damage she can.</li>
+					<li><strong>Defensive: </strong>Velm's probably got your back here, but if Anubits hits one character really hard make sure they heal with potions.</li>
+				</ul> 
+				<div class="postbattle"><h1 class="postbattle">Post-battle:</h1>
+					<p>Once you've beaten Anubits and reached that <em>Altar of <span class="strike">Density</span> Destiny</em> thingy (I still have no idea what it is), you'll be done the Lost Desert. You're now <strong>2/3rds done</strong> the game, level-wise. I say we call it a day and go drink some, uh... soda. Yeah, soda.</p>
+					<p>Now that that's over with, head on over to <a href="http://www.neopets.com/~AlaskanMosquito">AlaskanMosquito's page</a> for the <strong>Act 4</strong> guide. Unbookmark this page, bookmark that one, you know the drill. Try not to get arrested till then.</p>
+				</div>
+		</div>
+
+	</div>
+	</div>
+</body>

@@ -1,0 +1,94 @@
+			tr#skillstableheadings {
+		text-transform: lowercase;
+		font-weight: bold;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		font-size: 14px;
+		color: #FF0000;
+		background-color: transparent !important;
+		}
+	#skillstableheadings td {
+		border: none !important;
+		}
+	#skillstable tr {
+		background-color: #D4EDC3;
+		}
+	tr.altcolor {
+		background-color: #ADDC8D !important;
+		}
+	td.lev {
+		font-weight: bold;
+		font-family: Georgia, Verdana, Arial, sans-serif;
+		border: none !important;
+		background-color: #e5f3dc;
+		}
+
+	div#skills {
+		padding: 0px 5px 5px 5px;
+		border: 3px ridge #000000;
+		background-color: #e5f3dc;
+		height: 60%;
+		overflow: scroll;
+		}
+
+
+
+
+
+<div id="skills">
+			<h1 id="skillsheading">skills</h1>
+			<table id="skillstable">
+				<col class="levelcol">
+				<col class="rohane">
+				<col class="mipsy">
+				<col class="talinia">
+				<col class="velm">
+			<tr id="skillstableheadings">
+				<td>Lvl.</td>
+				<td title="Rohane">R</td>
+				<td title="Mipsy">M</td>
+				<td title="Talinia">T</td>
+				<td title="Velm">V</td></tr>
+			<tr>
+				<td class="lev">1</td>
+				<td title="You start at level 1.">---</td>
+				<td title="You won't get Mipsy yet." rowspan="14"></td>
+				<td title="You won't get Talinia yet." rowspan="14"></td>
+				<td title="You won't get Velm yet." rowspan="14"></td></tr>
+			<tr class="altcolor">
+				<td class="lev">2</td>
+				<td title="Damage Increase to skill lv. 1">Dmg.<br>Inc.</td></tr>
+			<tr>
+				<td class="lev">3</td>
+				<td title="Damage Increase to skill lv. 2">Dmg.<br>Inc.</td></tr>
+			<tr class="altcolor">
+				<td class="lev">4</td>
+				<td title="Innate Melee Haste to skill lv. 1">Innt.<br>Melee<br>Haste<br></td></tr>
+			<tr>
+				<td class="lev">5</td>
+				<td title="Critical Attacks to skill lv. 1">Crit.<br>Atks.</td></tr>				
+			<tr class="altcolor">
+				<td class="lev">6</td>
+				<td title="Damage Increase to skill lv. 3">Dmg.<br>Inc.</td></tr>
+			<tr>
+				<td class="lev">7</td>
+				<td title="Innate Melee Haste to skill lv. 2">Innt.<br>Melee<br>Haste<br></td></tr>				
+			<tr class="altcolor">
+				<td class="lev">8</td>
+				<td title="Stunning Strikes Increase to skill lv. 1">Stun.<br>Strks.</td></tr>
+		</table>
+<!--TEMPLATE
+			<tr>
+				<td class="lev">0</td>
+				
+			<tr class="altcolor">
+				<td class="lev">1</td>
+
+
+-->
+<!-- OTHER TEMPLATE DOOHICKEY
+				<td title="Damage Increase to skill lv. ">Dmg.<br>Inc.</td></tr>
+				<td title="Critical Attacks to skill lv. ">Crit.<br>Atks.</td></tr>
+				<td title="Stunning Strikes Increase to skill lv. ">Stun.<br>Strks.</td></tr>
+				<td title="Innate Melee Haste to skill lv. ">Innt.<br>Melee<br>Haste<br></td></tr>
+
+-->	

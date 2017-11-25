@@ -1,0 +1,178 @@
+<body bgcolor="#CAE1FF">
+<font face="georgia">
+
+<h1 align=center>Welcome to Rev's NeoQuest II Skills Guide!</h1>
+<hr width=75% size=10 noshade>
+
+<br><center>
+<img src="http://images.neopets.com/items/sta_nq_rohane.gif" width="100" height="100">
+<img src="http://images.neopets.com/items/sta_nq_mipsy.gif" width="100" height="100">
+<img src="http://images.neopets.com/items/sta_nq_talinia.gif" width="100" height="100">
+<img src="http://images.neopets.com/items/sta_nq_velm.gif" width="100" height="100">
+<br><br>
+<i>Rohane: Can't touch this. Well, you can, but I'll smack you in the face.<br>
+Mipsy: We have the precious... muhahaha.<br>
+Talinia: Stare at the background... OK, now move your head a little this way.<br>
+Velm: Wait a second, did I just grow golden locks? *faints*</i><br><br>
+
+<img src="http://counter2.neomallers.com/epanastasi.gif?theme=default&visit=#VISITOR">
+</center>
+
+<table width="95%" bgcolor="#CAE1FF" align="center"><tr><td><font face="georgia"><center><h2>Uh... 
+
+you looking for something? This guide currently under construction.</h2></center>
+
+
+<div align="center"><b>Quick Links:</b><br>
+<a href="~ThePhoenixRising">ThePhoenixRising's Page: Main NQII Guide</a><br>
+<a href="games/nq2/nq2.phtml">NeoQuest II</a>|
+<a href="neoboards/boardlist.phtml?board=16">NeoQuest II Boards</a><br>
+<a href="http://www.neopets.com">Neopets Main Page</a><br><br></div>
+
+<a name="jump"><div align="center"><b>Jump:</b></a><br>
+<a href="#introduction">Introduction</a>|
+<a href="#rohane">Skills for Rohane</a><br>
+<a href="#mipsy">Skills for Mipsy</a>|
+<a href="#talinia">Skills for Talinia</a><br>
+<a href="#velm">Skills for Velm</a>|
+<a href="#final">Recommended Skill Levels</a><br>
+<a href="#levelchart">Level Chart</a>|
+<a href="#checkpoints">Skill Level Checkpoints</a><br>
+<a href="#conclusion">Conclusion</a><br>
+</div>
+
+<a name="introduction"><h3 align="center">Introduction</h3></a>
+<p>Welcome to my Skills Guide! If you're looking for the complete walkthrough of NQII, go to <a 
+
+href="neopets.com/~ThePhoenixRising">ThePhoenixRising's page</a>. This guide will instruct you on 
+
+how to spend the skill points you get while playing NQII (ohemgee really? I never would have 
+
+guessed.)</p>
+<p>Basically, each time a character levels up, he/she gets a skill point to spend in any of seven 
+
+categories. These categories can increase the character's power, speed, or fortitude, or they can 
+
+let your character use a new special ability. In this guide, I'll be telling you what skills I 
+
+recommend and how to spend them.</p>
+<p>If you looked at the Jump, a lot of things probably didn't make sense. First off, I'll have my 
+
+comments on each characters' skills. In "Recommended Skill Levels", I'll tell you what I recommend 
+
+as the final skill point spread for each character. In "Level Chart", you'll see which skills to 
+
+invest in after each level. In "Skill Level Checkpoints", you'll be reminded what your skill 
+
+spreads should look like after every few levels. Let's begin, shall we?</p>
+
+<h3><a href="#jump">Back to Jump</a></h3>
+
+<a name="rohane"><h3 align="center">Skills for Rohane</h3></a>
+
+
+<a name="levelchart"><h3 align="center">Level Chart</h3></a>
+<p>This is the most useful part of the guide, in my opinion. Everything else is just commentary. 
+
+When you level up, you may be asking yourself where to put the skill point you just got. Never 
+
+fear, Rev is here! With this chart, you'll know where to spend your points as soon as you level up. 
+
+*hits button* That was easy.</p>
+<p>Oh yeah, and BTW, the "Level" on the table indicates the level you grow to. For example, if you 
+
+just got to level 10, check out Level 10 on the chart. If I write "DI 1", I mean to spend a point 
+
+in Damage Increase, thereby getting that skill to level 1. And the skills I advocate below work 
+
+well on all difficulties (I've tried it.)</p>
+<a href="#jump">Back to Jump</a><br><br>
+
+<table border="2" bgcolor="white" align="center" cellpadding="2">
+<tr>
+<th>Level</th><th>Rohane</th><th>Mipsy</th><th>Talinia</th><th>Velm</th></tr>
+
+<tr><td align="center"><b>1</b></td> <td>--</td> <td rowspan="12">DD 6<br>IMD 5</td> <td 
+
+rowspan="24">IBD 11<br>MT 6<br>IMH 6</td> <td rowspan="34">GH 10<br>GS 6<br>Mes 2<br>IMD 6<br>ICH 
+
+9</td></tr>
+<tr><td align="center"><b>2</b></td> <td>DI 1</td></tr>
+<tr><td align="center"><b>3</b></td> <td>DI 2</td></tr>
+<tr><td align="center"><b>4</b></td> <td>IMH 1</td></tr>
+<tr><td align="center"><b>5</b></td> <td>CH 1</td></tr>
+<tr><td align="center"><b>6</b></td> <td>DI 3</td></tr>
+<tr><td align="center"><b>7</b></td> <td>IMH 2</td></tr>
+<tr><td align="center"><b>8</b></td> <td>SS 1</td></tr>
+<tr><td align="center"><b>9</b></td> <td>CH 2</td></tr>
+<tr><td align="center"><b>10</b></td> <td>IMH 3</td></tr>
+<tr><td align="center"><b>11</b></td> <td>IMH 4</td></tr>
+<tr><td align="center"><b>12</b></td> <td>DI 4</td></tr>
+<tr><td align="center"><b>13</b></td> <td>IMH 5</td> <td>DD 7</td></tr>
+<tr><td align="center"><b>14</b></td> <td>CH 3</td> <td>DD 8</td></tr>
+<tr><td align="center"><b>15</b></td> <td>DI 5</td> <td>IMD 6</td></tr>
+<tr><td align="center"><b>16</b></td> <td>IMH 6</td> <td>DD 9</td></tr>
+<tr><td align="center"><b>17</b></td> <td>DI 6</td> <td>IMD 7</td></tr>
+<tr><td align="center"><b>18</b></td> <td>IMR 1</td> <td>ICH 1</td></tr>
+<tr><td align="center"><b>19</b></td> <td>DI 7</td> <td>ICH 2</td></tr>
+<tr><td align="center"><b>20</b></td> <td>IMR 2</td> <td>ICH 3</td></tr>
+<tr><td align="center"><b>21</b></td> <td>IMH 7</td> <td>ICH 4</td></tr>
+<tr><td align="center"><b>22</b></td> <td>DI 8</td> <td>DD 10</td></tr>
+<tr><td align="center"><b>23</b></td> <td>DI 9</td> <td>IMD 8</td></tr>
+<tr><td align="center"><b>24</b></td> <td>BT 1</td> <td>ICH 5</td></tr>
+<tr><td align="center"><b>25</b></td> <td>SS 2</td> <td>ICH 6</td> <td>RA 1</td></tr>
+<tr><td align="center"><b>26</b></td> <td>IMR 3</td> <td>DD 11</td> <td>RA 2</td></tr>
+<tr><td align="center"><b>27</b></td> <td>DI 10</td> <td>GH 1</td> <td>MT 7</td></tr>
+<tr><td align="center"><b>28</b></td> <td>IMH 8</td> <td>GH 2</td> <td>MT 8</td></tr>
+<tr><td align="center"><b>29</b></td> <td>SS 3</td> <td>GH 3</td> <td>RA 3</td></tr>
+<tr><td align="center"><b>30</b></td> <td>CH 4</td> <td>GH 4</td> <td>IMR 1</td></tr>
+<tr><td align="center"><b>31</b></td> <td>SS 4</td> <td>DD 12</td> <td>IMR 2</td></tr>
+<tr><td align="center"><b>32</b></td> <td>CH 5</td> <td>IMD 9</td> <td>IMH 7</td></tr>
+<tr><td align="center"><b>33</b></td> <td>IMR 4</td> <td>IMD 10</td> <td>IMH 8</td></tr>
+<tr><td align="center"><b>34</b></td> <td>SS 5</td> <td>ICH 7</td> <td>IBD 12</td></tr>
+<tr><td align="center"><b>35</b></td> <td>CH 6</td> <td>GH 5</td> <td>IBD 13</td><td>ICH 
+
+10</td></tr>
+<tr><td align="center"><b>36</b></td> <td>CH 7</td> <td>DD 13</td> <td>RA 4</td>
+<td>ICH 11</td></tr>
+<tr><td align="center"><b>37</b></td> <td>DI 11</td> <td>GH 6</td> <td>RA 5</td><td>GS 7</td></tr>
+<tr><td align="center"><b>38</b></td> <td>CH 8</td> <td>GH 7</td> 
+<td>IMH 9</td><td>GS 8</td></tr>
+<tr><td align="center"><b>39</b></td> <td>IMH 9</td> <td>ICH 8</td> 
+<td>RA 6</td><td>Mes 3</td></tr>
+<tr><td align="center"><b>40</b></td> <td>SS 6</td> <td>ICH 9</td> 
+<td>IMR 3</td><td>GH 11</td></tr>
+<tr><td align="center"><b>41</b></td> <td>CH 9</td> <td>GH 8</td> 
+<td>MT 9</td><td>GS 9</td></tr>
+<tr><td align="center"><b>42</b></td> <td>SS 7</td> <td>ICH 10</td> 
+<td>RA 7</td><td>GS 10</td></tr>
+<tr><td align="center"><b>43</b></td> <td>IMH 10</td> <td>GH 9</td> 
+<td>MT 10</td><td>IMD 7</td></tr>
+<tr><td align="center"><b>44</b></td> <td>CH 10</td> <td>GH 10</td> 
+<td>RA 8</td><td>Mes 4</td></tr>
+<tr><td align="center"><b>45</b></td> <td>IMH 11</td> <td>ICH 11</td> 
+<td>IMH 10</td><td>GS 11</td></tr>
+</table>
+<tr><td align="center"><b>46</b></td> <td>DI 12</td> <td>IMD 11</td> 
+<td>IMH 11</td><td>GH 12</td></tr>
+</table>
+<tr><td align="center"><b>47</b></td> <td>DI 13</td> <td>ICH 12</td> 
+<td>IMR 4</td><td>GS 12</td></tr>
+<tr><td align="center"><b>48</b></td> <td>CH 11</td> <td>GH 11</td> 
+<td>RA 9</td><td>GH 13</td></tr>
+<tr><td align="center"><b>49</b></td> <td>IMR 5</td> <td>IMD 12</td> 
+<td>IMR 5</td><td>GS 13</td></tr>
+<tr><td align="center"><b>50</b></td> <td>CH 12</td> <td>GH 12</td> 
+<td>IMR 6</td><td>ICH 13</td></tr>
+
+<tr><td align="center"><b>51</b></td> <td>CH 13</td> <td>GH 13</td> 
+<td>RA 10</td><td>IMD 8</td></tr>
+<tr><td align="center"><b>52</b></td> <td>IMR 6</td> <td>ICH 13</td> 
+<td>IMR 7</td><td>IMD 9</td></tr>
+<tr><td align="center"><b>53</b></td> <td>IMR 7</td> <td>IMD 13</td> 
+<td>RA 11</td><td>???</td></tr>
+</table>
+
+</td></tr></table>
+</font>
+</body>

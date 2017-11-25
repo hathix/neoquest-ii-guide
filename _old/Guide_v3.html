@@ -1,0 +1,535 @@
+
+<head>
+	<title>Rev's NeoQuest II Guide</title>
+	<style>
+	body {
+		font-family: Verdana, Arial, sans-serif;
+		font-size: 14px;
+		color: #0110a1;
+		line-height: 1.4em;
+		cursor: crosshair;
+		background-color: #44bcee;
+		background-image: url('http://www.psdgraphics.com/file/windows-7-wallpaper-1024x768.jpg');
+		}
+	table {
+		visibility: hidden;
+		}
+	.sf {
+		visibility: hidden;
+		}
+	div#allstuff {
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 100px;
+		}
+	div#header {
+		height: 150px;
+		margin: 5px;
+		text-align: center;
+		}
+	div#hitcounter {
+		margin: 5px;
+		margin-top: 25px;
+		text-align: center;
+		}
+	div#jump {
+		float: right;
+		width: 150px;
+		margin: 10px 20px 0px 15px;
+		padding: 10px 5px 10px 5px;
+		border: 3px inset #000000;
+		background-color: #d6f5f7;
+		line-height: 1.35em;
+		}
+	div#allbodycontent {
+		height: 450px;
+		overflow: scroll;
+		padding-left: 20px;
+		}
+	.bodycontent, .floatleft, .nonfloat {
+		border: 3px inset #000000;
+		background-color: #d6f5f7;
+		}
+	div.bodycontent {
+		padding: 10px;
+		margin: 10px 10px 0px 0px;
+		clear: both;
+		}
+	div.floatleft {
+		float: left;
+		width: 520px;
+		padding: 10px 5px 10px 5px;
+		margin: 10px 0px 0px 0px;
+		}
+	div.nonfloat {
+		padding: 10px 5px 10px 5px;
+		margin: 10px 10px 0px 549px;
+		}
+	
+	h1.header {
+		text-transform: lowercase;
+		text-align: left;
+		letter-spacing: 1.2em;
+		font-size: 120%;
+		color: #000000;
+		border-bottom: 1px dotted gray;
+		font-family: Georgia, Verdana, Arial, sans-serif;
+		}
+	h1#jump {
+		text-align: center;
+		font-size: 130%;
+		}
+	p.jumpsubheadings {
+		text-transform: lowercase;
+		text-align: left;
+		letter-spacing: 0.3em;
+		margin-top: 5px;
+		margin-bottom: 0px;
+		font-weight: bold;
+		}
+	div.ajump {
+		text-indent: 15px;
+		letter-spacing: 0.3em;
+		font-size: 90%;
+		text-transform: lowercase;
+		}
+	a {
+		text-decoration: none;
+		border-bottom: 1px dashed #000000;
+		}
+	a:link {
+		color: #009E3F;
+		}
+	a:visited {
+		color: #003259;
+		}
+	a:hover {
+		color: #A400DA;
+		}
+
+	table.skills {
+		border: 1px solid black;
+		border-collapse: collapse;
+		font-size: 80%;
+		background-color: #AADCF1;
+		}
+	col.skillcol {
+		width: 23.5%;
+		}
+	col.levelcol {
+		width: 8%;
+		}
+	.skills th {
+		font-weight: normal;
+		text-transform: lowercase;
+		color: red;
+		}
+	.skills td {
+		border: 1px solid black;
+		text-align: center;
+		padding: 2px;
+		}
+	tr.altcolor {
+		background-color: #63C7F2;
+		}
+	td.level {
+		font-weight: bold;
+		font-family: Georgia, Verdana, Arial, sans-serif;
+		}
+	
+	.bodycontent, .floatleft p {
+		text-indent: 20px;
+		}
+	div.times {
+		font-family: "Times New Roman", serif;
+		color: black;
+		font-size: 16px;
+		background-color: white;
+		margin-left: 100px;
+		margin-right: 100px;
+		line-height: 1em;
+		padding: 10px;
+		}
+	span.wttips {
+		font-weight: bold;
+		letter-spacing: 0.7em;
+		text-transform: lowercase;
+		}
+	p.legalese {
+		font-family: "Times New Roman", serif;
+		}
+	#scramble a {
+		width: 20px;
+		height: 20px;
+		overflow: hidden;
+		padding: 2px;
+		font-family: Tahoma, Verdana, Arial, sans-serif;
+		font-size: 14px;
+		border: 1px solid black;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 1px;
+		}
+	.win {
+		color: red;
+		font-weight: bold;
+		text-transform: uppercase;
+		width: 20px;
+		height: 20px;
+		overflow: hidden;
+		padding: 2px;
+		font-family: Tahoma, Verdana, Arial, sans-serif;
+		font-size: 14px;
+		border: 1px solid black;
+		text-align: center;
+		margin: 1px;
+		}
+
+	div.noindent {
+		text-indent: 0px;
+		}
+	table.multioption {
+		border: none;
+		margin: 0px 0px 5px 50px;
+		padding: 2px;
+		font-size: 100%;
+		}
+
+	p.smallmargin {
+		margin-bottom: 0px;
+		}
+	div.boss {
+		text-align: center;
+		}
+	span.flavortext {
+		font-style: italic;
+		}
+	div.bossstrategy {
+		text-align: left;
+		margin-left: 20px;
+		margin-right: 20px;
+		}
+	span.bossname {
+		font-weight: bold;
+		}
+</style>
+</head>
+<body>
+<div id="allstuff">
+	<div id="jump">
+		<h1 class="header" id="jump">Jump</h1>
+				<div class="ajump"> <a href="#hello">hello</a></div>
+		<p class="jumpsubheadings">Beginners</p>
+				<div class="ajump"><a href="#interface">interface</a></div>
+				<div class="ajump"><a href="#items">items</a></div>
+				<div class="ajump"><a href="#battling">battling</a></div>
+				<div class="ajump"><a href="#skillsguide">skills guide</a></div>
+		<p class="jumpsubheadings">Walkthrough</p>
+				<div class="ajump"><a href="#act1">Act 1</a></div>
+				<div class="ajump"><a href="#act2">Act 2</a></div>
+				<div class="ajump"><a href="#act3">Act 3</a></div>
+				<div class="ajump"><a href="#act4">Act 4</a></div>
+				<div class="ajump"><a href="#act5">Act 5</a></div>
+				<div class="ajump"><a href="#prizes">Prizes</a></div>
+		<p class="jumpsubheadings">More Stuff</p>
+				<div class="ajump"><a href="#faq">faq</a></div>	
+				<div class="ajump"><a href="#contactme">contact me</a></div>
+				<div class="ajump"><a href="#funstuff">fun stuff</a></div>
+				<div class="ajump"><a href="#linkback">link back</a></div>
+	</div>
+
+
+	<div id="allbodycontent">
+	<div class="bodycontent">
+		<div id="header">
+		<img src="http://www.fileden.com/files/2010/7/15/2915785//Header2.png" alt="Welcome to Rev's NQII Guide!">
+		</div>
+		<div id="hitcounter">
+		<img src="http://counter2.neomallers.com/thephoenixrising.gif?theme=default&visit=revolutionrising" alt="Suffice to say we have a lot of hits. Sorta.">
+		</div>
+		<div id="hello">
+		<h1 class="header">Hello</h1></div>
+<p>
+	Hi there #VISITOR. If you were looking for that elusive Fountain of Youth, I think you made a wrong turn at Albuquerque. If you were looking for elite squads of ninjas, amnesiac Techos, and sadistic Chias, you've found your page. Congrats.
+</p>
+<p>
+	I know what you're thinking. The banner says NeoQuest II Guide, but here I am talking about sadistic Chias. What's up?
+</p>
+	<div class="times">One would believe that a NeoQuest II guide would be written in a format such as this. The author must surely think that pictures, color, and interesting-ness are not at all important.</div>
+<p>
+	I don't know about you, but I don't like reading boring stuff. And I can tell you I don't like writing boring stuff, either. So I've tried to make this guide a little fun for both you and me. It's not like elite squads of ninjas will swoop down from the skies and kidnap me for not writing a boring -- *kidnapped by said squad of ninjas*
+</p>
+<p>
+	Good thing I'm trained in anti-ninja-fu. Now that that's over, on to the guide. Whatever you do here, have fun, I guess.
+</p>
+	</div>
+	
+	<div class="bodycontent" id="skillsguide">
+		<h1 class="header">Skills Guide</h1>
+		<p>As you (hopefully) saw earlier, everyone gains "skill points" when they level up. But what are these skill points? What are skills, anyway? And why does it smell like cheese here?
+		</p>
+		<p>Uh, I can answer the first 2 questions. See, everyone has 7 skills, and you can spend up to 15 skill points in each skill (although you only ever get 59 skill points per dude[tte].)
+		</p>
+		<p>
+"That's all peachy, Rev, but how do I know which skills help me beat up sadistic Chias?" Good question. All you need to do is read the rest of the stuff in this box. To test your memory there'll be a puzzle (gasp! FUN?!?!? In a NQII guide? No way!) at the end. So read well. ;)
+		</p>
+	</div>
+
+	<div class="bodycontent" id="walkthroughtips">
+		<h1 class="header">Walkthrough Tips</h1>
+		<p>Hold up a second, cowboy. Unless you want sadistic Chias snacking on you faster than you can say <em>Don't eat me bro!</em>, you better read this. Here are a few tips to help you while you use the walkthrough.
+		</p>
+		<p>
+			So here's a word scramble to test your memory. The 6 words that go in the fields are keywords that you've just read. After typing each letter (one letter per box), hit Tab to move to the next box. Once you've filled in each of the lines, unscramble the red letters to get a word that rhymes with nothing (by that I mean there's nothing that rhymes with it.) If you get stuck, hit the Reset button.
+		</p>
+	</div>
+
+	<div class="floatleft" id="act1">
+		<h1 class="header">Act 1 Walkthrough</h1>
+			TRESTIN VILLAGE
+<p>Start your game (if you've never played NQII before, you're going to be on Normal difficulty. Once you beat Normal you can play Evil, and after Evil you can play Insane.) Hit continue until you get to Trestin Village. Looks familiar, right? Well, now you'll want to head west until you're off the path. You don't fall off the edge of the Earth, you're just whisked out of town and into the big scary overworld. *shudders*
+</p>
+<p>
+On the right side of your screen, click on "Hunting" so you're on Hunting mode. If you didn't already know, this makes you more likely to run into baddies (and if you didn't know, now would be a good time to read the beginner's guides.) Click on the west arrow once, then the east arrow once, and then repeat (basically you're just walking back and forth.) When you run into a Plains Lupe, you'll want to let it kill you.
+</p>
+<p>
+Have I gone mad? Well, maybe, but I have a reason. You get the NQII - Weakling avatar if a Plains Lupe kills you. Just hit "Wait 5s" until you die. Unfortunately, Plains Lupes are pretty fail so that'll take a while. Once you're dead, you'll respawn in Trestin Village. Leave town to the west again.
+</p>
+<p>
+OK, now we're going to start taking revenge on those Lupes. Walk back and forth a little as you did earlier, and when you face a Plains Lupe kill it. (If you don't know how to, read the beginner's guides. Sense a theme? xD) If your health bar ever turns yellow, switch to Normal mode (click the word "Normal" on the right of your screen so that it turns bold) and head east into Trestin. Walk up to Mom and talk to her, and she'll heal you for free. (She <em>is</em> your mom after all.) Then you can switch back to Hunting and leave town again.
+</p>
+<p>
+So continue fighting/resting until you grow to Level 2 (on Normal mode... for you on Evil/Insane, bear with me for a sec. *puppy dog eyes*) Go to the Skills Menu and spend a point in Damage Increase (you should know all about this... if not, read the [removed cause you probably know what I'm going to say.])
+</p>
+<p>
+On Normal mode, get to Level 2. If you're on Evil, continue fighting Lupes until you're level 3, and if you're on Insane until you're level 4. See all that I just wrote? Well I'm too lazy to write that again so I'll just write <strong>2/3/4</strong> from now on. That means you should be level 2 if on Normal, 3 on Evil, 4 on Insane. Simple eh?
+</p>
+	MOVING ON
+<p>
+You're probably tired of beating up poor little puppies now. Well now we're going to beat up puppies AND kitties! Fun fun fun. Well, now we're going to branch out a little. Switch to Hunting mode (as you might expect, click on "Hunting" so it gets bolded) and walk a little north from town until you, quite literally, run into some hills.
+</p>
+<p>
+ Fight the Aishas/Lupes there until you're Level <strong>3/4/5</strong> (3 if you're on Normal, 4 on Evil, 5 on Insane.) If you're hurt (your health bar is yellow or red), don't use Healing Vials. Switch to Normal mode and run back to Mom. Then switch back to Hunting and continue fighting. Of course spend your skill points as you level up. Just look at the handy dandy little table to your right *points* to know where to spend.
+</p>
+<p>
+OK now we're ready to wave goodbye to Trestin for good. *sniffle* Switch to Normal mode and go to your map for the Western Plains. See the Dark Cave in the northwest? Well, walk there. (You'll be doing this sort of navigating a lot while playing this game... so get used to it. :P) Stop when you reach the forest near the cave's mouth.
+</p>
+<p>Switch to Hunting mode and start beating up the bear/dog thingies (or just Bearogs... how creative) in the forest until you grow to level <strong>4/5/6</strong> (4 on Normal mode, 5 on Evil, 6 on Insane. You probably get this now so I'll stop bugging you.)</p>
+
+<p>Good news! For 7 steps after each battle, you'll gain 1HP for each step you take. If you're slightly hurt after a battle, switch to Normal mode and walk around a bit to regain a bit of HP. So that means up to 7 free HP after each battle. Remember this paragraph, cause you'll be using the walk-heal method for the next 30 levels or so.</p>
+
+<p> If you're badly hurt, you can use Healing Vials if you like. Go to "Inventory and Party Info" (you read about this earlier... right?)and click on the words Healing Vial. If you're in battle, click on the words Healing Vial when it's your turn. You should know how to do all this, right?</p>
+
+<p>
+Once you've leveled up, switch to Normal mode and find the cave entrance at the north end of the forest. Step on the cave entrance and you'll be thrown into your first dungeon.
+</p>
+	DARK CAVE
+<p>
+First things first, you're probably going to get lost in this cave, even though you have maps. If you're lost, first thing you want to do is pretend you're Rohane. Put your left hand against a wall (not in real life, just move Rohane so that his left hand is against a wall.) Now move either forward or backward but keep your hand against that wall. Eventually you'll come across a boss or exit.
+</p>
+<p> Now that we've got that out of the way, we can start on our dungeon crawl. *applause* Switch to Hunting mode now and just kill the poor little Lupes and Spyders as they come.  They shouldn't be too bad, but if you're hurt don't hesitate to use a Healing Vial.</p>
+
+<p>But we can't beat up those little guys until we start moving. Open up your maps site to the Dark Cave area. You're at the mouth of the cave in the NW corner of the map, and you want to get to the gray building thingy in the south. You can probably navigate yourself there.</p>
+
+<p>When you reach some train tracks, stop. Switch to Hunting mode and start walking back and forth, killing the hapless Lupes and Spyders your un into. If your HP goes yellow, use Healing Vials (not Flasks) or walk around. nd use Healing Vials if your health bar becomes yellow. Grow to level <strong>5/6/7</strong> here before you even think about moving on (OK, you're allowed to think about it. Happy?)</p>
+
+<p>Once you're at the right level, you can move on. The road will fork once you step on the train tracks. Take the fork going southwest and follow that, staying on Hunting mode and beating up Lupes, Spyders, and the occasional undead Kacheek while you're at it. Eventually the ground will change to stones/tiles/bricks/whatever those things are.</p>
+
+<p>And now back to your regularly scheduled program. The train tracks you've been following continue into this building. Follow them until you come to a 4-way intersection, so to speak. See the Miner Foreman to your south? Don't approach him yet.</p>
+
+<p>Stay here and train (from now on I'll just tell you to "train" instead of telling you to walk back and forth, beat up stuff, and heal as necessary) until you're level <strong>6/7/8.</strong> The Kacheeks here are kinda annoying so don't hesitate to use the walk-heal method (you know, switch to Normal mode after each battle and pace back and forth a little to regain HP.) And use Healing Vials if you need to.</p>
+
+<p>The minute you level up, spend your skill point (duh) and switch to Normal mode (not so duh.) If you noticed, you've just regained all your HP once you leveled up. How convenient. Well now continue south on the train tracks you're on (flee from any baddies you run into) until you see that big blue lard tub with a big blue ball behind him. That lard tub is the boss, and the ball is your getaway car. Walk up to the lard tub and get ready to fight...</p>
+
+<div class="boss"><img src="http://images.neopets.com/nq2/m/m1008_4f897.gif" class="bossplacepic"><br>
+<span class="bossname">The Miner Foreman</span></br>
+<span class="flavortext">Either he's really fat or really buff. I'm going with fat.</span><br>
+Recommended Level: 6 on Normal, 7 on Evil, 8 on Insane<br>
+HP: 50 on Normal, 62 on Evil, 75 on Insane<br>
+Special Abilities: None<br>
+Prizes: 2 Healing Flasks, 1 weapon/armor, 100NP
+	<div class="bossstrategy">
+	<strong>Strategy:</strong> Say hi to your first boss. Unlike real-life bosses, you don't have to be nice to him. In fact you wanna do the opposite. Well, this battle won't be too tough. Just keep attacking him until he dies. If he gets your HP down to the yellow area, use a Healing Vial.
+	</div>
+</div>
+
+<p>Once the fat guy's sung, you'll get either a sword or tunic. Go to your inventory and equip that goodie (just click on "Equip Rohane.") You know how to do this, right? Go back to the overworld and walk south a bit onto the teleporter. You'll get whisked to just outside the cave. Remember this place? It's the forest you were in back at level 4. Good times, good times. Well, switch to Normal mode and get ready to leave the Trestin area for good.</p>
+
+<p>
+Notice the one-square-wide piece of land to your east? Well, make your way onto that.</p>
+	WHITE RIVER
+<p>
+If you like, you can talk to the Ixi guy in blue (Jeltharo) for a bit of storyline. But that's not important. We want to buy a sword/armor and potions here, and we want to rest at the inn. The conveniently placed signs tell you where to get what. The building on the right side of the brick path is the inn, where you can rest for 35 gold. That's not a bad idea, since if you don't rest here you'll get sent back to Trestin if you die. Just stand at the counter so that you're across from the innkeeper and ask him to rest.</p>
+
+<p>What a fabulous new day, huh? Almost makes you forget you have to beat up some insane magician. Anyway, it's time to buy some potions/weapons/armor. Head across the street to the potion/weapon/armor shop (how convenient) and chat with Tebor. Just walk up to the counter so that you're across from the guy. If you got a sword from the Foreman, buy the rusty chain tunic; if you got the tunic, buy the iron shortsword. Of course, equip what you bought. (Side note: Never sell your Father's sword, because you might use it at the end of the game.)</p>
+
+<p>We'll come back to White River in a bit. We need to train up a bit first, though. Exit White River from the north and head northeast until you're in a forest. Switch to Hunting mode here and train (there's that word meaning walk around and fight again...) till you're level <strong>7/8/9</strong>.</p>
+
+<p>Walk around (on Normal mode) after every battle to keep your HP up (just remember to switch back to Hunting once your HP stops going up.) If you get banged up, use Healing Vials. You'll want to save Healing Flasks for the boss you'll be facing in a while. If your HP gets to the red area, switch to Normal and run back to the inn (that'll be cheaper than using a bunch of Healing Vials.) Of course you should continue training after that.</p>
+
+<p>Once you've leveled up (and spent your skill point), you'll probably have a bit of gold to spend. Switch to Normal and head back to White River (go southwest from the forest) and enter the potions/weapons/armor shop. Buy as many Healing Vials as you can carry (keep clicking "buy 10" until you get an error message.) Also buy 10 Blast Potions. Once you're done shopping, exit town by going north.</p>
+
+<p>Wave goodbye to White River for now, cause chances are you won't be coming back for a while. Stay on Normal mode and go due northeast from where you stand (which should be one square north of town.) Now go east and south on this "mountain path" until you see a cave entrance. Yay, another dungeon crawl...</p>
+	UNDERGROUND CAVE
+<p>Hmm... smells like troll here. And skeleton. And cheese. Open up your map site and look at the map for the Underground Cave (though I think that part's obvious.) Notice the puddles: just follow them and you'll get to the exit. Awesome, right? Then let's go.</p>
+
+<p>Or not. No, the baddies here are pretty tough. Switch to Hunting mode and walk around the entrance, training to level <strong>8/9/10</strong>. Keep beating up the walking carpets/occasional skeleton dude here. Switch to Normal after each battle and walk around to regain some HP. You'll start picking up more Healing Flasks and the new Healing Potions (heal 35HP and taste like limes), but don't use them if you're hurt. Just use Healing Vials; if you're running low on them you can run back to White River and buy more. If the cave ogres are really tough, you can train outside the cave.</p>
+
+<p>All right, so you've just leveled up and are raring to beat up more skeleton thingies. Get to the cave entrance and switch to Hunting mode (we're just going to hunt as we walk.) Basically, we're going to follow the puddles through this cave. Head south onto the first puddle (if you encounter something, beat it up.) Now go southeast onto another puddle. Move southwest from here till you reach another puddle (yeah, you'll want to step on each puddle. Get wet man!) From here, go southeast onto another puddle... and then continue southeast until you hit *suspense* another puddle.</p>
+
+<p>If you notice, the road just forked. The fork that you didn't take is a dead end, so yeah you're cool. From where you stand, go northeast. You'll pass three puddles on the way. Now we're going to train a bit here before we get near the end of the cave (sorry, but you aren't leaving this place for *checks watch* a while.) Get to level <strong>9/10/11</strong> here by pacing back and forth, killing baddies you run into. You can use Flasks now if you like, but make sure you have at least 5 on hand. That shouldn't be a problem, though, cause monsters will be replenishing them.</p>
+
+<p>OK, so now that you've leveled up we can continue through the cave. Tough luck, kiddo, but we're going to gain yet another level in this cave (I promise we won't be doing this any more after this dungeon. Maybe.) Well, head southeast (still on Hunting) until you see the light at the end of the tunnel. You'll pass 3 puddles along the way. Once you get to this end of the tunnel, start beating up the dead Blumaroos here. Yeah we need to level A LOT in order to not become a dead Blumaroo ourselves. Train to level <strong>10/11/12</strong> here.The training is nothing special, use Flasks/Vials/the walk-heal method if your HP is yellow/red. </p>
+
+<p>So you've gained 3 levels here by beating up the same monsters. Can we move on yet? Actually, yes, but just a little. Now stay on Hunting mode and step on the cave exit. You'll find yourself on a puny island, so start fighting on that island.The baddies here are the same as in the cave, but fresh air is nice. Grow to level <strong>11/12/13</strong> before you enter the tower (honestly, it looks like a sundae to me.) Let me tell you, you're going to be going down to yellow/red a lot here. If you go to yellow, don't heal, but if you go to red you should heal yourself immediately.</p>
+
+<p>I've got good and bad news for you. Good news is, you're just one level away from Zombom. Bad news is, you've got to level up one more time. Now we're going to actually enter this mysterious sundae thingy on the island. Step onto it and you'll be whisked into a Mysterious Tower. What a helpful name.</p>
+
+<p>Well, get on Normal (the monsters here give out pathetic EXP) but fight any baddies you run into. Open up your map site to the Mysterious Tower (level 1) map and follow along. From the entrance, go east until your way is blocked. Then go south until you're blocked again. Go east now and, when you can (<em>without</em> running into a wall, silly), start moving northeast. Once you run into a wall, go north until you're blocked again. You should see stairs at the corner of your screen now. Just walk onto them (I trust you can do this) to go to level 2.</p>
+
+<p>Stay on Normal for this level. From where you stand, go west two spaces and then directly south until you run into a wall. At that point, go east so that you're on the stairs. Guess where you go now?</p>
+
+<p>Level 3, right. Now there's a new baddie for you to face: an eyrie spectre. It's tough but it gives out better EXP than the skeletons, so I'm not complaining. From where you start, go north one square and then west 5 squares. You'll find yourself in between two rows of statues. Walk around a bit on Hunting mode, beating up baddies. Walk around after each battle (I really mean every one) to regain health, and use Healing Flasks/Vials if your HP goes red. (If your HP goes red a lot, it's not you, trust me. I struggle here all the time.) Anyway, train to level <strong>12/13/14</strong>.</p>
+
+<p>The minute you level up, spend your skill point (duh) and switch to Normal mode. If you aren't already there, get in between the two rows of Eyrie statues. From there, walk all the way north until you see a staircase. You know what to do. Well, now you're on the last level of the tower. Go directly south from where you start off (if you run into baddies, flee from them.) Eventually, you'll walk into the fat guy who started this whole mess...</p>
+
+<div class="boss"><img src="http://images.neopets.com/items/toy_nq2_zombom.gif" class="bossplacepic"><br>
+<span class="bossname">Zombom</span><br>
+<span class="flavortext">Don't worry, he's a lot uglier in person.</span><br>
+Recommended Level: 12 on Normal, 13 on Evil, 14 on Insane<br>
+HP: 120 on Normal, 150 on Evil, 180 on Insane<br>
+Special Abilities: Decimate (31 damage to you), Zeal (Haste himself 18%), Aid (Heal himself 40HP).<br>
+Prizes: 3 Healing Flasks, 1 weapon/armor, 200NP, 150 gold
+	<div class="bossstrategy">
+	<strong>Strategy: </strong>This guy's tough. Chances are you'll die against him the first time (I still die against him. -_-) Well let's assume you don't die for now. The problem is that he can often double you (he gets 2 turns after each of your turns.) Since Decimate hits you for 31HP, don't let your HP go below 63. If it does, use one of those Healing Potions you've been saving. Offensively, you'll want to hurl Blast Potions at him whenever you're not healing. The Blast Potions will do more damage than your melee attack will. If you somehow run out of Blast Potions, use your normal attack. If you're lucky, you'll beat the big red peanut lover.
+	</div>
+	</div>
+<p>If you're unlucky like me, you'll probably die to him. No worries. You'll respawn in White River. If you have less than 10 Blast Potions, head across the street and buy some of those until you have 10. Now exit town from the north (be on Normal mode) and go directly northeast from where you stand. Go southeast into the cave and follow the puddles till you get to the island. Then enter the tower and make your way through that. (I know those are bad directions, just reread what's up there *points up* to get good directions.) Heal up if needed and get ready for your rematch.</p>
+
+<p>OK, so now let's assume that you've beaten him. Equip your new sword/armor (it's a pretty big upgrade) and walk into the teleporter just south of you. Now you'll be back on the island. Yeah, you'll have to go through the cave again... oh well. Follow the puddles, remember. Stay on Normal mode and flee from any baddies you run into. Now go northwest, passing 4 puddles on the way. Then go southwest, passing 4 puddles. You'll now be at a fork in the road, so take the fork going north. The rest of the cave is a tunnel going north to the exit.</p>
+
+<p>Once you step on the exit, you're back in the woods. Go west one square and then northwest until you hit a mountain. At that point, go west another square and go southwest until you saunter into the town of White River. Go south along the brick path until you end up on the famous "bridge" which is actually no more than some bricks placed on the water. Nice job, NQII developers. Anyway, continue south until you see a house to your left. Enter that house and you'll see a familiar (or not) face: Mipsy. Talk to her and she'll join your team. Let's party!</p>
+	MIPSY
+<p>Now you'll want to spend Mipsy's skill points. She can't blow stuff up without investing in magic, of course. Look to the table to your right and look at the big data cell right under Mipsy's name. Spend points in those skills first (6 in Direct Damage, 5 in Innate Melee Defense.) If you're playing Evil/Insane, put your leftover points into Direct Damage.</p>
+
+<p>Before you leave town (for the last time), head across the street to the other potions/weapon shop in town. Buy 5 Awakening Potions (yeah, they're expensive, but they're the cheapest Resurrectin Potions you'll ever get.) If Zombom gave you a sword, buy new armor. If he gave you armor, don't buy anything more.</p>
+
+<p>Now equip the best weapons you have and sell all the rest (except for the Father's Sword, of course.) At the end, you should have two swords and one armor in your inventory (one of each equipped to Rohane.) Don't buy any damage/haste/slowing potions here, cause you'll be able to get better ones before your next boss.</p>
+
+<p>Well, let's put Mipsy to work. We're going to try out battling with our vicious new friend, with the poor little Lupes and Aishas around here as our test subjects. You'll walk all over them, believe me. You're going to start encountering enemies in groups of two sometimes... so now's as good a time as ever to read the ADVANCED BATTLE GUIDE.</p>
+
+<p>Mipsy should always use her magic (the blue link) and Rohane should use his melee attafck. Mipsy's a big gun, so she'll be doing most of the damage. Rohane can do a bit of damage himself but he'll be the one in charge of finishing off baddies. Keep this in mind as you battle.</p>
+
+<p>Anyway, we're going to experiment, walk, and chew gum at the same time now. From where you stand (which is probably one square south of White River), go west (on Hunting mode, beating up anyone you meet) until you notice a mountain just south of you. When that happens, move east one more space. Then go directly south until the forest ends (there's just grass south of you.) When that happens, go west until the forest ends again (grass west of you.)</p>
+
+<p>At that point, go south and southwest. You should see some hills to your east - but don't go in them. Continue southwest until you see another forest. This is where your next town is. But first, we're going to level up. Once you're in the forest (or the hills surrounding that forest), switch to Hunting mode and train to level <strong>13/14/15</strong>. (When I say this, I mean get your entire team up to the same level.)</p>
+
+<p>Once you've leveled up (you should still be in the forest or the nearby hills), switch to Normal mode. Go east until you hit some mountains. Go southwest from there. You should see a lake to your northwest as you walk. You'll eventually see a town at the side of the lake. This is, rather anticlimactically (ooh big words... be scared), Lakeside.</p>
+	LAKESIDE
+<p>Yup, walk onto the town and you'll be whisked inside. Lakeside is a pretty cool place, despite having a lame name. Lots of stuff to do here. First, the inn. The first building on your right as you enter town is the inn, so talk to the dudette behind the counter and rest. You don't want to go back to White River again if you die, right?</p>
+
+<p>North of the inn is the tavern, aka potion shop. Enter it, but walk right through it. We'll <span style="text-decoration: strikethrough">celebrate</span> get potions here later. North of that is the weapons/armor shop. This is the more important store.</p>
+
+<p>Enter the shop and talk to the pink Zafara first. He sells weapons. Buy a sword from him. (Mipsy, of course, doesn't use her melee attack so she doesn't need a weapon. In fact, you can unequip and sell her sawdust wand if you really want cash.)</p>
+
+<p>Now talk to the blue guy. Grab armor for Rohane here. Don't bother with new robes for Mipsy, since it's only a 2 point upgrade here. Save the cash for potions.</p>
+
+<p>Which reminds me, we should buy potions now. Before you do that, though, equip Rohane with his new goodies. Now talk to the blue guy again sell Rohane's old sword and armor.</p>
+
+<p>Oh yeah, the potions. Right. Go to the tavern and talk with the green Scorchio dude. Grab 5 Flame Potions and 5 Dawdling Potions from here. Don't bother with any of the other potions.</p>
+
+<p>Sorry Mipsy, that's all the shopping we're going to do here. Go north from the tavern so that you're on a brick path. Follow the path west, then go north when it turns (no, don't walk into the weapon/armor shop silly.)</p>
+
+<p> Now you should look at your map site (the Lakeside map) and look for the hermit at the northwest corner of the map. To get to him, walk north of the Elders' building and go more or less west from there. When you get to a big clearing, go south until you see him. Chat with him for a while to get the entry code into some Lost City or other.</p>
+
+<p>Now exit the forest the same way you got in. Once you're just above the elders' building, go west. Start going south when you can, then go west when you hit a wall. You'll see a brick path here. Follow that south-ish (you should know where you are now) and exit Lakeside.</p>
+
+<p>So now you're in the forest in the Eye of Meridell. Go east until you run into some mountains (I mean the gray ones... not the hills.) Once you find yourself on grass ("The Plain Of Storms"... ooh scary) go east 3 steps and then go southeast.</p>
+
+<p>Eventually you'll enter a desert. Once you do, start going southwest. After a while, you'll see a ruined city thingy to your west. Well don't enter that yet.</p>
+
+<p>See that grassy strip south of the desert? Good, you're not going blind. Walk onto it and switch to Hunting mode. Walk around on the grass for a bit. There's a reason you're not running into anything: the grass is a no-encounter zone.</p>
+
+<p>The cool part about that is that you can walk around to heal after each battle without having to switch travel modes. Enough talk, let's train. Go north into the desert and walk onto the no-encounter zone for a bit to regain HP. Train to level <strong>14/15/16</strong> here. Once that's done, enter the...</p>
+	LOST CITY OF PHOROFOR
+<p>Now that you've leveled up, switch to Normal for a minute (or two. Or three.) Go southeast a bit and talk to the ghost dude when you run into him. He'll disappear (how convenient.)</p>
+
+<p>OK, now switch back onto Hunting mode. We're going to grow to level <strong>15/16/17</strong> in this town, so stay on Hunting until you level up. Once you level up, switch to Normal mode. Go southeast 3 steps and then go east (of course, kill any baddies you run into.) When you come across monsters, beat them up. Once the path you're on ends, turn south and continue that way until you run into a wall.</p>
+
+<p>Go west until you're back on the path. Continue south until you see a big path leading east. Your next boss (the Giant Sand Grundo) is at the end of this path. If you haven't leveled up already, now would be a good time to do so. Just walk back and forth a bit on Hunting mode and kill monsters till you level up. Once you've leveled up, switch to Normal mode and walk east until you run into your next boss.</p>
+
+<div class="boss"><img src="http://images.neopets.com/nq2/m/m1025_e4a7b.gif" class="bossplacepic"><br>
+<span class="bossname">Giant Sand Grundo</span><br>
+<span class="flavortext">More like Giant Sumo Grundo.</span><br>
+Recommended Level: 15 on Normal, 16 on Evil, 17 on Insane<br>
+HP: 130 on Normal, 162 on Evil, 195 on Insane<br>
+Special Abilities: Crical Attacks.</br>
+Prizes: 1 weapon/armor, 300NP
+	<div class="bossstrategy">
+	<strong>Strategy: </strong>This guy's a walk in the park (although smelling him isn't too much fun.) On Rohane's first turn, have him use a slowing potion on the Grundo dude. After that, you can start attacking him. Rohane can use his melee attack or throw a Flame Potion. Mipsy should focus on smacking him (I mean the Grundo, not Rohane) in the face with her Direct Damage spells. If either of them go to yellow HP, have them use a healing potion.
+	</div>
+	</div>
+<p>The sumo dude should go down without too much of a fight. Equip the weapon/armor he gave you, of course. Now step into the teleporter behind him to get warped into the Tower On A Hill.</p>
+
+<p>Switch back to Hunting mode now. We're going to grow to level <strong>16/17/18</strong> by using the Walk-and-Fight method. It's not as scary as it sounds, trust me. To use the Walk-and-Fight method, just be on Hunting mode and walk normally, but kill any baddies you come across. You've done it plenty of times, including in Phorofor. So remember how to use this method cause we'll be using it a lot.</p>
+
+<p>OK, so now you can put that spiffy Walk-and-Fight method to use. Whip out your map site and open it to the Tower On A Hill (level 2... yeah you start on the higher floor.) See the stairs in the middle of the floor? Well make your way there. Of course, beat up the wockies you meet here (I'd call them sadistic, but the word sadistic is already reserved by a certain group of Chias...) If either of your guys gets to yellow HP, have them heal. Rohane should use Healing Bottles, and Mipsy should use Potions and Flasks.</p>
+
+<p>Once you get to Level 1 of the tower, you'll be close to leveling up. When you do level up, switch to Normal mode and stay on Normal until you leave this tower. Anyway, use your map of Level 1 to get to the Tower Exit. Basically you want to go east from where you start and swing around in a circle till you get to the entrance. This place is a bit of a maze but it's good practice for harder mazes you'll be in later.</p>
+
+<p>OK, so you're outside now. If you aren't, get outside. Hurry! Switch to Hunting mode (we need to gain a level before our next boss, but you've got some time) and use the Walk-and-Fight method. (You remember that, right?) Head north from where you stand until you start seeing grass to your northeast.  Make your way to the grass and go northeast from there.</p>
+
+<p>Notice the mountains to your east? After a bit of walking, they'll end. When they do, walk so that you're north of the northernmost mountains. Then start going southeast-ish (that just means to go mostly southeast but move if you run into stuff.) You'll see a lake as you walk. Once the entire lake is to your west, go east toward the coast. You should see a town there.</p>
+	SEASIDE
+<p>As you might expect, you'll want to enter the town. Once you enter, you'll see a potion shop (well, at least its sign) to your north. Enter that and talk to the dude behind the counter. Don't buy anything from him, just talk to him until you can't ask him any more (once the blue "say" links go away.) Leave the building and get back on the main path.</p>
+
+<p>Go east for a bit on this path and you'll see the inn and weapons/armor shop. First, the inn. Talk to the Scorchio to stay there for the night. Leave that building and go south into the weapons/armor shop. The upgrades here are pretty nice. Get a sword for Rohane and armor for both guys (make sure you equip them and sell the old weapons/armor.) If you got something really good from the Giant Sand Grundo, you can stick with that and not upgrade.</p>
+
+<p>Anyway, after that open up your map site to Seaside for a second. See the Aisha called Uthyni in the northeast corner of the map? Walk over to him (you can do this, right?) and ask him about the troubles at the castle. Say "yes" and then tell him you're "sorry to hear that." He'll tell you that Uthare, the potion guy, will give you a discount.</p>
+
+<p>So go west from Uthyni till you hit a wall. Then go south until you see the main path to your west. Get on the main path and follow it until you get back to the potion shop. Walk in and trade with Uthare. Grab 10 Dawdling Potions and 10 Burst Potions from him. (You're going to face 2 and a half more bosses before the next town, so if you think you'll need more potions get some of those.) The Acceleration Potions are nice but not that useful. Sell off any Healing Vials or Blast Potions you have left.</p>
+
+<p>Now leave town to the west. Before you go too far, you'll want to grow to level <strong>17/18/19</strong>. Get on Hunting mode and walk back and forth a bit, bashing up baddies until you gain that level. Once that's done, switch to Normal mode and start heading southwest-ish from Seaside. Beat up any baddies you run into, although you won't run into many. After a while you'll see Meridell Castle in the distance.</p>
+	MERIDELL CASTLE
+<p>Step onto the castle and you'll get tossed inside. There are a bunch of guys here but they're all jerks so they won't talk to you. Yet. Just note the guard, Thyet, to the north of you as you enter. He'll be important later. Anyway, go directly west from the entrance until you run into a pond. At that point, go northwest two spaces and go directly north. You'll see an arrogant Bruce/Eyrie thingy sitting on a lawn chair. This can't be good...</p>
+
+<div class="boss"><img src="http://images.neopets.com/items/sta_nq2_ramtor.gif" class="bossplacepic"><br>
+<span class="bossname">Ramtor (1st Time)</span><br>
+<span class="flavortext">At least he's not fat...</span><br>
+Recommended Level: 17 on Normal, 18 on Evil, 19 on Insane<br>
+HP: 200 on Normal, 250 on Evil, 300 on Insane<br>
+Special Abilities: Liquefy (50 damage to one character), Zeal (Haste himself 18%), Repair (Heal himself 70HP), Entice (Mesmerize one character.) <br>
+Prizes: 3 Healing Potions.<br>
+Notes: He flees when his HP is down to 100 or below.
+	<div class="bossstrategy">
+	<strong>Strategy: </strong>In the beginning of the battle, have both guys toss Dawdling Potions at him until one works. After that, Rohane should swing his sword like crazy and Mipsy should blast Ramtor in the face with Direct Damage. Use Healing Bottles/Potions if he hits a character down to yellow HP. Unfortunately, you can't kill him, so you'll have to save your full sadistic enjoyment for later. 
+	</div>
+	</div>
+<p>Once Ramtor has fled, talk to that guard I told you to remember earlier (just retrace your steps.) He'll let you rest for free. Yes, for free. Awesome, huh? Well, rest with him now. If you used 3 or more Dawdling Potions, go back to Seaside to buy 2 or 3 Dawdling Potions. Otherwise, exit the castle by going east from Thyet.</p>
+
+<p>Switch to Hunting mode (you're probably in the Plains of Order or the King's Preserve right now... both of those are no-encounter areas, so you won't run into any monsters.) Go west from the castle now. In order to do that, you'll have to move one square southwest from where you stand and then start moving west. Otherwise you'll end up in the castle again.</p>
+
+<p>Anyway, go west until you enter some hills. Monsters are here, so snack on them until you're level <strong>18/19/20</strong>. If you're hurt, run back to Thyet to rest. You can actually step on the west side of the castle and still end up near the entrance. You can then continue fighting.</p>
+
+<p>Once you've leveled up we can move on.
+</p>
+
+
+	</div>
+	<div class="nonfloat">
+		<p>This is easiest to explain with an example. When Rohane grows to Level 2, spend a point in Damage Increase. If you can't understand the abbreviations, just hover your mouse over the abbreviation to see the full name.
+		</p>
+
+
+	</div>
+
+	
+
+	<div class="bodycontent" id="prizes">
+		<h1 class="header">Prizes</h1>
+	</div>
+	</div>
+</div>
+</body>				
+		

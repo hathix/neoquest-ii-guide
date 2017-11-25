@@ -1,0 +1,941 @@
+<head>
+  <title>Act 2 Walkthrough - CmdrInputBlocker</title>
+  <style type="text/css">
+	/*Release Notes
+		Rev's NeoQuest II Guide
+		by revolutionrising
+		(I would copyright this but what's the point?)
+		Guide Version 4.1 "A Blur of Green"
+		Act 1.5 - Fordulat (neopets.com/~epanastasi)
+		Page Version 1.2
+		Last edited 9/11/10
+		*/
+	/*Changelog
+		Version - Date - Notes
+		1.2 - 9/21 - All the content is done. *woohoo*
+		1.1 - 9/20 - Changed a few fonts and colors.
+		1.0 - 9/11 - Well, this is the first *official* version of the page.
+		*/
+	body {
+		font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+		font-size: 15px;
+		color: #000024;
+		line-height: 1.4em;
+		cursor: crosshair;
+		background-color: #000018;
+		background-image: url('http://www.psdgraphics.com/file/night-sky-stars.jpg');
+		background-attachment: fixed;
+		}
+	table,font {
+		visibility: hidden;
+		}
+	div#hitcounter {
+		text-align: center;
+		}
+	div#allstuff {
+		margin-top: 5%;
+		height: 80%;
+		}
+	div#jumpandskills {
+		width: 220px;
+		float: right;
+		margin: 0px 10px 0px 10px;
+		}
+	div#jump {
+		padding: 10px 5px 10px 5px;
+		border: 3px ridge #000000;
+		background-color: #D1D1FF;
+		height: 35%;
+		overflow: scroll;
+		margin-bottom: 10px;
+		}
+	div#skills {
+		padding: 0px 5px 5px 5px;
+		border: 3px ridge #000000;
+		background-color: #D1D1FF;
+		height: 60%;
+		overflow: scroll;
+		}
+	div#therest {
+		height: 100%;
+		overflow: scroll;
+		padding: 10px;
+		}
+
+	div#header {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+		width: 606px;
+		text-align: center;
+		}	
+	div.bodycontent {
+		background-color: #D1D1FF;
+		border: 3px ridge #000000;
+		padding: 10px;
+		margin-bottom: 10px;
+		}
+
+	div.bodycontent {
+		background-color: #D1D1FF;
+		border: 3px ridge #000000;
+		padding: 10px;
+		margin-bottom: 10px;
+		}
+
+	div.boss {
+		background-color: #D1D1FF;
+		border: 3px ridge #000000;
+		padding: 10px;
+		margin-bottom: 10px;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		}
+
+	.heading {
+		text-transform: lowercase;
+		text-align: left;
+		letter-spacing: 0.6em;
+		font-weight: bold;
+		font-size: 180%;
+		color: #000000;
+		border-bottom: 1px dashed #444444;
+		font-family: Candara, "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	.wtheading {
+		text-transform: lowercase;
+		text-align: center;
+		letter-spacing: 0.5em;
+		font-size: 180%;
+		font-weight: bold;
+		color: #000000;
+		font-family: Candara, "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	h1#jumpheading {
+		text-align: left;
+		font-size: 200%;
+		letter-spacing: 0.7em;
+		border-bottom: 1px dashed #444444;
+		font-family: "Berlin Sans FB", Candara, Georgia, Verdana, Arial, sans-serif;
+		}
+	div.place {
+		width: 50%;
+		text-align: center;
+		border-bottom: 1px dashed #444444;
+		margin-left: auto;
+		margin-right: auto;
+		}
+	div.flavortext {
+		font-style: italic;
+		margin-top: 0.5em;
+		}
+
+	p {
+		text-indent: 10px;
+		}
+	em {
+		color: #6700C1;
+		font-style: italic;
+		}
+	strong {
+		color: #6700C1;
+		font-weight: bold;
+		}
+	span.strike {
+		text-decoration: line-through;
+		}
+
+	div.ajump {
+		text-indent: 15px;
+		letter-spacing: 0.3em;
+		font-size: 14px;
+		text-transform: lowercase;
+		cursor: auto;
+		font-weight: bold;
+		font-family: "Trebuchet MS", "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	#header a {
+		text-decoration: none !important;
+		border: none !important;
+		}
+	#header img {
+		border: none !important;
+		}
+	span#learn {float: left;}
+	span#play {float: right;}
+	span#headercomment {
+		color: white;
+		}
+
+	a {
+		text-decoration: none;
+		border-bottom: 1px dashed #000000;
+		}
+	a:link {
+		color: #021654;
+		}
+	a:visited {
+		color: #3A0C7A;
+		}
+	a:hover {
+		color: #188E77;
+		}
+
+	div.ajumpwt {
+		text-indent: 10px;
+		letter-spacing: 0.2em;
+		font-size: 14px;
+		text-transform: lowercase;
+		cursor: auto;
+		font-family: "Trebuchet MS", Georgia, "Berlin Sans FB Demi", Verdana, Arial, sans-serif;
+		}
+	div.ajumpboss {
+		text-indent: 10px;
+		letter-spacing: 0.2em;
+		font-size: 14px;
+		text-transform: lowercase;
+		cursor: auto;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		color: #234D08;
+		font-weight: bold;
+		}
+	h1.jumpsection {
+		font-size: 14px;
+		margin-bottom: 0px;
+		text-transform: lowercase;
+		letter-spacing: 0.3em;
+		}
+	.ajumpboss a {
+		border-bottom: 1px dotted #444444;
+		}
+	div#intro {
+		text-align: center;
+		width: 605px;
+		margin-left: auto;
+		margin-right: auto;	
+		}
+	li.tip, li.descrip {
+		list-style-type: none;
+		}
+
+	li.tip {
+		font-size: 150%;
+		font-weight: bold;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		text-transform: lowercase;
+		letter-spacing: 0.5em;
+		}
+	li.descrip {
+		font-size: 16px;
+		margin-left: 15px;
+		}
+	div.message {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		background-color: white;
+		border: 2px solid black;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		padding: 5px;
+		}
+	span.messagetitle {
+		font-variant: small-caps;
+		font-size: 18px;
+		font-style: italic;
+		color:#b8389e;
+		margin-top: 10px;
+		text-decoration: underline;
+		}
+	span.red {
+		color: #FF0000;
+		}
+	p.smallprint {
+		font-size: 10px;
+		font-family: "Times New Roman", serif;
+		line-height: 1em;
+		}
+	div.bosspic {
+		margin: 5px;
+		text-align: center;
+		}
+	.bosspic img {
+		width: 100px;
+		}
+	table.bossinfo {
+		width: 80%;
+		margin: 5px auto 0px auto;
+		border: 1px dashed black;
+		padding: 5px;
+		visibility: visible !important;
+		}
+	.bossinfo td {
+		padding: 3px;
+		}
+	td.first {
+		text-align: right;
+		font-weight: bold;
+		text-transform: lowercase;
+		letter-spacing: 0.1em;
+		width: 30%;
+		}
+	td.second {
+		text-align: left;
+		border-bottom: 1px dotted #444444;
+		width: 70%;
+		}
+	td.secondlast {
+		border-bottom: none !important;
+		}
+	ul.strategy {
+		text-align: left;
+		list-style-type: none;
+		}
+	.strategy li {
+		margin-left: 25px;
+		margin-bottom: 1em;
+		}
+	.strategy strong {
+		margin-left: -10px !important;
+		border-bottom: 1px dashed #444444;
+		}
+	li.bossstrategy {
+		font-weight: bold;
+		letter-spacing: 0.1em;
+		text-transform: lowercase;
+		margin-left: 0px !important;
+		border-bottom: 1px dotted #444444;
+		}
+	div.postbattle {
+		text-align: left;
+		}
+	h1.postbattle {
+		color: #000000;
+		font-family: Candara, "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		text-transform: lowercase;
+		border-bottom: 1px dotted #444444;
+		font-size: 120%;
+		letter-spacing: 0.3em;
+		}
+	#skillsheading {
+		font-size: 200%;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		text-transform: lowercase;
+		letter-spacing: 0.4em;
+		border-bottom: 1px dashed #444444;
+		}
+	table#skillstable {
+		font-size: 12px;
+		border-collapse: collapse;
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		visibility: visible !important;
+		}
+	#skillstable td {
+		border: 1px solid #444444;
+		padding: 1px;
+		text-align: center;
+		}
+	.levelcol {
+		width: 10%;
+		}
+	.rohane, .mipsy, .talinia, .velm {
+		width: 22%;
+		}
+	tr#skillstableheadings {
+		text-transform: lowercase;
+		font-weight: bold;
+		font-family: "Candara", "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		font-size: 14px;
+		color: #FF0000;
+		background-color: transparent !important;
+		}
+	#charnames td {
+		font-weight: bold;
+		text-transform: lowercase;
+		font-family: "Candara", "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, "Trebuchet MS", Verdana, Arial, sans-serif;
+		font-size: 140%;
+		background-color: #D1D1FF !important;
+		border: none !important;
+		}
+	#skillstableheadings td {
+		border: none !important;
+		}
+	#skillstable tr {
+		background-color: #C1BAFF;
+		}
+	tr.altcolor {
+		background-color: #ABA0FF !important;
+		}
+	td.lev {
+		font-weight: bold;
+		font-family: "Trebuchet MS", Georgia, Verdana, Arial, sans-serif;
+		font-size: 120%;
+		border: none !important;
+		background-color: #D1D1FF;
+		}
+	table#newcharskills {
+		visibility: visible !important;
+		background-color: #C6CAFF;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		border-collapse: collapse;
+		}
+	#newcharskills td {
+		border: 1px solid black;
+		padding: 5px;
+		}
+	tr#ncsheadings {
+		text-align: center;
+		font-weight: bold;
+		background-color: #A69EFF !important;
+		}
+	td.left {
+		text-align: center;
+		background-color: #A69EFF !important;
+		font-weight: bold;
+		width: 30%;
+		}
+	td.right {
+		width: 70%;
+		}
+	div.message {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		background-color: white;
+		border: 2px solid black;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		padding: 5px;
+		}
+	span.messagetitle {
+		font-variant: small-caps;
+		font-size: 18px;
+		font-style: italic;
+		color:#b8389e;
+		margin-top: 10px;
+		text-decoration: underline;
+		}
+	span.red {
+		color: #FF0000;
+		}
+	p.smallprint {
+		font-size: 10px;
+		font-family: "Times New Roman", serif;
+		line-height: 1em;
+		}
+	div.shoppinglist{
+		background-color: #FFFFFF;
+		background-image: url('http://images2.layoutsparks.com/1/103072/notebook-paper-lines-page.gif');
+		width: 50%;
+		padding: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		font-family: "Segoe Print", "Trebuchet MS", Verdana, Arial, sans-serif;
+		text-align: center;
+		}
+	.shoppinglist h1{
+		font-family: "Segoe Script", "Segoe Print", "Trebuchet MS", Verdana, Arial, sans-serif;
+		}
+	.shoppinglist ul{
+		text-align: left;
+		font-size: 14px;
+		}
+	.shoppinglist strong{
+		color: #000000;
+		text-decoration: underline;
+		padding: 2px;
+		}
+	</style>
+</head>
+<body>
+<div id="allstuff">
+<div id="jumpandskills">
+<div id="jump">
+<h1 class="heading" id="jumpheading">Jump</h1>
+<div class="ajump"><a href="http://www.neopets.com/">neopets home</a></div>
+<div class="ajump"><a href="http://www.neopets.com/games/nq2/nq2.phtml"
+ target="_blank">nqii main page</a></div>
+<div class="ajump"><a href="http://www.neopets.com/~NQref">nqii reference</div>  
+<br>
+<div class="ajump"><a href="#header">top of page</a></div>
+<div class="ajumpwt"><a href="#brr">brr...</a></div>
+<div class="ajumpboss"><a href="#leximp">leximp</a></div>
+<div class="ajumpwt"><a href="#chiaoscuro">chia oscuro</a></div>
+<div class="ajumpwt"><a href="#talinia">it's talinia, sir</a></div>
+<div class="ajumpboss"><a href="#kolvars">kolvars</a></div>
+<div class="ajumpwt"><a href="#happyvalley">happy valley</a></div>
+<div class="ajumpwt"><a href="#evenmoresnow">even more snow</a></div>
+<div class="ajumpwt"><a href="#lostcaves">lost caves</a></div>
+<div class="ajumpboss"><a href="#scuzzy">scuzzy</a></div>
+
+</div>
+<div id="skills">
+<h1 id="skillsheading">skills</h1>
+<table id="skillstable">
+  <col class="levelcol"> <col class="rohane"> <col class="mipsy"> <col class="talinia">
+    <tr id="skillstableheadings">
+      <td>lv.</td>
+      <td colspan="3">When you grow to that level, spend points here.</td>
+    </tr>
+    <tr id="charnames">
+      <td style="border: none;"><br>
+      </td>
+      <td>Rohane</td>
+      <td>Mipsy</td>
+	  <td>Talinia</td>
+	  
+    <tr>
+      <td class="lev">21</td>
+      <td title="Innate Melee Haste to skill lv. 7">Innate Melee Haste</td>
+      <td title="Innate Casting Haste to skill lv. 4">Innate Casting
+Haste</td>
+    </tr>
+    <tr class="altcolor">
+      <td class="lev">22</td>
+      <td title="Damage Increase to skill lv. 8">Damage Increase</td>
+      <td title="Direct Damage to skill lv. 10">Direct Damage</td>
+    </tr>
+	<tr>
+      <td class="lev">23</td>
+		<td title="Stunning Strikes to skill lv. 2">Stunning Strikes</td>
+		<td title="Innate Casting Haste to skill lv. 5">Innate Casting Haste</td>
+    </tr>
+    <tr class="altcolor">
+      <td class="lev">24</td>
+		<td title="Stunning Strikes to skill lv. 3">Stunning Strikes</td>
+		<td title="Direct Damage to skill lv. 11">Direct Damage</td>
+    </tr>
+	<tr>
+      <td class="lev">25</td>
+		<td title="Stunning Strikes to skill lv. 4">Stunning Strikes</td>
+		<td title="Innate Casting Haste to skill lv. 6">Innate Casting Haste</td>
+		<td title="Shockwave to skill lv. 4">Shockwave</td>
+    </tr>
+    <tr class="altcolor">
+      <td class="lev">26</td>
+		<td title="Critical Attacks to skill lv. 4">Critical Attacks</td>
+		<td title="Direct Damage to skill lv. 12">Direct Damage</td>
+		<td title="Innate Melee Haste to skill lv. 6">Innate Melee Haste</td>
+    </tr>
+	<tr>
+      <td class="lev">27</td>
+		<td title="Critical Attacks to skill lv. 5">Critical Attacks</td>
+		<td title="Direct Damage to skill lv. 13">Direct Damage</td>
+		<td title="Shockwave to skill lv. 5">Shockwave</td>
+	  
+    </tr>
+	<tr class="altcolor">
+      <td class="lev">28</td>
+		<td title="Stunning Strikes to skill lv. 5">Stunning Strikes</td>
+		<td title="Innate Casting Haste to skill lv. 7">Innate Casting Haste</td>
+		<td title="Shockwave to skill lv. 6">Shockwave</td>
+    </tr>
+    <tr>
+      <td class="lev">29</td>
+		<td title="Critical Attacks to skill lv. 6">Critical Attacks</td>
+		<td title="Innate Melee Defense to skill lv. 8">Innate Melee Defense</td>
+		<td title="Shockwave to skill lv. 7">Shockwave</td>
+    </tr>
+	<tr class="altcolor">
+      <td class="lev">30</td>
+		<td title="Critical Attacks to skill lv. 7">Critical Attacks</td>
+		<td title="Innate Casting Haste to skill lv. 8">Innate Casting Haste</td>
+		<td title="Innate Melee Haste to skill lv. 7">Innate Melee Haste</td>
+    </tr>
+    <tr>
+      <td class="lev">31</td>
+		<td title="Stunning Strikes to skill lv. 6">Stunning Strikes</td>
+		<td title="Innate Melee Defense to skill lv. 9">Innate Melee Defense</td>
+		<td title="Shockwave to skill lv. 8">Shockwave</td>
+    </tr>
+	<tr class="altcolor">
+      <td class="lev">32</td>
+		<td title="Stunning Strikes to skill lv. 7">Stunning Strikes</td>
+		<td title="Innate Casting Haste to skill lv. 9">Innate Casting Haste</td>
+		<td title="Increased Bow Damage to skill lv. 10">Increased Bow Damage</td>
+    </tr>	
+</table>
+</div>
+</div>
+<div id="therest">
+<div id="header"> <span id="learn"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A1Learn.png"
+ alt="Learn..." title="Guides for Beginners"><br>
+<a href="http://www.neopets.com/~ThePhoenixRising#interface"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A2Interface.png"
+ alt="Interface" title="The Game's Interface"></a><br>
+<a href="http://www.neopets.com/~ThePhoenixRising#battling"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A3Battling.png"
+ alt="Battling" title="Battling"></a><br>
+<a href="http://www.neopets.com/~ThePhoenixRising#shopping"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A4Shopping.png"
+ alt="Shopping" title="Shopping"></a><br>
+<a href="http://www.neopets.com/~ThePhoenixRising#items"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A5Items.png"
+ alt="Items" title="Items"></a><br>
+<a href="http://www.neopets.com/~ThePhoenixRising#skills"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A6Skills.png"
+ alt="Skills" title="Skills Guide"></a> </span> <span id="play"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B0Play.png"
+ alt="Play..." title="Walkthroughs"><br>
+<a href="http://www.neopets.com/~Epanastasi"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B1.png"
+ alt="Act 1, Part 1" title="Act 1, Part 1"></a><br>
+<a href="http://www.neopets.com/~Fordulat"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B15.png"
+ alt="Act 1, Part 2" title="Act 1, Part 2"><br>
+</a><a href="http://www.neopets.com/~CmdrInputBlocker"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B2.png"
+ alt="Act 2" title="Act 2"><br>
+</a><a href="http://www.neopets.com/~DiabolicalChia"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B3.png"
+ alt="Act 3" title="Act 3"><br>
+</a><a href="http://www.neopets.com/~AlaskanMosquito"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B4.png"
+ alt="Act 4" title="Act 4"><br>
+</a><a href="http://www.neopets.com/~SmallGreenBlur"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B5.png"
+ alt="Act 5" title="Act 5"><br>
+</a></span><span
+ id="headermain"> </span><a
+ href="http://www.neopets.com/~ThePhoenixRising"
+ alt="Rev's NeoQuest II Guide" title="To Home Page"
+ style="cursor: pointer;"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/HeaderMain.png"></a>
+<span id="headercomment">This guide is currently in beta. So don't
+worry. c:</span> </div>
+<div class="bodycontent" id="intro"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/Act2Header.jpg">
+</div>
+<div class="bodycontent" id="hi">
+<div id="hitcounter"><img
+ src="http://counter2.neomallers.com/cmdrinputblocker.gif?theme=3dblue2&visit=#VISITOR"
+ alt="Good news! By reading this utterly useless alt text, you've just killed a few seconds. So your counter's probably loaded by now."></div>
+<h1 class="heading">hola</h1>
+	<p>Hey, you're back. You've finished the <a href="http://www.neopets.com/~Fordulat">Act 1, Part 2 guide</a> by now, right? (Cause if you haven't,
+	go ahead and follow that link. I won't tell anyone.) If you have finished Act 1, bookmark this page or whatever you want since <strong>you'll be
+	coming back here from now on.</strong> Well, at least until you finish the act.</p>
+	
+	<p>Have I ever told you you're nearly pro? Yeah, you're getting closer to beating up that fat dragon at the end of the game... you're a third
+	of the way there. But this act is gonna fly by like that. *pig flies by*</p>
+	
+	<p>Well, what are you waiting for? We've got more lupes/fat stuff to beat up... so let's get to it!</p>
+	</div>
+	
+	<div class="bodycontent" id="brr">
+		<div class="place">
+			<h1 class="wtheading">brr...</h1>
+			<img src="http://images.neopets.com/items/mall_dd_wheelersshorts.gif" alt="I'm cold... and mad.">
+			<div class="flavortext">OK, who was the genius who packed us shorts and T-shirts?!?</div></div>
+				<p>Smell that mountain air? Refreshing. And cold. So equip the stuff Ramtor gave you if you haven't already. The town a few steps away is full of a bunch of Chias who are pretty nice but don't
+				speak your language. Shoulda learned Esperanto.</p>
+				
+				<p>At any rate, switch to <strong>Hunting mode</strong> and go west a bit from town. Start training here
+				until you're level <strong title="Normal: 21, Evil: 22, Insane: 23">21/22/23</strong>. (While I'm at it, I'd like to reintroduce you to our old buddy the <strong>skills</strong> table. He hasn't changed much, but he's had to go on a diet. I trust you'll get along.) The baddies here hit pretty hard, so don't be afraid	
+				to use healing potions if you need to. The area around that town is a no-encounter zone (remember that grassy patch south of Phorofor? Yeah,
+				just like that) so you can grab some free HP there using the <em>Walk-Heal</em> method. Just walk around to gain HP.</p>
+				
+				<p>Once you've leveled up, open your <strong>map site</strong> again. Go to the maps and click on <em>Act 2</em> or <em>Terror Mountain</em>.
+				Whoa! That shows all the maps for this act. You can bookmark this page if you like, but just know you'll need to come here each time you look
+				for maps. Open up the <em>Southern Pass</em> map. You're in the southwest corner. 
+				See the <em>Dirty, Smelly Cave</em> a little to your east? Go there and enter it.</p>
+
+				<p>Once you've entered, switch to <strong>Normal</strong> mode and go southeast. After a bit you'll see some winged dude with glasses on.
+				If you beat him, you can talk to the Chias in that town back there. Besides, he looks kinda annoying... so heal up and then attack him.
+				</p>
+			</div>
+			
+	<div class="boss" id="leximp">
+				<h1 class="wtheading">leximp</h1>
+				<div class="bosspic"><img src="http://images.neopets.com/nq2/m/m2015_bade1.gif" alt="The Leximp"></div>
+				<div class="flavortext">Nerd power! *high 4.5s*</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">21 on Normal<br>22 on Evil<br>23 on Insane</td></tr>
+
+				<tr>
+					<td class="first">HP:</td>
+					<td class="second">150 on Normal<br>187 on Evil<br>220 on Insane</td></tr>
+				<tr>
+					<td class="first">Special Abilities:</td>
+					<td class="second"><strong>Stunning Strikes</strong><br>
+										Very <strong>magic-resistant</strong><br>
+							</td></tr>
+
+				<tr>
+					<td class="first">Prizes:</td>
+					<td class="secondlast">the Wordstone (lets you talk to those Chias)<br>
+											2 Potions of Regeneration<br>
+											1 weapon/armor<br>
+											200 gold<br>
+											500 NP
+											</td></tr>
+
+				</table>
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General: </strong>This guy's pretty annoying, and not very easy either. He
+								<em>isn't hurt</em> much by potions or magic, which means Mipsy
+								can't really do much this battle. Plus, he's <em>pretty fast</em> and likes picking on our slightly violent Acara friend.</li>
+								
+					<li><strong>Setup: </strong>Ooh look a new section. Yeah, boss battles are going to get <em>more involved</em> soon since you'll have more team
+							members and they'll have bigger goodie bags. Basically, this section will tell you what to do when the <em>battle starts</em>. 
+							For this battle, have Mipsy throw Dawdling Potions until one works (that might be a while.) When one wears off 
+							(remember, the words "Slowed" go away from under the boss's picture) have Mipsy throw more.</li>
+					<li><strong>Offensive: </strong>Since Mipsy won't be her usual self this battle, Rohane will need to attack all the time. Fortunately
+							the Leximp's HP isn't <em>too</em> high. When Mipsy's not healing or tossing slowing potions, have her use her <em>Direct 
+							Damage</em>. Who knows, you might get lucky.</li>
+					<li><strong>Defensive: </strong>This guy likes picking on Mipsy (she really can't catch a break, can she...) so make sure her health
+							<em>stays green</em>. Have her heal if her HP goes yellow.</li>
+				</ul> 
+				<div class="postbattle"><h1 class="postbattle">Post-battle:</h1>
+							<p>Keep hacking away and the Nimmo with specs will die, though you might burn a lot of potions in the process. Once he's dead, 
+							<strong>exit the cave</strong> and walk back to that <strong>town</strong> we saw earlier (it's just west from the cave.) 
+							Good news, you can finally talk to the Chias there. *woohoo*</p>
+				</div>
+		</div>
+		
+	<div class="bodycontent" id="chiaoscuro">
+
+		<div class="place">
+
+			<h1 class="wtheading">chia oscuro</h1>
+
+			<img src="http://images.neopets.com/items/ad_xmaschiaplushie.gif" alt="CHIAS!!!">
+
+				<div class="flavortext">A town full of Chias, huh? Wish Velm was here.</div></div>
+					<p>It's Chia time! Once you enter town, open up your <em>map</em> of it. (I think that goes without saying from now on.)
+						Look for Jarasth, the green guy in the <strong>north building</strong>. He sells weapons, armor, AND potions. Pretty nifty, huh?
+						Well, sorry, we won't be buying any weapons/armor here (they're more or less the same as the ones from Seaside.) And we don't need
+						to buy any potions here, since there's another town before the next boss. Just <strong>sell your old weapons/armor</strong> to him.
+						Poor guy.</p>
+					<p>Glance at your map again. See <strong>Ullistl</strong> in the northwestern house? Yeah, talk to him and he'll let you <strong>
+					rest for free</strong>. So keep that in mind. You can talk to the Chia dudes here if you like, but we have to leave town for now.</p>
+					
+					<p>Now that we have a free inn, we can start fighting carelessly and hoard potions. Walk a little west from town and train to level
+					<strong title="Normal: 22, Evil: 23, Insane: 24">22/23/24</strong>. If you're hurt, run back to the <strong>inn</strong>. Don't use potions
+					unless someone's about to die.</p>
+					
+					<p>Once you level up, you can start moving away from town. Open up your map to <em>Southern Pass</em> and look for the cave at the
+					<strong>eastern end</strong> of the pass. That's where we need to go, and we need to gain 1 level on the way.
+					Walk there using that <em>Fight-As-You-Go</em> method (remember? Just stay on Hunting mode
+					and walk, beating up any baddies you run into.) If you're hurt, use Healing Bottles or Potions of Regeneration. If you reach the cave
+					before you level up, <strong>train</strong> just outside the cave until you're level <strong title="Normal: 23, Evil: 24, Insane: 25">23/24/25</strong>.</p>
+					
+					<p>Once you're ready, you can enter the <em>Caves of Terror</em> (you start in the south.) If you've already opened up your map to that page, good for you.
+					If you haven't... *hits you with fish* Now that that's done, we need to <strong>train</strong> here until we're at level
+					<strong title="Normal: 24, Evil: 25, Insane: 26">24/25/26</strong>. The baddies here are <strong>tough</strong>, so don't hesitate
+					to use healing potions. Once you've leveled up, switch to <strong>Normal mode</strong> and make your way through the cave. Run
+					away from any baddies you run into, because they're even tougher than the ones at the start of the cave.</p>
+					
+					<p>Once you get out of the cave, you'll be on <em>Eastern Pass, Sector 1</em>. Walk north a bit and you'll
+					see a <span class="strike">gingerbread house</span> inn. Civilization that's not Chias! YEAH! Enter the building.</p>
+				</div>
+				
+	<div class="bodycontent" id="talinia">
+
+		<div class="place">
+
+			<h1 class="wtheading">it's talinia, sir</h1>
+
+			<img src="http://images.neopets.com/items/toy_nq2_talinia.gif" alt="Sir yourself.">
+
+				<div class="flavortext">Dude, where's my bow?</div></div>
+					<p>Once you enter the inn, walk a bit south from the entrance until you see... what? Talinia?! Neato. Ask her to join you, and she will.
+						Congrats! You've just added a good chunk of coolness factor to your squad (cause, let's face it, an arrogant Blumaroo and a violent
+						Acara aren't the coolest guys in the world.) Before you start stunning monsters with your new coolness, we need to <strong>
+						spend Talinia's skill points</strong> first. Cue the <strong>table</strong>.</p>
+						
+					<p style="text-align: center;"><img src="http://images.neopets.com/items/bamb_table.gif" alt="If only you could see this... you're missing out on the joke."><br>
+						No, the OTHER table. Geez, they don't pay me enough for this job.</p>
+						
+					<table id="newcharskills">
+							<tr id="ncsheadings">
+							  <td>On this difficulty...</td>
+							  <td>Spend Talinia's skill points here.</td>
+							</tr>
+							<tr>
+							  <td class="left">Normal</td>
+							  <td class="right"><b>9</b> points in Increased Bow Damage<br>
+							  <b>6</b> points in Multiple Targets<br>
+							  <b>3</b> points in Shockwave<br>
+							  <b>5</b> points in Innate Melee Haste
+							  </td>
+							</tr>
+							<tr>
+							  <td class="left">Evil</td>
+							  <td class="right"><b>9</b> points in Increased Bow Damage<br>
+							  <b>6</b> points in Multiple Targets<br>
+							  <b>4</b> points in Shockwave<br>
+							  <b>5</b> points in Innate Melee Haste
+							  </td>
+							</tr>
+							<tr>
+							  <td class="left">Insane</td>
+							  <td class="right"><b>9</b> points in Increased Bow Damage<br>
+							  <b>6</b> points in Multiple Targets<br>
+							  <b>4</b> points in Shockwave<br>
+							  <b>6</b> points in Innate Melee Haste
+							  </td>
+							</tr>
+						</table>
+			<p>You've done this before, right? Spend Talinia's skill points according to which difficulty you're on. Now that that's done, talk to the
+			Tuskaninny in the middle of the room if you want to <strong>rest</strong>. Chances are you won't die before the next town, but resting is never a bad idea. Now talk to Borhal, the guy in the <strong>southeast corner</strong> of the building.</p>
+			<p>Grab <strong>20 Frost Potions</strong> and about <strong>10 Chill Potions</strong>. If you're low on slowing potions, grab some of those. The Drowsiness Potions are more or less the same as the potions from Seaside. That's <strong>all we need to do</strong> here. Everyone else in the inn is comic relief, if you're into that sort of thing. Leave the inn when you're done.</p>
+			<p>Good news! Now we can test-drive Talinia (try saying that 5 times fast.) Fighting with Talinia isn't <em>too</em> different from what you've been doing up till now. Talinia should use <strong>Multiple Targets</strong> to soften up the baddie squad, then all your guys should go out there and squish those baddies. <strong>Practice fighting</strong> with Talinia a bit... hang around the inn so you can heal if you get hurt.</p>
+			<p>Once that's done, we need to get moving. We're going to use the <em>Fight-As-You-Go method</em> to <strong>gain a level</strong> before the next boss. Walk northish from where you are and open up your map to <em>Eastern Pass - Sector 2</em>. You need to walk over all the way west (oh yeah, remember the <em>Walk-Heal method</em>? Just walk around a bit on Normal after each battle to regain HP. Use this while you're walking.)</p>
+			<p>Once you level up to level <strong title="Normal: 25, Evil: 26, Insane: 27">25/26/27</strong>, switch to <strong>Normal mode</strong> and walk on over to Kolvars, the crabby spidery thingy. Well, I guess it doesn't really matter what he is. But still.</p>
+				</div>
+
+		<div class="boss" id="kolvars">
+				<h1 class="wtheading">kolvars</h1>
+				<div class="bosspic"><img src="http://images.neopets.com/items/sta_nq2spyder.gif" alt="Just a pom-pom thingy."></div>
+				<div class="flavortext">I eat mutated furballs for breakfast. Very tasty actually.</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">25 on Normal<br>26 on Evil<br>27 on Insane</td></tr>
+
+				<tr>
+					<td class="first">HP:</td>
+					<td class="second">225 on Normal<br>281 on Evil<br>337 on Insane</td></tr>
+				<tr>
+					<td class="first">Special Abilities:</td>
+					<td class="second">
+							Quick Feet - 28% <strong>Haste</strong><br>
+							Dormancy - 44% <strong>Slow</strong><br>
+							<strong>Critical Attacks</strong>
+							</td></tr>
+
+				<tr>
+					<td class="first">Prizes:</td>
+					<td class="secondlast">
+											2 Potions of Fortitude<br>
+											2 weapons/armor<br>
+											300 gold<br>
+											600 NP
+											</td></tr>
+
+				</table>
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General: </strong>Kolvars in one word: <em>fast</em>. Notice I didn't say hard. He's so busy hasting himself and slowing you that he forgets to hit you. (Once, he didn't hit me once throughout the entire battle.) So yeah, easy battle.</li>
+					<li><strong>Setup: </strong>Before you start attacking him, toss a slowing potion so that he doesn't get <em>too</em> fast. Once one slowing potion works, you should be able to start attacking.</li>
+					<li><strong>Offensive: </strong>Once he's been slowed a bit, Kolvars turns into a big furry punching bag. Rohane should hammer away with his melee, Talinia should toss Frost/Burst Potions, and Mipsy should toss around those Direct Damage spells.</li>
+					<li><strong>Defensive: </strong>Chances are Kolvars won't hit you, but his Critical Hits can hurt if they land (Kolvars is as accurate as a blind wombat, though, so he won't be hitting you much.) As usual, watch your HP and heal if anyone's HP becomes yellow.</li>
+				</ul> 
+				<div class="postbattle"><h1 class="postbattle">Post-battle:</h1>
+				<p>Once you've sent Kolvars to that big snowdrift in the sky, make sure you equipped the stuff he dropped and walk south from where he stood and you'll see the town of Happy Valley. Don't enter yet, though... walk around so that you're <strong>directly south of town</strong>. Then, walk north into town. You'll see why soon.
+				</div>
+		</div>				
+
+	<div class="bodycontent" id="happyvalley">
+
+		<div class="place">
+
+			<h1 class="wtheading">happy valley</h1>
+
+			<img src="http://images.neopets.com/items/fur_happyvalley_poster.gif" alt="Fun times in Happy Valley.">
+
+				<div class="flavortext">Beaches? Nah. Paris? Also nah. Big piles of snow? Get me a reservation!</div></div>
+					<p>Fun fact: Happy Valley is the biggest town in NQII, at least people-wise.</p>
+					<p>In other news, you've just entered town from the <strong>south</strong>. Open up your <strong>map</strong> to the page for this town. See <strong>Jualie</strong> in the south-central part of town? Walk north to get to her house, and then enter it. The door faces east, so you might need to walk around a bit to get to the entrance. Talk to her, and she'll tell you that her kid <span class="strike">fled the tyranny of his home</span> got lost. <em>You to the rescue!</em></p>
+					<p>Look in the <strong>southwest corner</strong> of your map. <strong>Niacha</strong>, the lost kid I just told you about, is the one you need to talk to. Go south to <strong>leave town</strong>, then once you've left town take one step west. Then go northeast. This'll put you just a few steps away from Niacha (if you haven't noticed already, the direction you enter town from determines where you start off.) Talk to him and he'll run back to his mom.</p>
+					<p>Go southwest to leave town, then re-enter town from the south. Now go back to <strong>Jualie</strong> (working up a sweat yet? Interestingly, sweating in the cold is a bad thing since the sweat freezes... I can tell you're not interested so I'll stop.) Once you've talked to her, you'll get a <strong>discount</strong> in all the stores. *woohoo*</p>
+					<p>Now walk so that you're just west of Jualie's house. You're now on Main Street, so to speak... this <em>is</em> a big city, after all. Head <strong>north till you see some signs</strong> for the potion/weapon/armor shop and the inn. Here's a new addition: the <strong>Shopping List</strong>. Everything you'll need to buy is right there. Get shopping.</p>
+					<div class="shoppinglist">
+						<h1>Shopping List</h1>
+						<ul>
+							<li>Milk</li>
+							<li>Eggs</li>
+							<li>Cheese</li>
+							<li><strong>Potions: </strong><ul>
+									<li><b>20</b> Lethargy Potions</li>
+									<li><b>20</b> Chill Potions</li>
+								</ul></li>
+							<li><strong>Weapons/Armor: </strong> <i>Note to self: don't upgrade willy-nilly.</i><ul>
+									<li>Sword and armor for Rohane</li>
+									<li>Bow and tunic for Talinia</li>
+									
+								</ul></li>
+							<li><strong>Inn: </strong> Rest if you need to... but it's not necessary.
+								</li>
+						</ul>
+					</div>
+					<p>Once you've finished buying everything, sell your old weapons and such. You can then leave town.</p>
+				</div>	
+
+	<div class="bodycontent" id="evenmoresnow">
+
+		<div class="place">
+
+			<h1 class="wtheading">even more snow</h1>
+
+			<img src="http://images.neopets.com/items/bd_ice_cube_club.gif" alt="That could hurt.">
+
+				<div class="flavortext">If we don't get out of here soon, I'm going to hit someone with that.</div></div>
+					<p>Once you leave town, switch to <strong>Hunting mode</strong> and start walking. You guessed it, we're going to use that <em>Fight-As-You-Go method</em>. Walk <strong>southeast-ish</strong> until the road forks to your east. At that point, open up your map to <em>Eastern Pass: Sector 4</em>. It doesn't matter which path you take as long as you get to the <strong>Adventurers' Camp</strong> (the tent thingy in the northeast corner of the map.)</p>
+					<p>By the time you get to that camp I just mentioned, make sure you're at least at level <strong title="Normal: 26, Evil: 27, Insane: 28">26/27/28</strong>. The area around the camp is a no-encounter zone (remember the no-encounter zone around Chia Oscuro?) so you might need to walk south a bit to train.</p>
+					<p>At any rate, walk onto the tent when you get to it. Turns out it's actually 4 tents. Why must you lie to us, NQII?!? Oh well. The dude holding a mace is a <strong>free inn</strong>, and you know what that means. Head north from the camp until you see a cave entrance. Well, <strong>don't enter yet</strong>. Train outside the mouth of the cave until you're level <strong title="Normal: 27, Evil: 28, Insane: 29">27/28/29</strong>. Run back to the camp if you need to rest.</p>
+					<p>Once you've gained that level, you can enter the cave. Like we haven't been through enough caves already.</p>
+				</div>		
+
+	<div class="bodycontent" id="lostcaves">
+
+		<div class="place">
+
+			<h1 class="wtheading">lost caves</h1>
+
+			<img src="http://images.neopets.com/items/bg_icecaves.gif" alt="Another cave. Yawn.">
+
+				<div class="flavortext">Wait, who could have lost these caves? They're kinda hard to miss.</div></div>
+					<p>But don't go too far. We have to gain another <strong>level</strong> at the mouth of the cave. Beat up the dudes at the mouth of the cave until you're level <strong title="Normal: 27, Evil: 28, Insane: 29">27/28/29</strong>. If you're badly hurt, run back to the camp, but otherwise you can use potions. Just don't use them all in one place, y'hear.</p>
+					<p>Now that that's done, we're going to get through the rest of the cave while using the <em>Fight-As-You-Go method</em>. Open up your map to <em>Lost Caves: Level 1</em>. You have to get from the southeast corner to the stairs in that <strong>building in the northwest</strong>. Try to get to level <strong title="Normal: 28, Evil: 29, Insane: 30">28/29/30</strong> before you climb those stairs. If you're not there yet, train a bit.</p>
+					<p>Now you're on <em>Level 2</em>. <strong>Train here</strong> till you're level <strong title="Normal: 29, Evil: 30, Insane: 31">29/30/31</strong> (oh come on, it's not THAT bad. Remember the cave before Zombom?) Once that's done, switch to <strong>Normal mode</strong> and make your way through the rest of this level. <em>Level 3</em> is an absolute joke... you'll see when you see the map. Just walk through it.</p>
+					<p>You're now on <em>Level 4</em>. We're going to use the - you guessed it - <em>Fight-As-You-Go method</em> through this last level. If you're not at level <strong title="Normal: 30, Evil: 31, Insane: 32">30/31/32</strong> by the time you're at the mouth of the cave, train till you're at that level. You know what to do.</p>
+					<p>Switch to <strong>Normal mode</strong> the minute you get onto the mountaintop (leave the cave.) Why? The arrogant Kougras and Chias who are too lazy to shave are pretty tough (not to mention fat.) You don't want to waste your time and potions fighting them, do ya? Didn't think so. I don't think you'll need a map to find <strong>Scuzzy</strong>, your next boss. Just <strong>heal up</strong> and pick a fight with the big hairy primate.</p>
+				</div>		
+
+		<div class="boss" id="scuzzy">
+				<h1 class="wtheading">scuzzy</h1>
+				<div class="bosspic"><img src="http://images.neopets.com/items/sta_nq2_scuzzy.gif" alt="Big and hairy. You aren't missing much."></div>
+				<div class="flavortext">You no win! Me eat you! (Me no read but look how smart me is!)</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">30 on Normal<br>31 on Evil<br>32 on Insane</td></tr>
+
+				<tr>
+					<td class="first">HP:</td>
+					<td class="second">400 on Normal<br>500 on Evil<br>600 on Insane</td></tr>
+				<tr>
+					<td class="first">Special Abilities:</td>
+					<td class="second">Cyclone - 36HP <strong>Group Damage</strong><br>
+							Indifference - 32% <strong>Slow</strong><br>
+							Very ugly
+							</td></tr>
+
+				<tr>
+					<td class="first">Prizes:</td>
+					<td class="secondlast">
+											3 weapons/armor<br>
+											1000 gold<br>
+											1000 NP
+											</td></tr>
+
+				</table>
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General: </strong>He may be kinda smelly, but he's pretty easy. If you managed to beat those annoying dervishes from the caves, you can beat him. He hits hard, but he'll probably die pretty quickly too.</li>
+					<li><strong>Setup: </strong> Have everyone toss Lethargy Potions until one works (you know, he get slowed.) After that you can start fighting, but remember to toss more Lethargy Potions if one wears off (the "Slow" from under his name disappears.)</li>
+					<li><strong>Offensive: </strong>The big Mynci can't heal, so he won't last very long. Mipsy's Direct Damage will hurt, as always, and Rohane should be doing a fair number with his melee too. Talinia should toss Frost/Burst Potions, since she won't be hitting as hard.</li>
+					<li><strong>Defensive: </strong>This big guy can hit pretty hard if he wants to, especially with his Cyclone. Watch everyone's health carefully, and don't be afraid to heal if someone gets hurt.</li>
+				</ul> 
+				<div class="postbattle"><h1 class="postbattle">Post-battle:</h1>
+					<p>Keep slugging away and Scuzzy will go bye-bye. Speaking of which, you can now say bye to this page. Now that you're done Act 2, you should start visiting <a href="http://www.neopets.com/~DiabolicalChia">DiabolicalChia's page</a> for <strong>Act 3</strong> stuff. I'll see you back here on the next difficulty. Don't get eaten till then, y'hear.</p>
+				</div>
+		</div>				
+	</div>
+	</div>
+</body>

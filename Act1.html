@@ -1,0 +1,892 @@
+<head>
+	<title>Act 1 Walkthrough - Epanastasi</title>
+	<style type="text/css">
+	/*Release Notes
+		Rev's NeoQuest II Guide
+		by revolutionrising
+		(I would copyright this but what's the point?)
+		Guide Version 4.1 "A Blur of Green"
+		Act 1 - Epanastasi (neopets.com/~epanastasi)
+		Page Version 1.0.1
+		Last edited 9/03/10
+		*/
+	/*Changelog
+		Version - Date - Notes
+		1.0.1 - 9/03 - No real changes, but all the content is done.
+		1.0.0 - 9/01 - Well, this is the first *official* version of the page.
+		*/
+	body {
+		font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+		font-size: 15px;
+		color: #234D08;
+		line-height: 1.4em;
+		cursor: crosshair;
+		background-color: #69BF28;
+		background-image: url('http://wallpapers-diq.org/wallpapers/12/Clean_Green_Abstract_Desktop.jpg');
+		background-attachment: fixed;
+		}
+	table,font {
+		visibility: hidden;
+		}
+	div#hitcounter {
+		text-align: center;
+		}
+	div#allstuff {
+		margin-top: 5%;
+		height: 80%;
+		}
+	div#jumpandskills {
+		width: 220px;
+		float: right;
+		margin: 0px 10px 0px 10px;
+		}
+	div#jump {
+		padding: 10px 5px 10px 5px;
+		border: 3px ridge #000000;
+		background-color: #E5F3DC;
+		height: 35%;
+		overflow: scroll;
+		margin-bottom: 10px;
+		}
+	div#skills {
+		padding: 0px 5px 5px 5px;
+		border: 3px ridge #000000;
+		background-color: #e5f3dc;
+		height: 60%;
+		overflow: scroll;
+		}
+	div#therest {
+		height: 100%;
+		overflow: scroll;
+		padding: 10px;
+		}
+
+	div#header {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+		width: 606px;
+		text-align: center;
+		}	
+	div.bodycontent {
+		background-color: #E5F3DC;
+		border: 3px ridge #000000;
+		padding: 10px;
+		margin-bottom: 10px;
+		}
+
+	div.boss {
+		background-color: #E5F3DC;
+		border: 3px ridge #000000;
+		padding: 10px;
+		margin-bottom: 10px;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		}
+
+	.heading {
+		text-transform: lowercase;
+		text-align: left;
+		letter-spacing: 0.6em;
+		font-size: 140%;
+		color: #000000;
+		border-bottom: 1px dashed #444444;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	.wtheading {
+		text-transform: lowercase;
+		text-align: center;
+		letter-spacing: 0.5em;
+		font-size: 140%;
+		color: #000000;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	h1#jumpheading {
+		font-size: 150%;
+		letter-spacing: 0.7em;
+		border-bottom: 1px dashed #444444;
+		text-align: left !important;
+		}
+	div.place {
+		width: 50%;
+		text-align: center;
+		border-bottom: 1px dashed #444444;
+		margin-left: auto;
+		margin-right: auto;
+		}
+	div.flavortext {
+		font-style: italic;
+		margin-top: 0.5em;
+		}
+	#jumpheading {
+		text-align: center;
+		font-size: 130%;
+		}
+
+	p {
+		text-indent: 10px;
+		}
+	em {
+		color: #a10181;
+		}
+	strong {
+		color: #b8389e;
+		}
+
+	div.ajump {
+		text-indent: 15px;
+		letter-spacing: 0.3em;
+		font-size: 90%;
+		text-transform: lowercase;
+		cursor: auto;
+		font-weight: bold;
+		font-family: "Trebuchet MS", "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	#header a {
+		text-decoration: none !important;
+		border: none !important;
+		}
+	#header img {
+		border: none !important;
+		}
+	span#learn {float: left;}
+	span#play {float: right;}
+	span#headercomment {
+		color: white;
+		}
+
+	a {
+		text-decoration: none;
+		border-bottom: 1px dashed #000000;
+		}
+	a:link {
+		color: #009E3F;
+		}
+	a:visited {
+		color: #003259;
+		}
+	a:hover {
+		color: #A400DA;
+		}
+
+	div.ajumpwt {
+		text-indent: 10px;
+		letter-spacing: 0.2em;
+		font-size: 85%;
+		text-transform: lowercase;
+		cursor: auto;
+		font-family: "Trebuchet MS", Georgia, "Berlin Sans FB Demi", Verdana, Arial, sans-serif;
+		}
+	div.ajumpboss {
+		text-indent: 10px;
+		letter-spacing: 0.2em;
+		font-size: 80%;
+		text-transform: lowercase;
+		cursor: auto;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		color: #234D08;
+		font-weight: bold;
+		}
+	h1.jumpsection {
+		font-size: 14px;
+		margin-bottom: 0px;
+		text-transform: lowercase;
+		letter-spacing: 0.3em;
+		}
+	.ajumpboss a {
+		border-bottom: 1px dotted #444444;
+		}
+	div#intro {
+		text-align: center;
+		width: 605px;
+		margin-left: auto;
+		margin-right: auto;	
+		}
+	div.message {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		background-color: white;
+		border: 2px solid black;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		padding: 5px;
+		}
+	span.messagetitle {
+		font-variant: small-caps;
+		font-size: 18px;
+		font-style: italic;
+		color:#b8389e;
+		margin-top: 10px;
+		text-decoration: underline;
+		}
+	span.red {
+		color: #FF0000;
+		}
+	p.smallprint {
+		font-size: 10px;
+		font-family: "Times New Roman", serif;
+		line-height: 1em;
+		}
+	div.bosspic {
+		margin: 5px;
+		text-align: center;
+		}
+	.bosspic img {
+		width: 100px;
+		}
+	table.bossinfo {
+		width: 80%;
+		margin: 5px auto 0px auto;
+		border: 1px dashed black;
+		padding: 5px;
+		visibility: visible !important;
+		}
+	.bossinfo td {
+		padding: 3px;
+		}
+	td.first {
+		text-align: right;
+		font-weight: bold;
+		text-transform: lowercase;
+		letter-spacing: 0.1em;
+		width: 30%;
+		}
+	td.second {
+		text-align: left;
+		border-bottom: 1px dotted #444444;
+		width: 70%;
+		}
+	td.secondlast {
+		border-bottom: none !important;
+		}
+	ul.strategy {
+		text-align: left;
+		list-style-type: none;
+		}
+	.strategy li {
+		margin-left: 25px;
+		}
+	.strategy strong {
+		margin-left: -10px !important;
+		}
+	li.bossstrategy {
+		font-weight: bold;
+		letter-spacing: 0.1em;
+		text-transform: lowercase;
+		margin-left: 0px !important;
+		border-bottom: 1px dotted #444444;
+		}
+	div.postbattle {
+		text-align: left;
+		}
+	h1.postbattle {
+		color: #000000;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		text-transform: lowercase;
+		border-bottom: 1px dotted #444444;
+		font-size: 120%;
+		letter-spacing: 0.3em;
+		}
+	#skillsheading {
+		font-size: 150%;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		text-transform: lowercase;
+		letter-spacing: 0.4em;
+		border-bottom: 1px dashed #444444;
+		}
+	table#skillstable {
+		font-size: 12px;
+		border-collapse: collapse;
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		visibility: visible !important;
+		}
+	#skillstable td {
+		border: 1px solid #444444;
+		padding: 1px;
+		text-align: center;
+		}
+	.levelcol {
+		width: 10%;
+		}
+	.rohane, .mipsy, .talinia, .velm {
+		width: 22%;
+		}
+	tr#skillstableheadings {
+		text-transform: lowercase;
+		font-weight: bold;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		font-size: 14px;
+		color: #FF0000;
+		background-color: transparent !important;
+		}
+	#skillstableheadings td {
+		border: none !important;
+		}
+	#skillstable tr {
+		background-color: #D4EDC3;
+		}
+	tr.altcolor {
+		background-color: #ADDC8D !important;
+		}
+	td.lev {
+		font-weight: bold;
+		font-family: "Trebuchet MS", Georgia, Verdana, Arial, sans-serif;
+		font-size: 120%;
+		border: none !important;
+		background-color: #e5f3dc;
+		}
+	ul{
+		list-style-type: none;
+	}
+	li.tip{
+		font-weight: bold;
+		font-family: Candara, "Trebuchet MS", Georgia, sans-serif;
+		font-size: 120%;
+		color: #603901;
+		margin-top: 10px;
+	}
+	li.descrip{
+		padding-left: 20px;
+	}
+	</style>
+</head>
+<body>
+<div id="allstuff">
+	<div id="jumpandskills">
+		<div id="jump">
+			<h1 class="heading" id="jumpheading">Jump</h1>
+
+			<div class="ajump"><a href="http://www.neopets.com/">neopets home</a></div>
+			<div class="ajump"><a href="http://www.neopets.com/games/nq2/nq2.phtml" target="_blank">nqii main 
+
+page</a></div>
+<div class="ajump"><a href="http://www.neopets.com/~NQref">nqii reference</div> <br>
+			<div class="ajump"><a href="#header">top of page</a></div>
+			<div class="ajump"><a href="#walkthroughtips">w-through tips</a></div>
+			<div class="ajumpwt"><a href="#trestinvillage">trestin village</a></div>
+
+			<div class="ajumpwt"><a href="#movingon">moving on</a></div>
+			<div class="ajumpwt"><a href="#darkcave">dark cave</a></div>
+			<div class="ajumpboss"><a href="#theminerforeman">the miner foreman</a></div>
+			<div class="ajumpwt"><a href="#whiteriver">white river</a></div>
+			<div class="ajumpwt"><a href="#undergroundcave">underground cave</a></div>
+			<div class="ajumpwt"><a href="#mysterioustower">mysterious tower</a></div>
+			<div class="ajumpboss"><a href="#zombom">zombom</a></div>
+		</div>
+		<div id="skills">
+			<h1 id="skillsheading">skills</h1>
+
+			<table id="skillstable">
+				<col class="levelcol">
+				<col class="rohane">
+			<tr id="skillstableheadings">
+				<td>When you grow to this level...</td>
+				<td title="Rohane">Spend a point in this skill.</td></tr>
+
+			<tr>
+
+				<td class="lev">1</td>
+				<td title="You start at level 1.">---</td></tr>
+			<tr class="altcolor">
+				<td class="lev">2</td>
+				<td title="Damage Increase to skill lv. 1">Damage Increase</td></tr>
+			<tr>
+				<td class="lev">3</td>
+
+				<td title="Damage Increase to skill lv. 2">Damage Increase</td></tr>
+			<tr class="altcolor">
+				<td class="lev">4</td>
+				<td title="Innate Melee Haste to skill lv. 1">Innate Melee Haste</td></tr>
+			<tr>
+				<td class="lev">5</td>
+				<td title="Critical Attacks to skill lv. 1">Critical Attacks</td></tr>				
+			<tr class="altcolor">
+
+				<td class="lev">6</td>
+				<td title="Damage Increase to skill lv. 3">Damage Increase</td></tr>
+			<tr>
+				<td class="lev">7</td>
+				<td title="Innate Melee Haste to skill lv. 2">Innate Melee Haste</td></tr>				
+			<tr class="altcolor">
+				<td class="lev">8</td>
+
+				<td title="Stunning Strikes to skill lv. 1">Stunning Strikes</td></tr>
+			<tr>
+				<td class="lev">9</td>
+				<td title="Critical Attacks to skill lv. 2">Critical Attacks</td></tr>				
+			<tr class="altcolor">
+				<td class="lev">10</td>
+				<td title="Innate Melee Haste to skill lv. 3">Innate Melee Haste</td></tr>
+
+			<tr>
+				<td class="lev">11</td>
+				<td title="Innate Melee Haste to skill lv. 4">Innate Melee Haste</td></tr>			
+			<tr class="altcolor">
+				<td class="lev">12</td>
+				<td title="Damage Increase to skill lv. 4">Damage Increase</td></tr>
+			<tr>
+
+				<td class="lev">13</td>
+				<td title="Innate Melee Haste to skill lv. 5">Innate Melee Haste</td></tr>				
+			<tr class="altcolor">
+				<td class="lev">14</td>
+				<td title="Critical Attacks to skill lv. 3">Critical Attacks</td></tr>
+		</table>
+
+ 
+		</div>
+
+	</div>
+	<div id="therest">
+<div id="header"> <span id="learn"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A1Learn.png"
+ alt="Learn..." title="Guides for Beginners"><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#interface"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A2Interface.png"
+ alt="Interface" title="The Game's Interface"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#battling"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A3Battling.png"
+ alt="Battling" title="Battling"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#shopping"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A4Shopping.png"
+ alt="Shopping" title="Shopping"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#items"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A5Items.png"
+ alt="Items" title="Items"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#skills"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A6Skills.png"
+ alt="Skills" title="Skills Guide"></a> </span> <span id="play"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B0Play.png"
+ alt="Play..." title="Walkthroughs"><br>
+<a href="http://www.neopets.com/~Epanastasi"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B1.png"
+ alt="Act 1, Part 1" title="Act 1, Part 1"></a><br>
+<a href="http://www.neopets.com/~Fordulat"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B15.png"
+ alt="Act 1, Part 2" title="Act 1, Part 2"><br>
+</a><a href="http://www.neopets.com/~CmdrInputBlocker"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B2.png"
+ alt="Act 2" title="Act 2"><br>
+</a><a href="http://www.neopets.com/~DiabolicalChia"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B3.png"
+ alt="Act 3" title="Act 3"><br>
+</a><a href="http://www.neopets.com/~AlaskanMosquito"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B4.png"
+ alt="Act 4" title="Act 4"><br>
+</a><a href="http://www.neopets.com/~ThePhoenixRising"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B5.png"
+ alt="Act 5" title="Act 5"><br>
+</a></span><span
+ id="headermain"> </span><a
+ href="http://www.neopets.com/~SmallGreenBlur"
+ alt="Rev's NeoQuest II Guide" title="To Home Page"
+ style="cursor: pointer;"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/HeaderMain.png"></a>
+<span id="headercomment">This guide is currently in beta. So don't
+worry. c:</span> </div>
+
+		<div class="bodycontent" id="intro">
+
+		<img src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/Act1Header.jpg">
+		</div>
+
+		<div class="bodycontent" id="hi">
+			<div id="hitcounter"><img src="http://counter2.neomallers.com/epanastasi.gif?theme=ptgreen&visit=revolutionrising"  alt="Good news! By reading this utterly useless alt text, you've just killed a few seconds. So your counter's probably loaded by now."></div>
+			<h1 class="heading">saluton</h1>
+			<p>Oh, hi again. So you've read all the guides and are raring to start killing those Chias. (Right? Right? <strong>If not, 
+
+go to <a href="http://www.neopets.com/~SmallGreenBlur">the guide page</a></strong> right now, mister. Or miss.)</p>
+
+			<p>As I was saying, you probably feel invincible with your knowledge of Obliterating stuff, throwing potions at stuff, and 
+
+being all-around 1337. (OK, maybe not that last part.) But before you start, you've got to read the last little bit. I promise, it really is the last thing 
+
+before the walkthrough. So scroll down a bit to see the Walkthrough Tips.</p>
+		</div>
+
+		<div class="bodycontent" id="walkthroughtips">
+		<h1 class="heading">walkthrough tips</h1>
+			<p>You can't just start playing NQII willy-nilly like that. You'll be eaten alive before you can say <em>Don't eat me 
+
+bro!</em> So read these tips. And remember to follow them.</p>
+
+			<ul id="ultips">
+				<li class="tip">Ditch IE</li>
+				<li class="descrip">Still using Internet Explorer? Hate to break it to ya, but it's slow and insecure, and it doesn't display pages right (especially this guide.) Download a better browser such as Firefox or Chrome. Just do a web search on them.</li>
+				
+				<li class="tip">Use Maps</li>
+				<li class="descrip">This is important. Without maps you'll get lost and become a tasty snack for 
+
+Lupes/Chias/whatever. Do an internet search for <em>NQII Maps</em> and go to the first site you see. Get to know your way around and bookmark 
+
+the site, cause we'll be coming back to that site a lot.</li>
+
+				<li class="tip">Block those ads</li>
+				<li class="descrip">Banners get annoying, fast, as you play NQII. They take forever to load. So let's block 'em.
+
+Do an internet search on <em>Block Ads for [your browser]</em>. Download the AdBlock thingy.
+				<li class="tip">Stop at good spots</li>
+				<li class="descrip">I know you have a life so you're gonna have to stop playing NQII sometimes. Choose good 
+
+stopping spots, such as towns or (best of all) the end of a walkthrough section. Don't stop playing in the middle of a cave/wilderness, if possible. If 
+
+you like you can write down where you stopped so you aren't disoriented when you start playing again.</li>
+				<li class="tip">Hit <span style="font-variant: small-caps;">F11</span></li>
+				<li class="descrip">Look at the top of your keyboard. See those F keys? Hit F11 (on newer laptops, you might need to his Fn + F11.) Notice that the toolbars at 
+
+the 
+
+top of your screen go away, letting you see more of the actual page. (Just hover your mouse at the top of the screen to get the URL bar/tabs.) Hit 
+
+F11 
+
+to go back to normal browsing mode. Always play NQII on F11 mode.</li>
+
+				<li class="tip">Buy wisely</li>
+				<li class="descrip">Gold doesn't grow on trees, after all. Only buy weapons/armor/potions if you need it. Never 
+
+buy weapons for Mipsy/Velm (they never use melee anyway.) If someone's carrying a weapon with bonuses, don't buy a weapon unless the weapon 
+
+for 
+
+sale has a big power/defense boost from the one they're carrying (I'm talking 4+ points.) If you never use damage/haste potions, don't buy them!
+
+</li>	
+			</ul>
+			<p>See, that wasn't so hard, now was it? Now we can (finally) start playing. *applause*</p>
+		</div>
+
+		<div class="bodycontent" id="trestinvillage">
+		<div class="place">
+
+			<h1 class="wtheading">Trestin Village</h1>
+			<img src="http://images.neopets.com/items/sta_nq2_rohanes_mother.gif" alt="Rohanes Mom">
+				<div class="flavortext">Home sweet home.</div></div>
+			<p>All right, we're ready to start! First off, <a href="http://www.neopets.com/games/nq2/nq2.phtml">click me to start 
+
+a 
+game.</a> Keep hitting "Continue" until you get to Trestin Village. But before we start actually playing, we're going to die. Yes, you heard me right. 
+Click on "Hunting" next to "Travel" so that Hunting gets bolded. Congrats! You've just <strong>switched</strong> to Hunting mode. Now "switch" 
+back to Normal mode. Now back to Hunting. You're learning already.</p>
+
+			<p>Now to, uh, get killed. Walk west from where you start so you leave town. Then walk back and forth a bit until you 
+
+run into a 
+<strong>Plains Lupe.</strong> Start the fight and then hit <strong>Wait 5s</strong> each time your turn comes. Eventually you'll die and be 
+spirited back to Trestin. Congrats! By dying to the weakest baddie in the game, you got an <strong>avatar.</strong> And they say NQII is hard. 
+Pfft.</p>
+			<p>Now we're going to take revenge. *cackles* OK, so stay on Hunting mode (<em>stay</em> is a hard vocab word: it 
+
+means to 
+
+<em>not change</em> your travel mode! Gasp!) Anyway. Walk outside town but don't go anywhere yet. Walk <strong>back and forth</strong> (go 
+west one step, then east one step... or north, then south... the possibilities are endless.) When you run into a Plains Lupe, kill it. If your HP bar 
+
+turns 
+<strong>yellow (ooh look this isn't yellow... scary)</strong>, switch to Normal mode and walk back into town. <strong>Talk to mom</strong> and 
+she'll heal you to full health for free. She <em>is</em> your mom after all. Then switch back to Hunting and start, well, hunting again.</p>
+			<p>Keep beating up those Lupes until you grow to level <strong>2 if you're playing Normal mode, 3 if Evil, and 4 if 
+
+Insane.</strong> (See what I wrote? That was 61 characters. I'm lazy so I'll write in the format <strong title="Normal: 2, Evil: 3, Insane:  4">2/3/4</strong> from now on. If you don't understand the syntax, just hover your mouse over the <span title="No, the OTHER 2/3/4, not this one,  silly. *bonks you on head*">2/3/4</span>.) If you get hurt, run back to mom.</p>
+
+			<p>Once you grow to level 2, you're going to get a <strong>skill point</strong> (you read about that, right?) Now to 
+
+spend it. Look to your right and you'll see a table called "skills." (Wonder what that could be...) Look to the row that says level 2 and look right next 
+
+to the 2. See the words <em>Damage Increase</em> next to it? (If you want to see more info, just <strong title="HOVER POWER!">hover</strong> 
+
+your mouse over the skill name.) Now go to your <strong>skills page</strong> (when you're in the overworld, look right next to your health bar. Bada 
+
+bing.) Look at the <em>Damage Increase</em> row and go across till you see <em>1: Fighting Stance</em> in big red letters. <strong>Click on the 
+
+red letters</strong> and confirm. Congrats, you just spent a skill point!</p>
+
+			<p>OK, from now on I'm not going to waste a paragraph telling you how to spend skill points. If you're cool enough to 
+
+read this guide in the first place, you're smart enough to have caught on by now. So remember, right now you're at level <strong title="Normal: 2,  Evil: 3, Insane: 4">2/3/4</strong> and you've <strong>spent</strong> all the skill points you've earned.  Now we can move on. *cheers*</p>
+		</div>
+
+	<div class="bodycontent" id="movingon">
+		<div class="place">
+			<h1 class="wtheading">Moving On</h1>
+
+			<img src="http://images.neopets.com/neoboards/avatars/weakling.gif" alt="Weakling!">
+				<div class="flavortext">No no, you WERE a weakling. Not anymore.</div></div>
+				<p>So you've gotten your (now useless) avatar and are ready to start beating up tougher stuff. Good news, 
+
+you can. So leave town on Normal mode and go north into some <strong>hills</strong>. We're going to do some <strong>training</strong> here. 
+
+What's that? You'll find out.</p>
+				<p>Basically, all training is is <strong>walking around on Hunting and fighting</strong>. Not that glamorous, 
+
+eh? Yeah. Well now that you're in the hills, practice some of this <em>training</em> stuff. If your HP goes down so that your HP bar turns 
+
+yellow/red (I prefer the more technical <em>you get hurt</em>), switch to Normal mode and run back to mom. When you're healed start training 
+
+again.</p>
+
+				<p>Once you level up to level <strong title="Normal: 3, Evil: 4, Insane: 5">3/4/5</strong>, spend your skill 
+
+point. Now go to your <strong>map site</strong> and open up the <em>Western Plains</em> map. See that <strong>cave</strong> in the 
+
+northwest corner? Yeah, you wanna go there. Right now you're near Trestin Village. So switch to <strong>Normal mode</strong> (whenever I say something like that, I mean Normal travel mode, not Normal difficulty) and walk your way 
+
+over to the forest near the cave. If you run into baddies just kill 'em.</p>
+
+				<p>Now that you're in the forest (right?) start <strong>training</strong>. I hope you remember what that 
+
+means. If you're hurt, use those <strong>Healing Vials</strong> everyone seems to carry. You know how to do this in battles and in the overworld. 
+
+All right? So grow to level <strong title="Normal: 4, Evil: 5, Insane: 6">4/5/6</strong> in this forest. Spend your skill point (I think you're getting 
+
+annoyed by this... so I'll stop.) And, uh, look at that. We're at the end of the section already. And it only took us 4 paragraphs. You're turning 
+
+<strong>pro</strong> already! *fist bump*</p>
+	</div>
+
+	<div class="bodycontent" id="darkcave">
+		<div class="place">
+			<h1 class="wtheading">Dark Cave</h1>
+			<img src="http://images.neopets.com/items/bg_creepycave.gif" alt="Dark, huh.">
+				<div class="flavortext">All caves are dark, but this one's <span style="font-weight:  bold;">official</span>.</div></div>
+				<p>I admit the first two sections took a while to read. I'll stop babying you after this section. I promise (I'm 
+
+being serious for once.) Oh yeah, the game. But first a word from our sponsors.</p>
+
+				<div class="message"><span class="messagetitle">The NEW Walk-Heal Method!</span>
+					<p><img src='http://images.neopets.com/template_images/kacheekwalkblue.gif' alt="WALK!"></p>
+
+					<p>Feeling <span class="red">LOW</span> on HP? Well just don't stand there, <span class="red">do 
+
+something!</span></p>
+					<p>Just <span class="red">walk around</span> to regain HP! That's right, just walk around! Now for 
+
+every <span class="red">7</span> steps you take after battle, you regain <span class="red">1</span> HP! That's up to 7 HP after each battle, 
+
+yours positively <span class="red">FREE!</span> So what are you waiting for?!?!?</p>
+
+					<p>As an added bonus, you don't even have to win the battle! You can <span  class="red">flee</span> and still gain HP afterwards!</p>
+					<p><span class="red">**</span>Brought to you by the <span class="red">NQII Help 
+
+Club!**</span></p>
+				<p class="smallprint">DISCLAIMER: Method does not work if you are attacked or eaten by Chias before 7 steps 
+
+is up. No, that Kacheek won't stop walking. And stop reading small print, it's bad for your eyes.</p>
+						</div>
+				<p>Uh, sorry about that. I didn't recommend that color scheme or that Kacheek to them. Anyway, use the 
+
+walk-heal method after each battle. The few HP adds up in the long run.</p>
+
+				<p>OK, so you've probably scrolled down a lot to get that annoying walking Kacheek off your screen. If you 
+
+get lost in this cave (hopefully you won't), use the <strong>left-hand method</strong> you read about. Put your left hand on a wall and walk, 
+
+keeping your hand against the wall the whole time. But we'll come back to this later.</p>
+				<p>Now open up your <strong>map site</strong> to the <em>Dark Cave/Gold Mine</em> map. You're in the 
+
+northwest, you wanna get into the building in the southwest. So switch to <strong>Hunting</strong> mode and make your way through the cave (I 
+
+think you know how to), beating up the baddies <strong>as they come</strong>. Don't walk back and forth or anything, just beat them up if they 
+
+get the nerve to attack you. Use a <strong>Healing Vial</strong> if you're hurt.</p>
+
+				<p>So keep on walking and chewing gum (not required) until you land on some train tracks. Before you move 
+
+on, <strong>train</strong> to level <strong title="Normal: 5, Evil: 6, Insane: 7">5/6/7</strong>. Once that's done, <span style="text-decoration:  line-through;">spend the skill point</span> take the southwest fork in the road.</p>
+				<p>Look at your map site and look at the <strong>4-way intersection</strong> in the west of the building. 
+
+Get there and train to level <strong title="Normal: 6, Evil: 7, Insane: 8">6/7/8</strong> once you're there. Use only Healing Vials here, don't use 
+
+those funky new Healing Flasks. The minute you level up, switch to <strong>Normal mode</strong>, do not pass go, do not collect 200 NP. Instead 
+
+go south until you see a big blue lard tub. Say hi to your first boss and then get ready to kill him. Haha.</p></div>
+
+			<div class="boss" id="theminerforeman">
+				<h1 class="wtheading">the miner foreman</h1>
+				<div class="bosspic"><img src="http://images.neopets.com/nq2/m/m1008_4f897.gif" alt="The Miner Foreman"></div>
+				<div class="flavortext">Yeah, he's about as fat as four men.</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">6 on Normal<br>7 on Evil<br>8 on Insane</td></tr>
+
+				<tr>
+					<td class="first">HP:</td>
+					<td class="second">50 on Normal<br>62 on Evil<br>75 on Insane</td></tr>
+				<tr>
+					<td class="first">Special Abilities:</td>
+					<td class="second">None. Lucky you.</td></tr>
+
+				<tr>
+					<td class="first">Prizes:</td>
+					<td class="secondlast">2 Healing Flasks<br>1 weapon/armor<br>100 NP</td></tr>
+
+				</table>
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General:</strong> Since this is your first boss battle, this is also your first encounter 
+
+with this sort of section. It's pretty simple, but know that <em>Special Abilities</em> are things like Direct Damage, Healing, and those sorta 
+
+goodies. As for the Foreman, he isn't so bad. Just follow the Offensive and Defensive tips to win.</li>
+
+					<li><strong>Offensive:</strong> Here's how to, well, go on the offensive. For the Foreman, just use 
+
+your melee attack whenever you aren't healing. Which reminds me of the next part...</li>
+					<li><strong>Defensive:</strong> This is the last part of the strategy. If the Foreman gets your HP 
+
+down to yellow/red, use Healing Flasks on your turn. After that turn you can go on attacking.</li>
+				</ul>
+				<div class="postbattle"><h1 class="postbattle">Post-Battle:</h1><p>Once he's got the skull on him, give 
+
+yourself a pat on the back. You've just beaten your first boss. He'll drop either a sword or armor, so go to your Inventory and 
+
+<strong>equip</strong> that. After that, step into the <strong>teleporter</strong> behind him to get warped <strong>outside the 
+
+cave.</strong></p>
+
+				<p>Open up your <strong>map site</strong> to the <em>Western Plains</em> map for a second. See that 
+
+one-square-wide <strong>land-bridge</strong> thingy to the west? Switch to <strong>Normal mode</strong> and make your way over to that.</p>
+				<p> Once you're there, open the <em>Northern Marches</em> map. See the town of <strong>White 
+
+River</strong> in the south? Walk there on Normal mode, beating up any Gelerts who get in your way. Step onto the city...</p>
+
+				</div>
+			</div>
+
+		<div class="bodycontent" id="whiteriver">
+		<div class="place">
+			<h1 class="wtheading">White River</h1>
+			<img src="http://images.neopets.com/items/gar_jelly_river.gif" alt="Wait, the river's blue...">
+				<div class="flavortext">The river's blue, not white. Why must you lie to us, NQII?!? *sobs*</div></div>
+
+				<p>...and you'll get warped into town. You can sightsee if you like but that's not why we're here. We're going 
+
+to do some shopping. But first we're gonna rest cause we're cool like that.</p>
+				<p>Walk south a few steps. See the conspicuously marked <strong>inn</strong> to your east? Yeah. Enter 
+
+that and talk to the Tonu behind the counter (yes, you can talk to him across the counter.) Ask him to <strong>stay there.</strong> The good part 
+
+is that if you die before you beat the next boss, you'll be revived here instead of in Trestin. Saves you a good bit of walking.</p>
+				<p>So exit this inn and go across the street to the <strong>weapons/armor/potions shop</strong>. Talk to 
+
+the dude behind the counter. You're going to buy either a <strong>sword</strong> or <strong>armor</strong>... but it depends on what the Miner 
+
+Foreman <strong>gave you</strong>. If he gave you a sword, buy the armor. If he gave you armor, buy the sword.</p>
+
+				<p>Now go back to your inventory and <strong>equip</strong> what you just bought. Talk to Tebor again 
+
+and buy <strong>10 Blast Potions</strong>. Also buy <strong>as many Healing Vials</strong> as you can carry. Just keep clicking <em>Buy 
+
+10</em> next to Healing Vials until you get a red error message. Once the shopping's done, we can leave town.</p>
+				<p>Now open up your <strong>map</strong> of the <em>Northern Marches</em>. See the 
+
+
+<strong>forest</strong> northeast of White River? Well, switch to <strong>Hunting mode</strong>, leave town, and <strong>train</strong> in the 
+
+forest until you're level <strong title="Normal: 7, Evil: 8, Insane: 9">7/8/9</strong>. If you're hurt you can rest at the <strong>inn.</strong> Save 
+
+your Healing Vials.</p>
+				<p>Once you've leveled up, switch to <strong>Normal mode</strong> and look at your map again. See the 
+
+entrance to the <em>Underground Cave</em> in the northeast? Make your way over there and step on the entrance to the cave.</p>
+
+		</div>
+
+	<div class="bodycontent" id="undergroundcave">
+		<div class="place">
+			<h1 class="wtheading">underground cave</h1>
+			<img src="http://images.neopets.com/items/bg_funguscave.gif" alt="Smelly.">
+				<div class="flavortext">They coulda built a bridge, but <b>NO</b>, they make you go through this 
+
+cave.</div></div>	
+				<p>Smelly. Well, at any rate, we're gonna <strong>train</strong> around the entrance of the cave until we're 
+
+level <strong title="Normal: 8, Evil: 9, Insane: 10">8/9/10</strong>. Use <strong>Healing Vials</strong> if you're hurt, save those Healing 
+
+Flasks.</p>
+
+				<p>So once you've leveled up, you're ready to start moving through the cave. That's coming up, right after 
+
+these messages.</p>
+	
+			<div class="message">
+				<span class="messagetitle">The NEW Left-Hand Method!</span>
+		<p><img src='http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/NewHandWall.PNG' alt="Keep your hand on the wall at  all times."></p>
+
+					<p>Feeling <span class="red">LOST?</span> Don't be! With our patented new Left-Hand Method, 
+
+you can get out of <span class="red">ANY</span> cave, guaranteed!</p>
+
+					<p>Just put your <span class="red">left hand</span> on a wall and start <span  class="red">walking</span>! That's right! As long as you keep your left hand on a wall, you'll get <span class="red">out</span> of the cave 
+
+pronto!</p>
+					<p>But <span class="red">wait</span>! There's more! This method will also work in <span  class="red">towers and dungeons</span>! So what are you waiting for?!?!?</p>
+
+					<p><span class="red">**</span>Brought to you by the <span class="red">NQII Help 
+
+Club!**</span></p>
+					<p class="smallprint">DISCLAIMER: Method does not work if you are eaten by Chias before you leave 
+the cave. And yes, you can use your right hand if you want. And stop reading small print, it's bad for your eyes.</p>
+			</div>
+
+		<p>Uh... yeah. Again, not my idea. Just use the left-hand method if (when) you get lost. Anyhow, now open up your <strong>map</strong> to the <em>Underground Cave.</em> You're in the northwest corner, and you need to get to the <strong>southeast corner</strong>. Switch to <strong>Hunting mode</strong> and make your way through the cave, beating up any baddies you run into. Just <strong>follow the puddles.</strong></p>
+		<p>OK, so once you get to the end of the cave, <strong>stop</strong>, do not pass Go, do not collect $200. We're actually going to gain 2 levels here. So train up to level <strong title="Normal: 10, Evil: 11, Insane: 12">10/11/12</strong>. If you're hurt, use <strong>Healing Flasks</strong> or Healing Vials if you really want to. Just save those Healing Potions (yeah there's a kind of healing potion called a Healing Potion.)</p>
+		<p>Once you've leveled up you can leave the cave. Woohoo! Now you're on a bite-size island, and you'll see a tower thingy nearby. Walk onto it to enter.</p>
+		</div>
+
+	<div class="bodycontent" id="mysterioustower">
+	<div class="place">
+		<h1 class="wtheading">Mysterious Tower</h1>
+			<img src="http://images.neopets.com/items/toy_bb_tower.gif" alt="Mysterious eh.">
+				<div class="flavortext">Nothing witty to say here. It's just... a tower...</div></div>
+		<p>Enter that but don't go too far. Yeah, we have to train to level <strong title="Normal: 11, Evil: 12, Insane: 13">11/12/13</strong> at the entrance of the tower. Keep using those <strong>Healing Flasks</strong> cause we want to save the Healing Potions.</p>
+		<p>Once you've leveled up, switch to <strong>Normal mode</strong> and open your <strong>map</strong> to <em>Mysterious Tower, Level 1.</em> Walk over to the stairs in the <strong>northeast</strong> corner of the room, running away from any skeleton dudes you run into.</p>
+		<p>Now you're on <em>Level 2</em> of the tower. Change your map accordingly. Find the stairs in the southeast and go up to <em>Level 3</em>. Good news! There's a <strong>new baddie</strong> for you to beat up, and he'll give out more EXP than the skeleton dudes. Unfortunately he hits kinda hard so use those <strong>Healing Flasks</strong>. Use as many as you like, actually, cause we won't be needing them much anymore.</p>
+		<p>Train up to level <strong title="Normal: 12, Evil: 13, Insane: 14">12/13/14</strong> (don't worry, that's the last level you have to gain before you face Zombom. I'm serious.) Glance at your <em>Level 3</em> map if you need to and walk onto the stairs. Now you're on <em>Level 4</em> of the tower, and Zombom's just south of you. Switch to <strong>Normal mode</strong>, heal up if you need to, and walk on down.</p>
+	</div>
+
+<div class="boss" id="zombom">
+				<h1 class="wtheading">zombom</h1>
+				<div class="bosspic"><img src="http://images.neopets.com/items/toy_nq2_zombom.gif" alt="Zombom"></div>
+				<div class="flavortext">Sorry, FireFox, but even you lose out to MagicPeanutEater.</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">12 on Normal<br>13 on Evil<br>14 on Insane</td></tr>
+
+				<tr>
+					<td class="first">HP:</td>
+					<td class="second">120 on Normal<br>150 on Evil<br>180 on Insane</td></tr>
+				<tr>
+					<td class="first">Special Abilities:</td>
+					<td class="second">Decimate - 31HP <strong>Direct Damage</strong><br>
+							Zeal - 18% <strong>Haste</strong><br>
+							Aid - 40HP <strong>Heal</strong></td></tr>
+
+				<tr>
+					<td class="first">Prizes:</td>
+					<td class="secondlast">3 Healing Flasks<br>1 weapon/armor<br>100 gold<br>200 NP</td></tr>
+
+				</table>
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General:</strong>This peanut-eating pachyderm is a tough cookie (never thought you'd hear <em>that</em> in a NQII  Guide, eh?) The fight isn't that complicated... just toss Blast Potions when you're not using Healing Potions. attack when you're not healing. Still, chances are you'll die to him... if you do, read the Post-Battle section. </li>
+
+					<li><strong>Offensive:</strong> <em>Blast Potions</em> will hit harder than your melee attack most of the time, so use those (just click on the words Blast Potion) when you're not healing. If you start running low on them just start attacking normally.</li>
+					<li><strong>Defensive:</strong> Zombom's Decimate will nail you for 31HP most of the time. On top of that, he'll double you (he gets 2 moves after each one of yours) sometimes, so always keep your <em>HP above 62</em> (31 * 2.) Use those <em>Healing Potions</em> whenever your HP is below 62.</li>
+				</ul> 
+				<div class="postbattle"><h1 class="postbattle">Post-Battle:</h1><p><strong>If you died...</strong></p>
+				<p style="margin-left: 20px;">Oof, sorry to hear that. You'll respawn in White River. If you have fewer than <strong>5 Blast Potions</strong> left, buy 5 more. Then switch to <strong>Normal mode</strong> and open up your map site to the <em>Northern Marches</em>. Enter the cave (and open up your map for that), and make your way through it. Then go through the Mysterious Tower. You can get your rematch with Zombom at the top. </p>
+				
+				<p><strong>If he died...</strong></p>
+				<p style="margin-left: 20px;">Nice job! Not many people can beat the fat elephant (yes, I have tons of nicknames for Zombom.) <strong>Equip</strong> the new sword/armor he gave you and step onto the <strong>teleporter</strong>. You'll be <strong>outside the tower</strong>. Open up your map for the <em>Underground Cave</em> and switch to <strong>Normal mode</strong>. Follow the puddles back to the exit in the northwest. You're now in the <em>Northern Marches</em>. Make your way back to White River.</p>
+				<p><strong>Congrats!</strong> You've just finished Act 1, Part 1. For more baddie-bashing fun (now with the help of Mipsy, the wizard with attitude), visit the <a href="http://www.neopets.com/~Fordulat">Act 1.5 Guide</a> on Fordulat's page. So it looks like you won't be coming back to this page anymore... looks like goodbye for now. *sniffle*
+				</div>
+			</div>
+
+
+</div>			
+</body>

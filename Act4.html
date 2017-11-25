@@ -1,0 +1,1217 @@
+<head>
+  <title>Act 4 Walkthrough - AlaskanMosquito</title>
+  <style type="text/css">
+	/*Release Notes
+		Rev's NeoQuest II Guide
+		by revolutionrising
+		(I would copyright this but what's the point?)
+		Guide Version 4.1 "A Blur of Green"
+		Act 4 - AlaskanMosquito (neopets.com/~AlaskanMosquito)
+		Page Version 1.0
+		Last edited 9/24/10
+		*/
+	/*Changelog
+		Version - Date - Notes
+		1.0 - 10/10/10 - Awesome date. Also, hi.
+		*/
+	body {
+		font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+		font-size: 15px;
+		color: #381808;
+		line-height: 1.4em;
+		cursor: crosshair;
+		background-color: #58260D;
+		background-image: url('http://www.psdgraphics.com/file/dark-wood-texture.jpg');
+		background-attachment: fixed;
+		}
+	table {
+		visibility: hidden;
+		}
+	font{
+		visibility: hidden;
+	}
+	div#hitcounter {
+		text-align: center;
+		}
+	div#allstuff {
+		margin-top: 5%;
+		height: 80%;
+		}
+	div#jumpandskills {
+		width: 220px;
+		float: right;
+		margin: 0px 10px 0px 10px;
+		}
+	div#jump {
+		padding: 10px 5px 10px 5px;
+		border: 3px ridge #000000;
+		background-color: #FFE8C1;
+		height: 35%;
+		overflow: scroll;
+		margin-bottom: 10px;
+		}
+	div#skills {
+		padding: 0px 5px 5px 5px;
+		border: 3px ridge #000000;
+		background-color: #FFE8C1;
+		height: 60%;
+		overflow: scroll;
+		}
+	div#therest {
+		height: 100%;
+		overflow: scroll;
+		padding: 10px;
+		}
+
+	div#header {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+		width: 606px;
+		text-align: center;
+		}	
+	div.bodycontent {
+		background-color: #FFE8C1;
+		border: 3px ridge #000000;
+		padding: 10px;
+		margin-bottom: 10px;
+		}
+
+	div.boss {
+		background-color: #FFE8C1;
+		border: 3px ridge #000000;
+		padding: 10px;
+		margin-bottom: 10px;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		}
+
+	.heading {
+		text-transform: lowercase;
+		text-align: left;
+		letter-spacing: 0.6em;
+		font-weight: bold;
+		font-size: 180%;
+		color: #000000;
+		border-bottom: 1px dashed #444444;
+		font-family: Candara, "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	.wtheading {
+		text-transform: lowercase;
+		text-align: center;
+		letter-spacing: 0.5em;
+		font-size: 180%;
+		font-weight: bold;
+		color: #000000;
+		font-family: Candara, "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	h1#jumpheading {
+		text-align: left;
+		font-size: 200%;
+		letter-spacing: 0.7em;
+		border-bottom: 1px dashed #444444;
+		font-family: "Berlin Sans FB", Candara, Georgia, Verdana, Arial, sans-serif;
+		}
+	div.place {
+		width: 50%;
+		text-align: center;
+		border-bottom: 1px dashed #444444;
+		margin-left: auto;
+		margin-right: auto;
+		}
+	.place img{
+		width: 100px;
+		}
+	div.flavortext {
+		font-style: italic;
+		margin-top: 0.5em;
+		}
+
+	p {
+		text-indent: 10px;
+		}
+	em {
+		color: #248E1C;
+		font-style: italic;
+		}
+	strong {
+		color: #207A18;
+		font-weight: bold;
+		}
+	span.strike {
+		text-decoration: line-through;
+		}
+
+	div.ajump {
+		text-indent: 15px;
+		letter-spacing: 0.3em;
+		font-size: 14px;
+		text-transform: lowercase;
+		cursor: auto;
+		font-weight: bold;
+		font-family: "Trebuchet MS", "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		}
+	#header a {
+		text-decoration: none !important;
+		border: none !important;
+		}
+	#header img {
+		border: none !important;
+		}
+	span#learn {float: left;}
+	span#play {float: right;}
+	span#headercomment {
+		color: white;
+		}
+
+	a {
+		text-decoration: none;
+		border-bottom: 1px dashed #000000;
+		}
+	a:link {
+		color: #12094C;
+		}
+	a:visited {
+		color: #562900;
+		}
+	a:hover {
+		color: #BC0016;
+		}
+
+	div.ajumpwt {
+		text-indent: 10px;
+		letter-spacing: 0.2em;
+		font-size: 14px;
+		text-transform: lowercase;
+		cursor: auto;
+		font-family: "Trebuchet MS", Georgia, "Berlin Sans FB Demi", Verdana, Arial, sans-serif;
+		}
+	div.ajumpboss {
+		text-indent: 10px;
+		letter-spacing: 0.2em;
+		font-size: 14px;
+		text-transform: lowercase;
+		cursor: auto;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		color: #9E0915;
+		font-weight: bold;
+		}
+	h1.jumpsection {
+		font-size: 14px;
+		margin-bottom: 0px;
+		text-transform: lowercase;
+		letter-spacing: 0.3em;
+		}
+	.ajumpboss a {
+		border-bottom: 1px dotted #444444;
+		}
+	div#intro {
+		text-align: center;
+		width: 605px;
+		margin-left: auto;
+		margin-right: auto;	
+		}
+	div.message {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		background-color: white;
+		border: 2px solid black;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		padding: 5px;
+		}
+	span.messagetitle {
+		font-variant: small-caps;
+		font-size: 18px;
+		font-style: italic;
+		color:#b8389e;
+		margin-top: 10px;
+		text-decoration: underline;
+		}
+	span.red {
+		color: #FF0000;
+		}
+	p.smallprint {
+		font-size: 10px;
+		font-family: "Times New Roman", serif;
+		line-height: 1em;
+		}
+	div.bosspic {
+		margin: 5px;
+		text-align: center;
+		}
+	.bosspic img {
+		width: 100px;
+		}
+	table.bossinfo {
+		width: 80%;
+		margin: 5px auto 0px auto;
+		border: 1px dashed black;
+		padding: 5px;
+		visibility: visible !important;
+		}
+	.bossinfo td {
+		padding: 3px;
+		}
+	td.first {
+		text-align: right;
+		font-weight: bold;
+		text-transform: lowercase;
+		letter-spacing: 0.1em;
+		width: 30%;
+		}
+	td.second {
+		text-align: left;
+		border-bottom: 1px dotted #444444;
+		width: 70%;
+		}
+	td.secondlast {
+		border-bottom: none !important;
+		}
+	ul.strategy {
+		text-align: left;
+		list-style-type: none;
+		}
+	.strategy li {
+		margin-left: 25px;
+		margin-bottom: 1em;
+		}
+	.strategy strong {
+		margin-left: -10px !important;
+		border-bottom: 1px dashed #444444;
+		}
+	li.bossstrategy {
+		font-weight: bold;
+		letter-spacing: 0.1em;
+		text-transform: lowercase;
+		margin-left: 0px !important;
+		border-bottom: 1px dotted #444444;
+		}
+	div.postbattle {
+		text-align: left;
+		}
+	h1.postbattle {
+		color: #000000;
+		font-family: Candara, "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		text-transform: lowercase;
+		border-bottom: 1px dotted #444444;
+		font-size: 120%;
+		letter-spacing: 0.3em;
+		}
+	#skillsheading {
+		font-size: 200%;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		text-transform: lowercase;
+		letter-spacing: 0.4em;
+		border-bottom: 1px dashed #444444;
+		}
+	table#skillstable {
+		font-size: 12px;
+		border-collapse: collapse;
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		visibility: visible !important;
+		}
+	#skillstable td {
+		border: 1px solid #444444;
+		padding: 1px;
+		text-align: center;
+		}
+	.levelcol {
+		width: 10%;
+		}
+	.rohane, .mipsy, .talinia, .velm {
+		width: 20%;
+		}
+	tr#skillstableheadings {
+		text-transform: lowercase;
+		font-weight: bold;
+		font-family: "Candara", "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		font-size: 14px;
+		color: #000000;
+		background-color: transparent !important;
+		}
+	#charnames td {
+		font-weight: bold;
+		text-transform: lowercase;
+		font-family: "Candara", "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, "Trebuchet MS", Verdana, Arial, sans-serif;
+		font-size: 140%;
+		background-color: #FFE8C1 !important;
+		border: none !important;
+		}
+	#skillstableheadings td {
+		border: none !important;
+		}
+	#skillstable tr {
+		background-color: #EDFFD8;
+		}
+	tr.altcolor {
+		background-color: #D2FF9B !important;		
+		}
+	td.lev {
+		font-weight: bold;
+		font-family: "Trebuchet MS", Georgia, Verdana, Arial, sans-serif;
+		font-size: 120%;
+		border: none !important;
+		background-color: #FFE8C1;
+		}
+	td.left {
+		text-align: center;
+		background-color: #FF8E8C !important;
+		font-weight: bold;
+		width: 30%;
+		}
+	td.right {
+		width: 70%;
+		}
+	div.message {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		background-color: white;
+		border: 2px solid black;
+		font-family: "Berlin Sans FB Demi", "Berlin Sans FB", Georgia, Verdana, Arial, sans-serif;
+		padding: 5px;
+		}
+	span.messagetitle {
+		font-variant: small-caps;
+		font-size: 18px;
+		font-style: italic;
+		color:#b8389e;
+		margin-top: 10px;
+		text-decoration: underline;
+		}
+	span.red {
+		color: #FF0000;
+		}
+	p.smallprint {
+		font-size: 10px;
+		font-family: "Times New Roman", serif;
+		line-height: 1em;
+		}
+	div.shoppinglist{
+		background-color: #FFFFFF;
+		background-image: url('http://images2.layoutsparks.com/1/103072/notebook-paper-lines-page.gif');
+		width: 50%;
+		padding: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		font-family: "Segoe Print", "Trebuchet MS", Verdana, Arial, sans-serif;
+		text-align: center;
+		}
+	.shoppinglist h1{
+		font-family: "Segoe Script", "Segoe Print", "Trebuchet MS", Verdana, Arial, sans-serif;
+		}
+	.shoppinglist ul{
+		text-align: left;
+		font-size: 14px;
+		list-style-type: none;
+		}
+	.shoppinglist ul ul{
+		}
+	.shoppinglist strong{
+		color: #000000;
+		text-decoration: underline;
+		padding: 2px;
+		}
+	table#abilities{
+		visibility: visible !important;
+		}
+	.aname{
+		text-align: right;
+		font-style: italic;
+		border-right: 1px dotted #444444;
+		width: 25%;
+		}
+	.amount{
+		text-align: right;
+		width: 10%;
+		}
+	.atype{
+		font-weight: bold;
+		width: 65%;
+		}
+	table#faeries{
+		visibility: visible !important;
+		width: 80%;
+		background-color: #F1FFE0;
+		margin: 10px;
+		border-collapse: collapse;
+		margin-left: auto;
+		margin-right: auto;		
+	}
+	#faeries td{
+		border: 1px solid #000;
+		padding: 3px;
+		text-align: center;
+	}
+	#faerieheadings td{
+		font-weight: bold;
+		background-color: #E5FFC6;
+		size: 110%;
+	}
+	#mainfaerieheading td{
+		text-transform: lowercase;
+		background-color: #6A9E2C;
+		color: #FFF;
+		font-weight: bold;
+		font-size: 150%;
+		letter-spacing: 1em;
+	}
+	td.faerie{
+		font-weight: bold;
+		font-size: 110%;
+		text-decoration: underline;
+	}
+	ol.strategylist li{
+		margin-top: 0.6em;
+	}
+	.bigheading{
+		size: 140%;
+		text-align: center;
+		font-family: Candara, "Segoe Print","Berlin Sans","Berlin Sans FB",Georgia, Verdana, sans-serif;
+		color: #FF0000;
+		text-decoration: underline;
+	}
+	div.person{
+		width: 90%;
+		border: 1px dashed #444;
+		margin: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 5px;
+	}
+	</style>
+</head>	
+<body>
+<div id="allstuff">
+<div id="jumpandskills">
+<div id="jump">
+<h1 class="heading" id="jumpheading">Jump</h1>
+<div class="ajump"><a href="http://www.neopets.com/">neopets home</a></div>
+<div class="ajump"><a href="http://www.neopets.com/games/nq2/nq2.phtml"
+ target="_blank">nqii main page</a></div>
+<div class="ajump"><a href="http://www.neopets.com/~NQref">nqii reference</div>  
+<br>
+<div class="ajump"><a href="#header">top of page</a></div>
+<div class="ajumpwt"><a href="#shadowgulch">shadow gulch</a></div>
+<div class="ajumpwt"><a href="#vonrooscastle">von roo's castle</a></div>
+<div class="ajumpboss"><a href="#meuka">meuka</a></div>
+<div class="ajumpwt"><a href="#caveofdarkthings">cave of dark things</a></div>
+<div class="ajumpboss"><a href="#spidergrundo">spider grundo</a></div>
+<div class="ajumpwt"><a href="#balthazarsgrove">balthazar's grove</a></div>
+<div class="ajumpboss"><a href="#fourfaeries">four faeries</a></div>
+<div class="ajumpwt"><a href="#landofthechias">land of the chias</a></div>
+<div class="ajumpwt"><a href="#goobog">goo bog</a></div>
+<div class="ajumpboss"><a href="#hubridnox">hubrid nox</a></div>
+<div class="ajumpboss"><a href="#esophagor">esophagor<a></div>
+
+</div>
+<div id="skills">
+<h1 id="skillsheading">skills</h1>
+<table id="skillstable">
+  <col class="levelcol"> <col class="rohane"> <col class="mipsy"> <col class="talinia"> <col class="velm">
+    <tr id="skillstableheadings">
+      <td>lv.</td>
+      <td colspan="4">When you grow to that level, spend points here.</td>
+    </tr>
+    <tr id="charnames">
+      <td style="border: none;"><br>
+      </td>
+      <td title="Rohane">Roh</td>
+      <td title="Mipsy">Mip</td>
+	  <td title="Talinia">Tal</td>
+	  <td title="Velm">Velm</td>
+	 </tr>
+	<tr>
+		<td class="lev">41</td>
+			<td title="Innate Melee Haste to skill lv. 9">Innate Melee Haste</td>
+			<td title="Innate Melee Defense to skill lv. 11">Innate Melee Def.</td>
+			<td title="Multiple Targets to skill lv. 8">Mult. Targets</td>
+			<td title="Group Healing to skill lv. 10">Group Heal.</td>
+	</tr>
+	<tr class="altcolor">
+		<td class="lev">42</td>
+			<td title="Damage Increase to skill lv. 11">Damage Inc.</td>
+			<td title="Innate Casting Haste to skill lv. 11">Innate Casting Haste</td>
+			<td title="Multiple Targets to skill lv. 9">Mult. Targets</td>
+			<td title="Group Shielding to skill lv. 10">Group Shield.</td>
+	</tr>	
+		<td class="lev">43</td>
+			<td title="Critical Attacks to skill lv. 11">Critical Attacks</td>
+			<td title="Group Haste to skill lv. 7">Group Haste</td>
+			<td title="Increased Bow Damage to skill lv. 12">Incrsd. Bow Dmg.</td>
+			<td title="Group Shielding to skill lv. 11">Group Shield.</td>
+	</tr>
+	<tr class="altcolor">
+		<td class="lev">44</td>
+			<td title="Innate Melee Haste to skill lv. 10">Innate Melee Haste</td>
+			<td title="Group Haste to skill lv. 8">Group Haste</td>
+			<td title="Multiple Targets to skill lv. 10">Mult. Targets</td>
+			<td title="Innate Melee Defense to skill lv. 7">Innate Melee Def.</td>
+	</tr>
+	</tr>	
+		<td class="lev">45</td>
+			<td title="Damage Increase to skill lv. 12">Damage Inc.</td>
+			<td title="Group Haste to skill lv. 9">Group Haste</td>
+			<td title="Multiple Targets to skill lv. 11">Mult. Targets</td>
+			<td title="Group Healing to skill lv. 11">Group Heal.</td>
+	</tr>
+	<tr class="altcolor">
+		<td class="lev">46</td>
+			<td title="Damage Increase to skill lv. 13">Damage Inc.</td>
+			<td title="Innate Melee Defense to skill lv. 12">Innate Melee Def.</td>
+			<td title="Increased Bow Damage to skill lv. 13">Incrsd. Bow Dmg.</td>
+			<td title="Innate Melee Defense to skill lv. 8">Innate Melee Def.</td>
+	</tr>
+	</tr>	
+		<td class="lev">47</td>
+			<td title="Critical Attacks to skill lv. 12">Critical Attacks</td>
+			<td title="Innate Casting Haste to skill lv. 12">Innate Casting Haste</td>
+			<td title="Innate Melee Haste to skill lv. 10">Innate Melee Haste</td>
+			<td title="Group Shielding to skill lv. 12">Group Shield.</td>
+	</tr>
+	<tr class="altcolor">
+		<td class="lev">48</td>
+			<td title="Innate Melee Haste to skill lv. 11">Innate Melee Haste</td>
+			<td title="Group Haste to skill lv. 10">Group Haste</td>
+			<td title="Innate Melee Haste to skill lv. 11">Innate Melee Haste</td>
+			<td title="Group Healing to skill lv. 12">Group Heal.</td>
+	</tr>	
+	</tr>	
+		<td class="lev">49</td>
+			<td title="Critical Attacks to skill lv. 13">Critical Attacks</td>
+			<td title="Group Haste to skill lv. 11">Group Haste</td>
+			<td title="Innate Magic Resistance to skill lv. 2">Innate Magic Res.</td>
+			<td title="Innate Melee Defense to skill lv. 9">Innate Melee Def.</td>
+	</tr>
+	<tr class="altcolor">
+		<td class="lev">50</td>
+			<td title="Innate Magic Resistance to skill lv. 3">Innate Magic Res.</td>
+			<td title="Group Haste to skill lv. 12">Group Haste</td>
+			<td title="Innate Magic Resistance to skill lv. 3">Innate Magic Res.</td>
+			<td title="Innate Melee Defense to skill lv. 10">Innate Melee Def.</td>
+	</tr>		
+</table>
+	<p><em>Note:</em> once you get to level 50, <strong>stop spending skill points</strong>. You'll see why later.</p>
+</div>
+</div>
+<div id="therest">
+<div id="header"> <span id="learn"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A1Learn.png"
+ alt="Learn..." title="Guides for Beginners"><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#interface"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A2Interface.png"
+ alt="Interface" title="The Game's Interface"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#battling"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A3Battling.png"
+ alt="Battling" title="Battling"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#shopping"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A4Shopping.png"
+ alt="Shopping" title="Shopping"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#items"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A5Items.png"
+ alt="Items" title="Items"></a><br>
+<a href="http://www.neopets.com/~SmallGreenBlur#skills"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/A6Skills.png"
+ alt="Skills" title="Skills Guide"></a> </span> <span id="play"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B0Play.png"
+ alt="Play..." title="Walkthroughs"><br>
+<a href="http://www.neopets.com/~Epanastasi"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B1.png"
+ alt="Act 1, Part 1" title="Act 1, Part 1"></a><br>
+<a href="http://www.neopets.com/~Fordulat"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B15.png"
+ alt="Act 1, Part 2" title="Act 1, Part 2"><br>
+</a><a href="http://www.neopets.com/~CmdrInputBlocker"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B2.png"
+ alt="Act 2" title="Act 2"><br>
+</a><a href="http://www.neopets.com/~DiabolicalChia"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B3.png"
+ alt="Act 3" title="Act 3"><br>
+</a><a href="http://www.neopets.com/~AlaskanMosquito"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B4.png"
+ alt="Act 4" title="Act 4"><br>
+</a><a href="http://www.neopets.com/~ThePhoenixRising"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/B5.png"
+ alt="Act 5" title="Act 5"><br>
+</a></span><span
+ id="headermain"> </span><a
+ href="http://www.neopets.com/~SmallGreenBlur"
+ alt="Rev's NeoQuest II Guide" title="To Home Page"
+ style="cursor: pointer;"><img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/HeaderMain.png"></a>
+<span id="headercomment">This guide is currently in beta. So don't
+worry. c:</span> </div>
+<div class="bodycontent" id="intro"> <img
+ src="http://www.fileden.com/files/2010/7/15/2915785/NQIIGuide/Act4Header.jpg" alt="act 4: haunted woods">
+</div>
+<div class="bodycontent" id="hi">
+<div id="hitcounter"><img
+ src="http://counter2.neomallers.com/alaskanmosquito.gif?theme=3dgreen&visit=#VISITOR"
+ alt="Good news! By reading this utterly useless alt text, you've just killed a few seconds. So your counter's probably loaded by now."></div>
+<h1 class="heading">salve</h1>
+	<p>Eh? Now what? Oh, it's you. Hi. If you're completely lost, <strong>click on the header</strong> to get back to where you once belonged (if you're lost, you'll want to check the <a href="http://www.neopets.com/~ThePhoenixRising">main page</a>.) If you haven't beaten Act 3 yet, go ahead and <a href="http://www.neopets.com/~DiabolicalChia">do that</a>.</p>
+	<p>If you aren't lost and you have beaten Act 3, then you're probably in the right place. Congrats. Well, the <strong>Haunted Woods</strong> is a pretty <strong>small</strong> chapter (at least compared to the last one), and it shouldn't take too much time to get through. <strong>Have fun</strong> with this chapter, since the next chapter (which is the last) one is all business. Say, did I mention that the next chapter is the <strong>last one?</strong></p>
+	<p>Before you start, keep in mind that this chapter is home to those <strong>diabolical Chias</strong> I've been telling you about. Be scared. Very scared.</p>
+	</div>
+	
+	<div class="bodycontent" id="shadowgulch">
+		<div class="place">
+			<h1 class="wtheading">shadow gulch</h1>
+			<img src="http://images.neopets.com/items/meepit_ghost.gif" alt="A ghost Meepit. Be scared.">
+				<div class="flavortext">Who you gonna call? (Hint: not me.)</div></div>
+					<p>As soon as you land in the Haunted Woods, you'll notice a <strong>town</strong> just below you. Walk onto it, and you'll find out that it's infested with ghosts. Before you ask, no, you can't bust them. Sorry. The main tourist <span class="strike">trap</span> attraction here is the weapons/armor/potions store in the <strong>southwestern building</strong>. Walk on over there, then get out that shopping list.</p>
+					<div class="shoppinglist">
+						<h1>Shopping List</h1>
+						<ul>
+							<li>Milk</li>
+							<li>Eggs</li>
+							<li>Cheese</li>
+							<li><strong>Potions: </strong><ul>
+									<li><b>20</b> Vile's Apathy Potions</li>
+									<li><b>20</b> Rot Potions</li>
+									<li><b>5</b> Kougra Sprint Potions</li>
+								</ul></li>
+							<li><strong>Weapons/Armor: </strong><ul>
+									<li>Chances are the bosses from the Lost Desert dropped good stuff, so we probably won't need to buy any weapons/armor from here. But if anyone's current weapon is 6 or so points weaker than the one for sale, you might want to upgrade.</li>
+									
+								</ul></li>
+							<li><strong>Inn:</strong> Didn't we just rest at the start of the act? Yeah.
+								</li>
+						</ul>
+					</div>
+					<p>
+						That's that for Shadow Gulch. Head out of town and get ready to use the <em>Fight-As-You-Go method</em>. Open up your map to the <em>West Haunted Woods</em> and look for <strong>Von Roo's Castle</strong> in the northeast corner. Head on over there, and enter as soon as you get there. (We don't need to level up just yet.)
+					</p>
+				</div>
+				
+	<div class="bodycontent" id="vonrooscastle">
+
+		<div class="place">
+
+			<h1 class="wtheading">von roo's castle</h1>
+
+			<img src="http://images.neopets.com/items/fur_pinata_vonroo.gif" alt="Von Roo himself.">
+
+				<div class="flavortext">"What? No! Don't hit me with that stick! I'm not a pinata. These are just, uh, my street clothes. Wait, I don't wear clothes..."</div></div>
+				
+					<p>Before you start doing anything, know that <strong>you should stay on Hunting for this entire castle.</strong> I don't care if you gain a level, two levels, or 42 levels... just stay on Hunting. It'll help. Believe me.</p>
+					
+					<p>Now that that's over with, take a peek at the map of the <em>Entrance</em> and look for the <strong>stairs</strong> in the east side of the level. There's actually two ways to get to it, but it really doesn't matter one way or the other as long as you are on Hunting mode. (Sense a theme? Thought so.) By the time you get to the stairs, get to level <strong title="Normal: 41, Evil: 42, Insane: 43">41/42/43</strong> if you aren't at that level already. Climb the stairs once you're ready.</p>
+					
+					<p>Now you're on the <em>Dungeon</em> level of the castle. It's a pretty simple route to <strong>Meuka</strong>, the boss of this castle. Yeah, you aren't fighting Von Roo. Go figure. But heal yourself and walk up to Meuka to pick <span class="strike">your nose</span> a fight.</p>
+				</div>
+			
+		<div class="boss" id="meuka">
+				<h1 class="wtheading">meuka</h1>
+				<div class="bosspic"><img src="http://images.neopets.com/items/toy_pinata_meuka.gif" alt="Meuka"></div>
+				<div class="flavortext">I'm pretty sure you don't want to hit this one with a stick.</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">41 on Normal<br>42 on Evil<br>43 on Insane</td></tr>
+
+				<tr>
+					<td class="first">HP:</td>
+					<td class="second">1000 on Normal<br>1250 on Evil<br>1500 on Insane</td></tr>
+				<tr>
+					<td class="first">Special Abilities:</td>
+					<td class="second">
+							<table id="abilities">
+								<tr>
+									<td class="aname">Rampant Acceleration</td>
+									<td class="amount">38%</td>
+									<td class="atype">Group Haste</td>
+								</tr>
+								<tr>
+									<td class="aname">Petrification</td>
+									<td class="amount">62%</td>
+									<td class="atype">Slowing</td>
+								</tr>								
+								<tr>
+									<td class="aname">Infestation</td>
+									<td class="amount">44HP</td>
+									<td class="atype">Group Damage</td>
+								</tr>
+							</table>
+							</td></tr>
+
+				<tr>
+					<td class="first">Prizes:</td>
+					<td class="secondlast">
+											5 Vitality Potions<br>
+											2 weapons/armor<br>
+											2000 gold<br>
+											850 NP
+											</td></tr>
+
+				</table>
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General: </strong>This guy isn't too bad, at least in comparison to the other bosses you'll fight this chapter. But anyway, he can't heal himself so he will die quickly. Enjoy this easy boss.</li>
+					<li><strong>Setup: </strong>You know what to do by now: have Velm put up <em>Group Shields</em>, have Mipsy use <em>Group Haste</em>, and keep the boss <em>slowed at all times</em>. If you feel like walking back to Shadow Gulch, you can toss some of Vile's Apathy Potions to slow him down. If you're lazy like me, use the <em>Potions of Loafing Laziness</em> from the Lost Desert.</li>
+					<li><strong>Offensive: </strong>Pretty <em>standard</em>.Rohane and Talinia should use their melee attacks, and Mipsy should use her Direct Damage. This guy can't heal, so don't bother with damage potions.</li>
+					<li><strong>Defensive: </strong>Meuka's <em>Infestation</em> hurts, so keep a careful eye on your team. Velm, of course, should heal whenever he needs to. It's not like he has anything better to do.</li>
+				</ul> 
+				<div class="postbattle"><h1 class="postbattle">Post-battle:</h1>
+					<p>You can talk to Von Roo if you like, but take the teleporter outside. Stay on <strong>Hunting mode</strong> (actually, you'll want to <strong>stay on Hunting mode for the rest of this chapter</strong>), and head east into the <em>East Haunted Woods</em>. You might not notice it on your map, but there's a lot of impassable ground in this swamp. Just be aware of that.</p>
+
+					<p>You'll notice the entrance to a <em>Cave of Dark Things</em> at the end of this swamp; walk over to it. Make sure you're at least level <strong title="Normal: 42, Evil: 43, Insane: 44">42/43/44</strong> before you enter.</p>
+				</div>
+		</div>
+
+	<div class="bodycontent" id="caveofdarkthings">
+
+		<div class="place">
+
+			<h1 class="wtheading">cave of dark things</h1>
+
+			<img src="http://images.neopets.com/items/bd_darkduck.gif" alt="Quack!" title="QUACK!">
+
+				<div class="flavortext">Whaddya mean, "things?" You mean like this slightly disturbing rubber duck?</div></div>
+					<p>So, as I was saying, you want to <strong>stay on Hunting mode</strong> for all of this cave and the rest of the chapter. I'm feeling lazy now so I'll stop repeating it. Anyhow, we need to grow to level <strong title="Normal: 44, Evil: 45, Insane: 46">44/45/46</strong>  - yeah, <strong>two levels</strong> - before we take on the boss at the end of this cave. Just keep that in mind.</p>
+					
+					<p>Take a peek at your map and look for the conveniently placed <strong>slime puddles</strong>. Make your way through the cave, following those puddles. Once you get to the boss at the end of the cave, you'll hopefully have at least one more level under your belt. <strong>Train</strong> (yeah, that's what you did back before you fought Zombom... good times, good times) till you get to level <strong title="Normal: 44, Evil: 45, Insane: 46">44/45/46</strong>.</p>
+					
+					<p>Once you've gained that level, walk up to the spider boss guy and proceed to beat him up.</p>
+				</div>
+
+		<div class="boss" id="spidergrundo">
+				<h1 class="wtheading">spider grundo</h1>
+				<div class="bosspic"><img src="http://images.neopets.com/items/plu_grundo_spider.gif" alt="The Spider Grundo immortalized in plushie form."></div>
+				<div class="flavortext">"Please. Two legs are SO 2007. 8 is the new 2."</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">44 on Normal<br>45 on Evil<br>46 on Insane</td></tr>
+
+				<tr>
+					<td class="first">HP:</td>
+					<td class="second">1200 on Normal<br>1500 on Evil<br>1800 on Insane</td></tr>
+				<tr>
+					<td class="first">Special Abilities:</td>
+					<td class="second">
+							<table id="abilities">
+								<tr>
+									<td class="aname">Renew</td>
+									<td class="amount">150HP</td>
+									<td class="atype">Heal</td>
+								</tr>
+								<tr>
+									<td class="aname">Wall of Chaos</td>
+									<td class="amount">22HP</td>
+									<td class="atype">Damage Shield</td>
+								</tr>
+								<tr>
+									<td class="aname"></td>
+									<td class="amount">45dmg</td>
+									<td class="atype">Celestial Hammer</td>
+								</tr>
+							</table>
+							</td></tr>
+
+				<tr>
+					<td class="first">Prizes:</td>
+					<td class="secondlast">
+											2 weapon/armor<br>
+											2000 gold<br>
+											900 NP
+											</td></tr>
+
+				</table>
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General: </strong>Ack. Just... ack. This guy is impossible to beat if you're below the recommended level, and even if you're at the recommended level he's tough. He's fast and heals a lot, so ack is a pretty good word for this situation.</li>
+					<li><strong>Setup: </strong>Again, I'm pretty sure you don't feel like walking all the way back to Shadow Gulch to replenish your potions. Good thing you have some lying around. If you still have <em>Potions of Loafing Laziness</em>, use those to keep this guy slowed at all times.  If you run out of those, use the <em>Potions of Inert Inaction</em> from Waset. <em>You really have to keep him slowed the whole battle</em>.</li>
+					<li><strong>Offensive: </strong>This guy heals A LOT, so bring out your big guns. Rohane and Mipsy should use their best forms of attack (you know what those are), while Talinia should chuck <em>Blister Potions</em> to do the most damage. Velm might get free turns sometimes (no one is hurt), and if he does he should toss Blister potions.</li>
+					<li><strong>Defensive: </strong>He doesn't have any spells, so be thankful for that. He still hits pretty hard, though, so be careful of your team's health. Still, Velm should pull through for you.</li>
+				</ul>
+				<div class="postbattle"><h1 class="postbattle">Post-battle:</h1>
+					<p>In another decidedly anticlimactic turn of events (wow, that was really flowery language), you don't bury the Grundo. You just talk to him. Anyway, equip those weapons and head west out of the cave (you're still on <strong>Hunting mode</strong>, right? That'll help.)</p>
+					<p>Once you leave the cave, start walking <strong>south</strong> on the path till the scenery changes. You'll know what I mean when you get there...</p>
+				</div>
+		</div>
+	<div class="bodycontent" id="balthazarsgrove">
+
+		<div class="place">
+
+			<h1 class="wtheading">balthazar's grove</h1>
+
+			<img src="http://images.neopets.com/items/toy_fir_ornament.gif" alt="A smiling plastic fir tree thingy.">
+
+				<div class="flavortext">All this happy is slightly disturbing. Scratch that, very disturbing.</div></div>
+					<p>Yeah, it's all green... and happy... which is weird, considering the evil Chias I've been telling you about live pretty nearby. Anyhow, make sure you're on that mode I was telling you about earlier *cough* Hunting *cough*. If you look at the west end of the grove, you'll notice <strong>some faeries</strong> who don't look very cheery. That, of course, means they're bosses. Before we fight them, we have to grow to level <strong title="Normal: 46, Evil: 47, Insane: 48">46/47/48</strong>.</p>
+					
+					<p>As usual, there's a dungeon thingy we need to get through. It's not a dungeon, though, it's the <strong>Happy Fun Non-Haunted House</strong>. You're currently on <em>Level 1</em>. You need to get to the <strong>stairs to level 2</strong>, which will take you almost to the exit of the house. It's weird, yeah, but it's not like this section is normal. Keep <em>Fighting as You Go</em> till you get to the exit of the house. Try to gain a level in the process.</p>
+					
+					<p>Once you get outside again, you'll notice the Brain Tree and a weird purple Bruce fella. He's actually the <strong>town</strong>, except rolled into one slightly anorexic package. Convenient. Take a look at your shopping list:</p>
+					
+					<div class="shoppinglist">
+						<h1>Shopping List</h1>
+						<ul>
+							<li>Milk</li>
+							<li>Eggs</li>
+							<li>Cheese</li>
+							<li><strong>Potions: </strong><ul>
+									<li><b>20</b> Sloth's Sloth Potions</li>
+									<li><b>20</b> Corrode Potions</li>
+									<li><b>10</b> Eyrie Flight Potions</li>
+								</ul></li>
+							<li><strong>Weapons/Armor: </strong><ul>
+									<li>The stuff for sale here is a decent jump up from the last town's stuff, and the next town isn't till next chapter. If someone's equipped weapon/armor doesn't pack bonuses, upgrade for them.</li>
+									
+								</ul></li>
+							<li><strong>Inn: </strong>Hate to say it, but there's a (comparatively) high chance you'll die before the next chapter. So rest here. Gold probably isn't an issue for you anyway.
+								</li>
+						</ul>
+					</div>
+					
+					<p>So yeah, <strong>don't hesitate to buy</strong> stuff, since there isn't another town for a while. Talk to the <strong>Brain Tree</strong>, too, he's got some useful info. If you aren't at level <strong title="Normal: 46, Evil: 47, Insane: 48">46/47/48</strong> yet, <strong>train in the house</strong> until you get to that level. Once you do, you can actually <em>walk north</em> from where the Bruce and the Tree are. That'll send you south (go figure) back into the Grove. Conveniently, you now know the secret word (whatever that is), so <strong>walk up to the faeries</strong> and prepare for a long, hard fight. (Don't you wish I had said that earlier?)</p> 
+				</div>		
+
+		<div class="boss" id="fourfaeries">
+				<h1 class="wtheading">four faeries</h1>
+				<div class="bosspic"><img src="http://images.neopets.com/nq2/n/n46e554_l_faeries_1.gif" alt="The four faeries"></div>
+				<div class="flavortext">See, kiddies, if you don't believe in the tooth fairy, THIS is what happens to you.</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">46 on Normal<br>47 on Evil<br>48 on Insane</td></tr>
+					<tr>
+					<td class="first">Prizes:</td>
+					<td class="secondlast">
+											3 weapons/armor<br>
+											2500 gold<br>
+											1000 NP
+											</td></tr>
+
+				</table>
+				
+				<table id="faeries">
+					<col><col><col><col style="width: 30%;">
+					<tr id="mainfaerieheading">
+						<td colspan="4">Faeries</td>
+					</tr>
+					<tr id="faerieheadings">
+						<td>name</td>
+						<td>hp</td>
+						<td>special abilities</td>
+						<td>comments</td>
+					</tr>
+					<tr style="background-color: #FFD6DB">
+						<td class="faerie" style="color:#AD0017">Fire</td>
+						<td>600 on Normal<br>750 on Evil<br>900 on Insane</td>
+						<td>100HP Direct Damage<br>56HP Group Damage</td>
+						<td>The hardest-hitting of the bunch</td>
+					</tr>
+					<tr style="background-color: #F3D6FF">
+						<td class="faerie" style="color:#7C00AD">Dark</td>
+						<td>750 on Normal<br>937 on Evil<br>1125 on Insane</td>
+						<td>38% Group Haste<br>62% Slowing<br>Mesmerization</td>
+						<td>Dangerous because of Mesmerization</td>
+					</tr>
+					<tr style="background-color: #D6FAFF">
+						<td class="faerie" style="color:#00A3BC">Water</td>
+						<td>900 on Normal<br>1125 on Evil<br>1350 on Insane</td>
+						<td>78HP Group Heal<br>150HP Heal</td>
+						<td>The healer of the group</td>
+					</tr>
+					<tr style="background-color: #D8FFD6">
+						<td class="faerie" style="color:#098700">Earth</td>
+						<td>1200 on Normal<br>1500 on Evil<br>1800 on Insane</td>
+						<td>Critical Attacks<br>Stunning Strikes</td>
+						<td>A tough melee attacker</td>
+					</tr>					
+				</table>	
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General: </strong>This is a weird boss fight since we've got 4 bosses at once. Also, these guys are a <em>Really Tough Boss</em>, so I'll go more <em>in-depth</em> in the strategy this time. (There are actually whole articles in the Neopian Times about how to beat these guys.) Basically, these guys can wreak a lot of havoc together. But if you pick them off <em>one by one</em>, the battle gets much easier.</li>
+					<li><strong>Battle: </strong>I'll put all the info in a list for you:
+						<ol class="strategylist">
+							<li>On their first turns, Mipsy and Velm should cast <em>Group Haste</em> and <em>Group Shields</em> respectively. Rohane and Talinia should toss <em>Sloth's Sloth Potions</em> at any Faerie on their first turns. Your team can use haste potions too if you like.</li>
+							<li>Everyone should continue chucking slowing potions at the Faeries (doesn't matter what order) until <em>all the faeries are slowed</em>. Make sure you re-apply potions as necessary. If a faerie's slow wears off, <b>chuck slow potions immediately until one works!</b> (if you run out of Sloth's Sloth Potions, use some of the <em>Vile's Apathy Potions</em>.)</li>
+							<li>Nice! You're done the setup. Velm should <em>Group Heal</em> absolutely every turn, and the others should <em>attack</em> just about every turn (Rohane should use melee, Mipsy should use Direct Damage, and Talinia can chuck damage potions or just attack melee. Her <em>Multiple Targets</em> is a nice skill to use too.)</li>
+							<li>We're going to take out the faeries from least to most HP. First, everyone should aim at the <b>Fire Faerie</b> and keep beating her up until she dies. When she does, the faeries might not be slowed anymore. If so, take a quick break and <em>re-slow the faeries</em>. If your Group Shields or Group Haste has worn off, be sure to <em>recast</em> those.</li>
+							<li>Good news! The battle's just gotten a whole lot easier. Everyone should now focus on taking out the <b>Dark Faerie</b>. Same deal as before. When she dies, <em>re-apply the slow potions and Shield/Haste spells.</em></li>
+							<li>Keep at it... now you want to take out the <b>Water Faerie</b>. Once she's dead, this battle is almost over. Slow the <b>Earth Faerie</b> and blast her until she's dead. Shouldn't take too long.</li>
+						</ol>
+					</li>
+				</ul> 
+				
+				<div class="postbattle"><h1 class="postbattle">Post-battle:</h1>
+					<p>Nice job! You've just beaten one of the hardest (if not THE hardest) bosses in the game. Collect your winnings, but don't go on. Switch to <strong>Normal mode</strong> (the baddies in the Grove don't give out much EXP now) and head back to the <strong>Haunted House</strong> (yeah, it changed its name.)</p>
+					
+					<p>I'm not sure if you noticed, but when you enter the house there are <strong>gates on either side of the house</strong>, which let you get to the guys behind the house without actually having to go through it. (Before you ask, they were opened when you talked to the Brain Tree.) So walk on back and talk to the <strong>Bruce guy</strong> again. <strong>Restock your potions</strong> (you want 20 of the <em>Sloth's Sloth</em> and <em>Corrode</em> Potions) and sell your old weapons.</p>
+					
+					<p>You can walk north from the guys again to get back into the Grove. Once you do, get ready for our next section...</p>
+				</div>
+		</div>
+		
+	<div class="bodycontent" id="landofthechias">
+
+		<div class="place">
+
+			<h1 class="wtheading">land of the chias</h1>
+
+			<img src="http://images.neopets.com/items/evilchiadoll.gif" alt="Th... the... evil Chia...">
+
+				<div class="flavortext">See, I told you you'd get to beat up Chias eventually.</div></div>
+					<p>Walk over to where the <strong>Faeries</strong> were (you'll notice everything looks all evil again) and start going west. Look at your map for <em>Hubrid's Mountain Range</em> or something to that effect. Stay on <strong>Normal mode</strong> and head through the woods and mountains until you find yourself in the <em>Esophagor's Swamp</em> or the <em>Goo Bog</em>. <strong>Don't fight anyone or enter the fortress.</strong> Let me repeat that:</p>
+						<h2 class="bigheading">Don't touch anything!</h2>
+					<p>Why? Well, the baddies around here are called evil for a reason: they're <strong>ridiculously strong</strong> and <strong>attack in droves</strong>. One baddie, the Hand of Nox, can Obliterate Mipsy in two shots if she's a little hurt. Mipsy's died plenty of times against these guys on my watch. The Heart of Nox uses the odd Focus Energy ability to become just about indestructible. And the other Chias aren't much easier.</p>
+					
+					<p>But don't worry. We'll be back soon. And yeah, we'll enter that fortress and beat up the leader of these Chias.</p>
+				</div>
+	<div class="bodycontent" id="bigimportantnote">
+
+		<div class="place">
+
+			<h1 class="wtheading">Big Important Note</h1>
+
+			<img src="http://images.neopets.com/new_shopkeepers/t_442.gif" alt="Stop that.">
+				<div class="flavortext">Don't spend those skill points...</div></div>
+			
+					<p>Pretty soon you'll reach <strong>level 50</strong>, which is a <em>Really Big Deal</em>. Once you grow to level 50, spend that skill point, but <strong>when you reach level 51, don't spend that skill point!</strong> We're actually going to <strong>save our skill points</strong> until we reach level 60, at which point we'll spend them.</p>
+					
+					<p>I know what you're thinking: <em>why?</em> Is it cause I feel like it? Well, partially, but not really. See, weapons and armor in Faerieland (act 5) give <strong>big bonuses</strong>. I'm talking 2-3 points for 3 or more skills. Well, take a look at Tricia and Arthur.</p>
+					
+					
+					<div class="person">
+						<p><strong>Tricia</strong> is your standard, no-nonsense NQII player. She figured it just makes sense to <strong>spend your skill points as soon as you get them</strong>. So every time she levels up in Act 5, she spends the skill point she gets immediately. By level 60, Rohane has <em>15 points in Critical Attacks and Damage Increase</em>, so those stats are <strong>maxed out</strong>.</p>
+						
+						<p>But at level 60, she finds the Sword of Apocalypse, which gives <strong>2 points bonus</strong> in all of Rohane's non-innate skills. Rohane's Critical Attacks and Damage Increase would go up, but they can't. So <strong>she's just wasted 4 skill points</strong>, which is a Really Big Deal. And it isn't a good idea to have wasted skill points when you're up against the toughest boss in the game.</p>
+					</div>
+					
+					<div class="person">
+						<p><strong>Arthur</strong> decides to try the save-your-skill-points method, because he listened to me and I'm *ahem* awesome like that. So he <strong>stops spending skill points after level 50.</strong> He spends his skill point when he grew to level 50, but after that he saves his points until he gets to level 60. At level 60, his Rohane only has <em>13 points in Damage Increase and Critical Attacks</em>, so he doesn't have the easiest time in Faerieland.</p>
+						
+						<p>But his patience is rewarded. At level 60, he finds the Sword of Apocalypse, which gives <strong>2 points bonus</strong> in all of Rohane's non-innate skills. Rohane's Critical Attacks and Damage Increase <strong>go to 15</strong>. Bam, <strong>no skill points wasted</strong>, it just falls neatly into place.</p>
+
+						<p>So now, Arthur and Tricia are on the same level, skill-wise. The only difference is that <strong>Arthur has 10 more skill points to spend</strong>, which is, again, a Really Big Deal. The last boss is so much easier for him now. Thank you, planning ahead.</p>
+					</div>	
+				<p>The gist of it is that <strong>you should stop spending skill points once you reach level 50</strong>. You can spend those saved skill points after the 2nd-to-last-boss. I'll let you know when it's time. And now back to your regularly scheduled production.</p>
+				</div>
+				
+	<div class="bodycontent" id="goobog">
+
+		<div class="place">
+
+			<h1 class="wtheading">goo bog</h1>
+
+			<img src="http://images.neopets.com/items/toy_nq2_fungus.gif" alt="A rather ugly fungus.">
+
+				<div class="flavortext">He sure looks like a fun guy. Haha... fungus humor.</div></div>
+					<p>Yeah, instead of training in the home of the barbaric Chias, we're going to <strong>train a bit here</strong> in the Goo Bog (your map might call it the <em>Esophagor's Swamp</em> or something like that.) Go ahead and beat up the fungi and other slime thingies that live here. Go far enough into the swamp that you <strong>see scattered trees</strong> but not too far. If you look at your map you'll see what I mean.</p>
+
+				<p>You'll want to train to level <strong title="Normal: 49, Evil: 50, Insane: 51">49/50/51</strong> (yeah, <strong>3 levels</strong>) here. Don't worry, it isn't that bad. The baddies here give <em>incredible</em> experience and they're far easier than those Chias I told you about earlier. So what's not to like?</p>
+				
+				<p>Now that that's done, we can finally go back to Chia-land. Before you leave the Goo Bog, though, <strong>Switch to Normal mode.</strong> No point fighting the Chias anymore, since they don't give out much experience. Well, now head northwest out of the Goo Bog until you're in the <strong>mountain range you came through</strong>. Remember the <strong>tower</strong> in the middle of the mountains? (If not, open up your map of the <em>Mountain Range</em>.) Yeah, that's where we're headed.</p>
+				
+				<p>Take a look at your map for <em>Nox's Fortress, Level 1</em>. Yeah, there are 9 levels of this thing. I trust you can <strong>make your way up</strong> through the 9 levels. If you run into any Chias, feel free to kill 'em. Once you make it to the top of the tower (<em>Level 9</em>), you'll notice an especially big Chia, who's incidentally your next boss.</p>
+				</div>
+		<div class="boss" id="hubridnox">
+				<h1 class="wtheading">hubrid nox</h1>
+				<div class="bosspic"><img src="http://images.neopets.com/items/toy_pinata_hubrid.gif" alt="Nox, this time in pinata form."></div>
+				<div class="flavortext">OK, so let me get this straight. All the evil guys get pinatas made of them, but I don't. Real nice.</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">49 on Normal<br>50 on Evil<br>51 on Insane</td></tr>
+
+				<tr>
+					<td class="first">HP:</td>
+					<td class="second">1500 on Normal<br>1875 on Evil<br>2250 on Insane</td></tr>
+				<tr>
+					<td class="first">Special Abilities:</td>
+					<td class="second">
+							<table id="abilities">
+								<tr>
+									<td class="aname">Rampant Acceleration</td>
+									<td class="amount">38%</td>
+									<td class="atype">Group Haste</td>
+								</tr>
+								<tr>
+									<td class="aname">Petrification</td>
+									<td class="amount">62%</td>
+									<td class="atype">Slowing</td>
+								</tr>								
+								<tr>
+									<td class="aname">Obliterate</td>
+									<td class="amount">100HP</td>
+									<td class="atype">Direct Damage</td>
+								</tr>
+								<tr>
+									<td class="aname">Renew</td>
+									<td class="amount">150HP</td>
+									<td class="atype">Heal</td>
+								</tr>
+								<tr>
+									<td class="aname"></td>
+									<td class="amount"></td>
+									<td class="atype">Critical Attacks</td>
+								</tr>
+								<tr>
+									<td class="aname"></td>
+									<td class="amount">5%</td>
+									<td class="atype">Slowing Strike</td>
+								</tr>
+								<tr>
+									<td class="aname"></td>
+									<td class="amount">Nice</td>
+									<td class="atype">Mustache</td>
+								</tr>								
+							</table>
+							</td></tr>
+
+				<tr>
+					<td class="first">Prizes:</td>
+					<td class="secondlast">
+											2 weapons/armor<br>
+											3000 gold<br>
+											1000 NP
+											</td></tr>
+
+				</table>
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General: </strong>This is, hands down, the most annoying boss in the whole game. Not tough, just annoying, mostly because he <em>heals. A lot.</em> See, he's <em>insanely fast</em> and can sometimes get two turns in a row. Combine that with his healing power and he's a tough cookie.</li>
+					<li><strong>Setup: </strong>Make sure this guy is <em>slowed all the time</em>. Toss those <em>Vile's Apathy Potions</em> from Shadow Gulch as soon as the battle starts, and make sure you throw more if his slow wears off. If you run out of those potions, use the ones from the Lost Desert. Also make sure you use Velm's Group Shields and Mipsy's Group Haste, they'll be really useful. I'd recommend that Rohane uses some <em>haste potions</em> (he's your best attacker this battle), and if you have time the others can use them too.</li>
+					<li><strong>Offensive: </strong>You really must do <em>as much damage as possible</em> to this guy, or else he'll just heal it all off.  Rohane and Mipsy should use their standard attacks, while Talinia should toss <em>Rot or Blister Potions</em> (her melee is nice, though, since she's able to get a Shockwave off.) If Velm gets a turn when he doesn't need to heal, have him toss damage potions too. Rohane's Stunning Strikes will be really useful this battle.</li>
+					<li><strong>Defensive: </strong>As if taking Nox down wasn't hard enough, he hits pretty hard too. Velm should always have <em>Group Shields</em> up (he should have them up every battle) and should heal whenever someone is hurt. If Nox gets two turns in a row and decides to Obliterate Mipsy... yeah, not fun. Velm can use <em>haste potions</em> too, they'll be useful.</li>
+				</ul> 
+				<div class="postbattle"><h1 class="postbattle">Post-battle:</h1>
+					<p>Once you finally kill this guy off, give yourself a pat on the back. You won't have to face another boss as hard as this guy for... maybe 5 more levels. I know it isn't much, but hey.</p>
+					
+					<p>You're really close to the end of this chapter. Take the teleporter outside the fortress, and head back to the <strong>Goo Bog</strong>. Grow to level <strong title="Normal: 50, Evil: 51, Insane: 52">50/51/52</strong> in the Goo Bog, then use your maps to <strong>get to the Esophagor</strong> in the southeast corner of the swamp. Walk on up to him and get ready to fight him.</p>
+				</div>
+		</div>
+		<div class="boss" id="esophagor">
+				<h1 class="wtheading">esophagor</h1>
+				<div class="bosspic"><img src="http://images.neopets.com/items/stamp_hal_eso.gif" alt="The Esophagor on a stamp."></div>
+				<div class="flavortext">What's with all the malformed, disembodied baddies around here?</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">50 on Normal<br>51 on Evil<br>52 on Insane</td></tr>
+
+				<tr>
+					<td class="first">HP:</td>
+					<td class="second">2000 on Normal<br>2500 on Evil<br>3000 on Insane</td></tr>
+				<tr>
+					<td class="first">Special Abilities:</td>
+					<td class="second">
+							<table id="abilities">
+								<tr>
+									<td class="aname">Rampant Acceleration</td>
+									<td class="amount">38%</td>
+									<td class="atype">Group Haste</td>
+								</tr>
+								<tr>
+									<td class="aname"></td>
+									<td class="amount"></td>
+									<td class="atype">Stunning Strikes</td>
+								</tr>
+							</table>
+							</td></tr>
+
+				<tr>
+					<td class="first">Prizes:</td>
+					<td class="secondlast">
+											3 weapons/armor<br>
+											500 gold<br>
+											1500 NP
+											</td></tr>
+
+				</table>
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General: </strong>After Nox, this guy is a pushover. He <em>hits hard, but he can't heal</em>, so you should be able to take him out quickly. This is a pretty mindless fight, to be honest.</li>
+					<li><strong>Setup: </strong>As usual, put up Group Shields and cast Group Haste. If you're low on potions, you can get away with not slowing him, but you probably should <em>slow him</em>. Toss some <em>Potions of Inert Inaction</em> or <em>Potions of Loafing Laziness</em> and keep him slowed the whole battle.</li>
+					<li><strong>Offensive: </strong>This guy <em>hits hard</em> (he can hit Mipsy for 120+ damage if you're unlucky), so make sure Velm uses Group Healing every turn. If someone's hurt really badly, don't be afraid to have them use a <em>healing potion</em>.</li>
+					<li><strong>Defensive: </strong>He has a lot of HP, but he can't heal so there's <em>no hurry to kill him</em>. Rohane and Talinia should use melee hits, and Mipsy should toss around some Direct Damage spells.</li>
+				</ul> 
+				<div class="postbattle"><h1 class="postbattle">Post-battle:</h1>
+					<p>Nice! You've just finished Act 4. All that's left is Act 5, where you'll find misguided flying cats and the huge ugly dragon at the end of the game. Head on over to <a href="http://www.neopets.com/~ThePhoenixRising">ThePhoenixRising's page</a> to get started. See you next page.</p>
+				</div>
+		</div>		
+	<!--PLACE TEMPLATE
+	<div class="bodycontent" id="">
+
+		<div class="place">
+
+			<h1 class="wtheading"></h1>
+
+			<img src="" alt="">
+
+				<div class="flavortext">lorem</div></div>
+					<p>STUFF HERE
+				</div>
+		-->
+	<!-- BOSS TEMPLATE
+		<div class="boss" id="">
+				<h1 class="wtheading"></h1>
+				<div class="bosspic"><img src="" alt=""></div>
+				<div class="flavortext">Cool mustache, but that robe? Ew. He's gotta go.</div>
+				<table class="bossinfo"><tr>
+					<td class="first">Recommended Level:</td>
+					<td class="second">20 on Normal<br>21 on Evil<br>22 on Insane</td></tr>
+
+				<tr>
+					<td class="first">HP:</td>
+					<td class="second">200 on Normal<br>250 on Evil<br>300 on Insane</td></tr>
+				<tr>
+					<td class="first">Special Abilities:</td>
+					<td class="second">
+							<table id="abilities">
+								<tr>
+									<td class="aname">Rampant Acceleration</td>
+									<td class="amount">38%</td>
+									<td class="atype">Group Haste</td>
+								</tr>
+								<tr>
+									<td class="aname">Infestation</td>
+									<td class="amount">44HP</td>
+									<td class="atype">Group Damage</td>
+								</tr>
+								<tr>
+									<td class="aname">Mitigation</td>
+									<td class="amount">60HP</td>
+									<td class="atype">Group Heal</td>
+								</tr>
+								<tr>
+									<td class="aname">Spellbind</td>
+									<td class="amount"></td>
+									<td class="atype">Mesmerization</td>
+								</tr>
+								<tr>
+									<td class="aname"></td>
+									<td class="amount"></td>
+									<td class="atype">Shockwave</td>
+								</tr>
+								<tr>
+									<td class="aname"></td>
+									<td class="amount">5%</td>
+									<td class="atype">Slowing Strike</td>
+								</tr>
+							</table>
+							</td></tr>
+
+				<tr>
+					<td class="first">Prizes:</td>
+					<td class="secondlast">the Wordstone (lets you talk to those Chias)<br>
+											2 Potions of Regeneration<br>
+											1 weapon/armor<br>
+											200 gold<br>
+											500 NP
+											</td></tr>
+
+				</table>
+				<ul class="strategy"><li class="bossstrategy">Strategy:</li>
+					<li><strong>General: </strong>stuff</li>
+					<li><strong>Setup: </strong></li>
+					<li><strong>Offensive: </strong></li>
+					<li><strong>Defensive: </strong></li>
+				</ul> 
+				<div class="postbattle"><h1 class="postbattle">Post-battle:</h1>
+				</div>
+		</div>
+	-->
+</div>
+</div>
+</body>	
